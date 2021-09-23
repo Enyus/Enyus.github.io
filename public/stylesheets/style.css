@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@800&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #DCDDE1;
+}
+
+header, .header-menu {
+  background-color: #FFFFFF;
+  width: 100%;
+  padding: 0 3%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+header section {
+  display: flex;
+  padding: 10px 0;
+  align-items: center;
+}
+
+header section.header-principal .logo {
+  width: 20%;
+}
+
+header section.header-principal .logo img {
+  max-width: 100%;
+  height: 100px;
+}
+
+header .header-principal .busca {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+header .header-principal .busca p {
+  width: 20%;
+  text-align: right;
+  padding-right: 10px;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+header .header-principal .busca input {
+  width: 70%;
+  height: 10%;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+header .header-principal .busca button {
+  background: none;
+  border: none;
+  position: relative;
+  left: -35px;
+}
+
+header .header-principal .hbutton {
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+header .header-principal .hbutton img {
+  height: 50%;
+}
+
+header .header-principal .hbutton div {
+  width: 25%;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: space-around;
+  position: sticky;
+  top: 0;
+  padding: 10px 3%;
+}
+
+header a, footer a, .header-menu a {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #FFFFFF;
+  width: 100%;
+  padding: 0 3%;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  height: 6%;
+  min-height: 50px;
+  align-items: center;
+}
+
+footer .fbutton {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .fbutton a {
+  display: flex;
+  align-items: center;
+}
+
+footer .fbutton a img {
+  height: 20px;
+  position: relative;
+  top: -2px;
+  left: 4px;
+}
+
+footer .mlogo {
+  width: 40%;
+  display: flex;
+  justify-content: end;
+}
+
+body section.banner {
+  margin: 20px 3% 0 3%;
+  width: 94%;
+  border-radius: 10px;
+  background-color: #E84118;
+  display: flex;
+  justify-content: center;
+}
+
+body section.ofertas {
+  margin: 20px 3% 60px 3%;
+  width: 94%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+body section.ofertas div.container {
+  margin: 1%;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 280px;
+  height: 300px;
+  text-align: center;
+}
+
+body section.ofertas a {
+  color: unset;
+  text-decoration: unset;
+  max-width: 25%;
+}
+
+body section.ofertas div.container img {
+  width: auto;
+  margin-top: 10px;
+}
+
+h1 {
+  margin: 10px 0;
+}
+
+body section.ofertas div.container div.precos ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  list-style-type:none;
+}
+
+.preco-antes {
+  font-weight: 300;
+  font-size: 16px;
+  text-decoration-line: line-through;
+  width: 30%;
+}
+
+.preco-agora {
+  font-weight: bolder;
+  font-size: 18px;
+  width: 30%;
+}
+
+.off {
+  font-weight: bolder;
+  font-size: 18px;
+  width: 30%;
+  color: #4CD137;
+}
