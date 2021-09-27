@@ -389,3 +389,136 @@ main.resultadobusca nav.navpages button {
   font-weight: 600;
   cursor: pointer;
 }
+
+main.paginaproduto div.produto {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: top;
+}
+
+main.paginaproduto div.fotosproduto {
+  display: flex;
+  justify-content: space-between;
+  width: 40vw;
+  max-width: 600px;
+  height: 35em;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+  border-radius: 10px;
+}
+
+main.paginaproduto div.fotosproduto div.miniimg {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+main.paginaproduto div.fotosproduto div.miniimg img {
+  max-height: 150px;
+}
+
+main.paginaproduto div.fotosproduto div.miniimg img:first-child{
+  border-top-left-radius: 10px;
+}
+
+main.paginaproduto div.fotosproduto div.miniimg img:last-child {
+  border-bottom-left-radius: 10px;
+}
+
+main.paginaproduto div.fotosproduto div.focoimg {
+  height: 100%;
+  max-width: 70%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+main.paginaproduto div.fotosproduto div.focoimg img {
+  height: 100%;
+  position: relative;
+  right: -3px;
+  border-radius: 0 10px 10px 0;
+}
+
+main.paginaproduto div.descgeral {
+  width: 50vw;
+  height: 100%;
+  margin: 0 0 20px 0;
+}
+
+main.paginaproduto div.descgeral h2 {
+  text-align: center;
+  width: 100%;
+  font-size: xx-large;
+  margin: 0;
+}
+
+main.paginaproduto div.descgeral div.oferta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+main.paginaproduto div.descgeral div.oferta p.off {
+  font-size: xx-large;
+}
+
+main.paginaproduto div.descgeral div.subcontainer {
+  display: flex;
+}
+
+main.paginaproduto div.descgeral div.subcontainer div.desc {
+  width: 50%;
+}
+
+main.paginaproduto div.descgeral div.subcontainer div.comprar,
+main.paginaproduto div.descgeral div.subcontainer div.comprar form  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  height: -webkit-fill-available;
+}
+
+main.paginaproduto div.descgeral div.subcontainer div.comprar form,
+main.paginaproduto div.descgeral div.subcontainer div.comprar form input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+main.paginaproduto div.descgeral div.subcontainer div.comprar form button {
+  align-self: flex-end;
+  width: 40%;
+  border-radius: 20px;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  border-style: none;
+}
+
+main.paginaproduto div.descgeral div.subcontainer div.comprar p {
+  align-self: flex-end;
+}
+
+main.paginaproduto div.descgeral div.subcontainer div.comprar p.total {
+  font-size: xx-large;
+}
+
+main.paginaproduto div.descgeral div.subcontainer div.compra {
+  text-align: center;
+  margin-top: 20px;
+}
+
+main.paginaproduto div.descgeral div.subcontainer div.compra button {
+  border-radius: 20px;
+  border-style: none;
+  background-color: #E84118;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  font-size: 18px;
+  width: 230px;
+  height: 40px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
