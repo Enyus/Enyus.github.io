@@ -507,6 +507,8 @@ main.paginaproduto div.descgeral div.subcontainer div.comprar p.total {
 main.paginaproduto div.descgeral div.subcontainer div.compra {
   text-align: center;
   margin-top: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 main.paginaproduto div.descgeral div.subcontainer div.compra button {
