@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato DO$</title>
+    <title>Digital Outlet $</title>
     <link rel='stylesheet' href='./public/stylesheets/style.css' />
   </head>
 
@@ -65,35 +65,24 @@
         </a>
     </section>
 
-    <main>
+    <main class="login">
         <section class="containergeral">
-            <h1>Categorias</h1>
-            <div class="buttonscontato">
-                <div>
-                    <button><p>Lojas parceiras</p></button>
-                    <button><p>Vale Troca</p></button>
-                    <button><p>Cupom e Promoção</p></button>
-                    <button><p>Formas de Pagamento</p></button>
+            <h1>Seja Bem Vindo</h1>
+            <p>Preencha os campos abaixo:</p>
+            <form action="" method="POST">
+                <div class="formrow">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email">
                 </div>
-                <div>
-                    <button><p>Dividas e Emprestimo</p></button>
-                    <button><p>Trocas e Cancelamento</p></button>
-                    <button><p>Pedidos</p></button>
-                    <button><p>Cadastro</p></button>
+                <div class="formrow">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password">
                 </div>
-            </div>
-            <p class="pcontato">Não encontrou a sua dúvida? Nos conte aqui:</p>
-            <form id="contato" class="contato">
-                <div>
-                    <input type="text" id="nome" value="Nome Completo">
-                    <input type="email" id="email" value="E-mail">
-                    <input type="tel"id="telefone" value="Telefone para contato (xx) xxxxx-xxxx">
-                </div>
-                <div><textarea id="mensagem">Digite aqui sua dúvida</textarea></div>
-                <input type="submit" value="Enviar">
+                <button type="submit">Entrar</button>
             </form>
+            <p>Não é cadastrado?<a href=""> Cadastre-se aqui!</a></p>
         </section>
-    </main>
+      </main>
 
     <footer>
         <section class="fbutton">

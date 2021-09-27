@@ -524,3 +524,58 @@ main.paginaproduto div.descgeral div.subcontainer div.compra button {
   margin-bottom: 20px;
   font-weight: bold;
 }
+
+main.login section.containergeral p {
+  text-align: center;
+}
+
+main.login section.containergeral form {
+  width: 100%;
+  text-align: center;
+}
+
+main.login section.containergeral form div.formrow {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  align-items: center;
+}
+
+main.login section.containergeral form div.formrow label {
+  margin-right: 10px;
+}
+
+main.login section.containergeral form div.formrow input {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 350px;
+  max-width: 50%;
+  font-size: 20px;
+  border: 1px solid #C8D6E5;
+}
+
+main.login section.containergeral form button {
+  font-size: 36px;
+  width: 20%;
+  border-style: none;
+  border-radius: 20px;
+  border-width: 1px;
+  color: #fff;
+  background-color: #E84118;
+  font-weight: bold;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+main.login section.containergeral p:last-child {
+  width: 50%;
+  position: relative;
+  left: 31%;
+  margin: 20px 0;
+}
+
+main.login section.containergeral p:last-child a{
+  color: #40739E;
+  font-weight: bold;
+  text-decoration: underline;
+}
