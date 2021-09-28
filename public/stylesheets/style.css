@@ -302,7 +302,7 @@ main section.containergeral form.contato {
 }
 
 main section.containergeral form.contato div {
-  background: #F7F7F7;
+  background: #c1c1c1;
   width: 40%;
   display: flex;
   flex-direction: column;
@@ -311,14 +311,14 @@ main section.containergeral form.contato div {
 }
 
 main section.containergeral form.contato div input {
-  margin: 2%;
+  margin: 10px;
   color: #c1c1c1;
   border: none;
 }
 
 main section.containergeral form.contato textarea {
   background-color: #FFFFFF;
-  margin: 2%;
+  margin: 10px;
   height: inherit;
   color: #c1c1c1;
   border: none;
@@ -326,7 +326,7 @@ main section.containergeral form.contato textarea {
 
 main section.containergeral form.contato input[type="submit"] {
   margin: auto;
-  background: #f7f7f7;
+  background: #c1c1c1;
   border: none;
   width: 15%;
   cursor: pointer;
@@ -525,16 +525,22 @@ main.paginaproduto div.descgeral div.subcontainer div.compra button {
   font-weight: bold;
 }
 
-main.login section.containergeral p {
+main.login section.containergeral p,
+main.cadastrousuario section.containergeral p,
+main.trabalheconosco section.containergeral div.form p {
   text-align: center;
 }
 
-main.login section.containergeral form {
+main.login section.containergeral form,
+main.cadastrousuario section.containergeral form,
+main.trabalheconosco section.containergeral form {
   width: 100%;
   text-align: center;
 }
 
-main.login section.containergeral form div.formrow {
+main.login section.containergeral form div.formrow,
+main.cadastrousuario section.containergeral form div.formrow,
+main.trabalheconosco section.containergeral form div.formrow {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -542,11 +548,19 @@ main.login section.containergeral form div.formrow {
   align-items: center;
 }
 
-main.login section.containergeral form div.formrow label {
+main.login section.containergeral form div.formrow label,
+main.cadastrousuario section.containergeral form div.formrow label,
+main.trabalheconosco section.containergeral form div.formrow label {
   margin-right: 10px;
+  width: 150px;
+  text-align: end;
 }
 
-main.login section.containergeral form div.formrow input {
+main.login section.containergeral form div.formrow input,
+main.cadastrousuario section.containergeral form div.formrow input,
+main.trabalheconosco section.containergeral form div.formrow input,
+main.trabalheconosco section.containergeral form div.formrow select,
+main.trabalheconosco section.containergeral form div.formrow textarea {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   width: 350px;
   max-width: 50%;
@@ -554,9 +568,11 @@ main.login section.containergeral form div.formrow input {
   border: 1px solid #C8D6E5;
 }
 
-main.login section.containergeral form button {
+main.login section.containergeral form button,
+main.cadastrousuario section.containergeral form button,
+main.trabalheconosco section.containergeral form button {
   font-size: 36px;
-  width: 20%;
+  width: 300px;
   border-style: none;
   border-radius: 20px;
   border-width: 1px;
@@ -578,4 +594,56 @@ main.login section.containergeral p:last-child a{
   color: #40739E;
   font-weight: bold;
   text-decoration: underline;
+}
+
+main.trabalheconosco div.containersecundario {
+  display: flex;
+  justify-content: space-around;
+}
+
+main.trabalheconosco div.containersecundario div.form,
+main.trabalheconosco div.containersecundario div.imagem{
+  width: 45%;
+}
+
+main.trabalheconosco div.containersecundario div.imagem img {
+  width: -webkit-fill-available;
+}
+
+main.trabalheconosco h2 {
+  font-weight: normal;
+  text-align: justify;
+}
+
+main.trabalheconosco form ul {
+  display: flex;
+  list-style: none;
+  width: 350px;
+  max-width: 50%;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+main.trabalheconosco form ul input {
+  width: auto !important;
+  box-shadow: none !important;
+}
+
+main.trabalheconosco input[type="file"] {
+  display: none;
+}
+
+main.trabalheconosco div.upload {
+  width: 350px;
+  max-width: 50%;
+  text-align: left;
+}
+
+main.trabalheconosco div.upload button {
+  width: 160px !important;
+  background-color: #D3D3D3 !important;
+  border-radius: 0 !important;
+  font-size: 18px !important;
+  line-height: 23px;
 }

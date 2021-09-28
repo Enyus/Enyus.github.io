@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Outlet $</title>
+    <link rel='stylesheet' href='./public/stylesheets/style.css' />
+  </head>
+
+<body>
+
+    <header>
+    <section class="header-principal">
+      <div class="logo">
+        <a href="./home.html"><img src="./public/images/logo.png" alt="Logo DO$"></a>
+      </div>
+      <div class="busca">
+        <p>Pesquise sua marca/produto:</p>
+        <input type="text">
+        <a href="./resultadobusca.html"><img src="./public/images/search-icon.png" alt="search"></a>
+      </div>
+      <div class="hbutton">
+        <div>
+          <a href="./login.html">
+          <img src='./public/images/login.svg' alt="login">
+          <p>LOG IN</p>
+          </a>
+        </div>
+        <div>
+          <a href="">
+          <img src="./public/images/lojista.svg" alt="login lojista">
+          <p>VENDA CONOSCO</p>
+          </a>
+        </div>
+        <div>
+          <a href="">
+          <img src="./public/images/carrinho.svg" alt="carrinho">
+          <p>SEU CARRINHO</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    </header>
+    
+    <section class="header-menu">
+        <a href="">
+          ROUPAS
+        </a>
+        <a href="">
+          LIVROS
+        </a>
+        <a href="">
+          CALÇADOS
+        </a>
+        <a href="">
+          ACESSÓRIOS
+        </a>
+        <a href="">
+          PARA A CASA
+        </a>
+        <a href="">
+          ESPORTE
+        </a>
+    </section>
+
+    <main class="trabalheconosco">
+        <section class="containergeral">
+            <h1>Trabalhe na <img src="./public/images/logo-mini.svg" alt="mini logo"></h1>
+            <div class="containersecundario">
+                <div class="form">
+                    <p>Cadastre-se a uma de nossas vagas:</p>
+                    <form action="" method="POST">
+                        <div class="formrow">
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="formrow">
+                            <label for="nome">Nome Completo:</label>
+                            <input type="text" id="nome" name="nome">
+                        </div>
+                        <div class="formrow">
+                            <label for="departamentos">Departamentos:</label>
+                            <select id="departamentos">
+                                <option selected disabled value="escolha">Escolha</option>
+                                <option value="adm">Administração</option>
+                                <option value="dev">Developer</option>
+                                <option value="mkt">Marketing</option>
+                                <option value="fin">Financeiro</option>
+                            </select>
+                        </div>
+                        <div class="formrow">
+                            <label for="disp">Disponibilidade:</label>
+                            <ul id="disp">
+                                <li><input type="radio" id="4h" name="disp" value="4h"><label for="4h">4 horas</label></li>
+                                <li><input type="radio" id="8h" name="disp" value="8h"><label for="8h">8 horas</label></li>
+                                <li><input type="radio" id="freela" name="disp" value="freela"><label for="freela">Freela</label></li>
+                            </ul>
+                        </div>
+                        <div class="formrow">
+                            <label for="mensagem">Mensagem:</label>
+                            <textarea id="mensagem"></textarea>
+                        </div>
+                        <div class="formrow">
+                            <label for="curriculo">Currículo:</label>
+                            <div class="upload">
+                                <button type="button" id="curriculo" onclick="document.getElementById('fileupload').click()">upload</button>
+                                <input type="file" id="fileupload">
+                            </div>
+                        </div>
+                        
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+                <div class="imagem">
+                    <img src="./public/images/trabalhe-conosco.png" alt="trabalhe conosco">
+                    <h2>Faça parte de uma equipe dinâmica que quer sempre estar a frente do mercado digital!</h2>
+                </div>
+            </div>
+        </section>
+      </main>
+
+    <footer>
+        <section class="fbutton">
+        <a href="./sobre.html">
+            SOBRE A <img src="./public/images/logo-mini.svg" alt="Mini Logo DO$">
+        </a>
+        <a href="./contato.html">
+            FALE CONOSCO
+        </a>
+        <a href="./trabalheconosco.html">
+            TRABALHE CONOSCO
+        </a>
+        <a href="./faq.html">
+            FAQ
+        </a>
+        </section>
+        <section class="mlogo">
+        <a href="/home.html"><img src="./public/images/logo-mini.svg" alt="Mini Logo DO$"></a>
+        </section>
+    </footer>
+
+</body>
+
+</html>
