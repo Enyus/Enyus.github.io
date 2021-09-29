@@ -527,20 +527,23 @@ main.paginaproduto div.descgeral div.subcontainer div.compra button {
 
 main.login section.containergeral p,
 main.cadastrousuario section.containergeral p,
-main.trabalheconosco section.containergeral div.form p {
+main.trabalheconosco section.containergeral div.form p,
+main.cadastroloja section.containergeral p {
   text-align: center;
 }
 
 main.login section.containergeral form,
 main.cadastrousuario section.containergeral form,
-main.trabalheconosco section.containergeral form {
+main.trabalheconosco section.containergeral form,
+main.cadastroloja section.containergeral form {
   width: 100%;
   text-align: center;
 }
 
 main.login section.containergeral form div.formrow,
 main.cadastrousuario section.containergeral form div.formrow,
-main.trabalheconosco section.containergeral form div.formrow {
+main.trabalheconosco section.containergeral form div.formrow,
+main.cadastroloja section.containergeral form div.formrow {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -550,7 +553,8 @@ main.trabalheconosco section.containergeral form div.formrow {
 
 main.login section.containergeral form div.formrow label,
 main.cadastrousuario section.containergeral form div.formrow label,
-main.trabalheconosco section.containergeral form div.formrow label {
+main.trabalheconosco section.containergeral form div.formrow label,
+main.cadastroloja section.containergeral form div.formrow label {
   margin-right: 10px;
   width: 150px;
   text-align: end;
@@ -560,7 +564,8 @@ main.login section.containergeral form div.formrow input,
 main.cadastrousuario section.containergeral form div.formrow input,
 main.trabalheconosco section.containergeral form div.formrow input,
 main.trabalheconosco section.containergeral form div.formrow select,
-main.trabalheconosco section.containergeral form div.formrow textarea {
+main.trabalheconosco section.containergeral form div.formrow textarea,
+main.cadastroloja section.containergeral form div.formrow input {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   width: 350px;
   max-width: 50%;
@@ -570,7 +575,8 @@ main.trabalheconosco section.containergeral form div.formrow textarea {
 
 main.login section.containergeral form button,
 main.cadastrousuario section.containergeral form button,
-main.trabalheconosco section.containergeral form button {
+main.trabalheconosco section.containergeral form button,
+main.cadastroloja section.containergeral form button {
   font-size: 36px;
   width: 300px;
   border-style: none;
@@ -583,6 +589,7 @@ main.trabalheconosco section.containergeral form button {
   cursor: pointer;
 }
 
+main.login section.containergeral p:nth-last-child(2),
 main.login section.containergeral p:last-child {
   width: 50%;
   position: relative;
@@ -590,7 +597,8 @@ main.login section.containergeral p:last-child {
   margin: 20px 0;
 }
 
-main.login section.containergeral p:last-child a{
+main.login section.containergeral p:nth-last-child(2) a,
+main.login section.containergeral p:last-child a {
   color: #40739E;
   font-weight: bold;
   text-decoration: underline;

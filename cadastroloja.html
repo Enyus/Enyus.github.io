@@ -65,10 +65,43 @@
         </a>
     </section>
 
-    <main>
-
-
-    </main>
+    <main class="cadastroloja">
+        <section class="containergeral">
+            <h1>Seja nosso Parceiro de Negócios!</h1>
+            <p>Preencha os campos abaixo:</p>
+            <form action="" method="POST">
+                <div class="formrow">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="formrow">
+                  <label for="razaosocial">Razão Social:</label>
+                  <input type="text" id="razaosocial" name="razaosocial">
+                </div>
+                <div class="formrow">
+                  <label for="nomefantasia">Nome Fantasia:</label>
+                  <input type="text" id="nomefantasia" name="nomefantasia">
+                </div>
+                <div class="formrow">
+                  <label for="ie">Inscrição Estadual:</label>
+                  <input type="text" id="ie" name="ie" pattern="\d{3}\.\d{3}\.\d{3}.\d{3}/\[A-Z]{2}" value="xxx.xxx.xxx.xxx/UF">
+                </div>
+                <div class="formrow">
+                  <label for="cnpj">C.N.P.J.:</label>
+                  <input type="text" id="cnpj" name="cnpj" pattern="\d{2}\.\d{3}\.\d{3}/\d{4}-\d{2}" value="xx.xxx.xxx/xxxx-xx">
+                </div>
+                <div class="formrow">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <div class="formrow">
+                  <label for="confirmapassword">Confirmar Senha:</label>
+                  <input type="password" id="confirmapassword" name="confirmapassword">
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+      </main>
 
     <footer>
         <section class="fbutton">
