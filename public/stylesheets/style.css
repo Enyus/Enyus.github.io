@@ -543,7 +543,8 @@ main.cadastroloja section.containergeral form {
 main.login section.containergeral form div.formrow,
 main.cadastrousuario section.containergeral form div.formrow,
 main.trabalheconosco section.containergeral form div.formrow,
-main.cadastroloja section.containergeral form div.formrow {
+main.cadastroloja section.containergeral form div.formrow,
+main.cadastroproduto section.containergeral form div.formrow {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -554,7 +555,8 @@ main.cadastroloja section.containergeral form div.formrow {
 main.login section.containergeral form div.formrow label,
 main.cadastrousuario section.containergeral form div.formrow label,
 main.trabalheconosco section.containergeral form div.formrow label,
-main.cadastroloja section.containergeral form div.formrow label {
+main.cadastroloja section.containergeral form div.formrow label,
+main.cadastroproduto section.containergeral div form div.formrow label {
   margin-right: 10px;
   width: 150px;
   text-align: end;
@@ -565,7 +567,9 @@ main.cadastrousuario section.containergeral form div.formrow input,
 main.trabalheconosco section.containergeral form div.formrow input,
 main.trabalheconosco section.containergeral form div.formrow select,
 main.trabalheconosco section.containergeral form div.formrow textarea,
-main.cadastroloja section.containergeral form div.formrow input {
+main.cadastroloja section.containergeral form div.formrow input,
+main.cadastroproduto section.containergeral div form div.formrow input,
+main.cadastroproduto section.containergeral div form div.formrow textarea {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   width: 350px;
   max-width: 50%;
@@ -576,7 +580,8 @@ main.cadastroloja section.containergeral form div.formrow input {
 main.login section.containergeral form button,
 main.cadastrousuario section.containergeral form button,
 main.trabalheconosco section.containergeral form button,
-main.cadastroloja section.containergeral form button {
+main.cadastroloja section.containergeral form button,
+main.cadastroproduto section.containergeral button {
   font-size: 36px;
   width: 300px;
   border-style: none;
@@ -604,13 +609,16 @@ main.login section.containergeral p:last-child a {
   text-decoration: underline;
 }
 
-main.trabalheconosco div.containersecundario {
+main.trabalheconosco div.containersecundario,
+main.cadastroproduto div.containersecundario {
   display: flex;
   justify-content: space-around;
+  margin: 20px 0;
 }
 
 main.trabalheconosco div.containersecundario div.form,
-main.trabalheconosco div.containersecundario div.imagem{
+main.trabalheconosco div.containersecundario div.imagem,
+main.cadastroproduto div.containersecundario div {
   width: 45%;
 }
 
@@ -654,4 +662,51 @@ main.trabalheconosco div.upload button {
   border-radius: 0 !important;
   font-size: 18px !important;
   line-height: 23px;
+}
+
+main.cadastroproduto section.containergeral p.lembrete {
+  text-align: center;
+  width: 50%;
+  margin:auto;
+}
+
+main.cadastroproduto section.containergeral form div.formrow div.fotoproduto,
+main.cadastroproduto section.containergeral form div.formrow div.desctec {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  align-content: space-around;
+  height: fit-content;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+  padding: 5px;
+}
+
+main.cadastroproduto section.containergeral form div.formrow div.fotoproduto button img {
+  width: 100px;
+  height: 100px;
+}
+
+main.cadastroproduto section.containergeral form div.formrow div.fotoproduto button input[type="image"] {
+  display: none;
+}
+
+main.cadastroproduto section.containergeral button.img {
+  width: 110px !important;
+  height: 110px !important;
+  padding: 1px;
+  background: none;
+  box-shadow: none;
+  border: black solid 1px;
+  border-radius: 0;
+  margin: 10px;
+}
+
+main.cadastroproduto section.containergeral form div.formrow div.desctec input[type="checkbox"] {
+  width: fit-content;
+  margin-right: 10px;
+}
+
+main.cadastroproduto section.containergeral form div.formrow div.desctec input[type="text"] {
+  width: 40%;
 }
