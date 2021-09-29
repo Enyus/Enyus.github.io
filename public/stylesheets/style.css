@@ -162,7 +162,7 @@ div.container {
   border-radius: 10px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   width: 280px;
-  height: 300px;
+  height: fit-content;
   text-align: center;
 }
 
@@ -610,7 +610,9 @@ main.login section.containergeral p:last-child a {
 }
 
 main.trabalheconosco div.containersecundario,
-main.cadastroproduto div.containersecundario {
+main.cadastroproduto div.containersecundario,
+main.paginacliente div.containersecundario,
+main.paginaloja div.containersecundario  {
   display: flex;
   justify-content: space-around;
   margin: 20px 0;
@@ -710,3 +712,136 @@ main.cadastroproduto section.containergeral form div.formrow div.desctec input[t
 main.cadastroproduto section.containergeral form div.formrow div.desctec input[type="text"] {
   width: 40%;
 }
+
+main.paginacliente section.containergeral h1.bemvindo,
+main.paginaloja section.containergeral h1.bemvindo {
+  text-align: left;
+  margin: 20px;
+}
+
+main.paginacliente section.containergeral div.menu-cliente,
+main.paginaloja section.containergeral div.menu-loja {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin: 10px;
+}
+
+main.paginacliente section.containergeral div.pedidosrecentes,
+main.paginacliente section.containergeral div.buscasrecentes,
+main.paginaloja section.containergeral div.faturadorecentemente,
+main.paginaloja section.containergeral div.resumopedidos {
+  width: 40%;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main.paginacliente section.containergeral div.menu-cliente a,
+main.paginaloja section.containergeral div.menu-loja a {
+  margin: 20px;
+  font-size: 18px;
+  line-height: 23px;
+  max-width: 100%;
+  font-weight: bold;
+}
+
+main.paginaloja div.containerinfo {
+  margin: 1% 3%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  align-items: center;
+  width: 100%;
+}
+
+main.paginaloja div.containerinfo div.hoje,
+main.paginaloja div.containerinfo div.estasemana {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+main.paginaloja div.containerinfo div.hoje p,
+main.paginaloja div.containerinfo div.estasemana p {
+  width: 100px;
+  text-align: end;
+}
+
+main.paginaloja div.containerinfo div.infocard {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  margin: 10px;
+  border-radius: 10px;
+  border: #D3D3D3 1px solid;
+}
+
+main.paginaloja div.containerinfo div.infocard div.info {
+  margin: 10px;
+}
+
+main.paginaloja div.containerinfo div.infocard div.info p {
+  width: 100%;
+  text-align: end;
+  margin: 0;
+}
+
+main.paginaloja img {
+  height: 18px;
+  position: relative;
+  top: 2px;
+}
+
+main.paginaloja div.resumopedidos div.containerinfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+main.paginaloja div.resumopedidos div.containerinfo p {
+  margin: 10px;
+  text-align: end;
+}
+
+/* Os itens abaixo são apenas relativos à página home estática, não devendo aparecer nos conteúdos .ejs do projeto principal */
+
+aside.estatica {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  cursor: pointer;
+}
+
+aside.estatica p {
+  width: 100%;
+  text-align: center;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+aside.estatica div.content {
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: fixed;
+  left: 50px;
+  height: 100%;
+  background-color: #fff;
+  padding: 60px 10px;
+}
+
+aside.estatica:hover  div.content {
+  display: flex;
+}
+
+/* Os itens acima são apenas relativos à página home estática, não devendo aparecer nos conteúdos .ejs do projeto principal */
