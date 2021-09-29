@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Outlet $</title>
+    <link rel='stylesheet' href='./public/stylesheets/style.css' />
+  </head>
+
+<body>
+
+    <header>
+    <section class="header-principal">
+      <div class="logo">
+        <a href="./home.html"><img src="./public/images/logo.png" alt="Logo DO$"></a>
+      </div>
+      <div class="busca">
+        <p>Pesquise sua marca/produto:</p>
+        <input type="text">
+        <a href="./resultadobusca.html"><img src="./public/images/search-icon.png" alt="search"></a>
+      </div>
+      <div class="hbutton">
+        <div>
+          <a href="./login.html">
+          <img src='./public/images/login.svg' alt="login">
+          <p>LOG IN</p>
+          </a>
+        </div>
+        <div>
+          <a href="./cadastroloja.html">
+          <img src="./public/images/lojista.svg" alt="login lojista">
+          <p>VENDA CONOSCO</p>
+          </a>
+        </div>
+        <div>
+          <a href="">
+          <img src="./public/images/carrinho.svg" alt="carrinho">
+          <p>SEU CARRINHO</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    </header>
+    
+    <section class="header-menu">
+        <a href="">
+          ROUPAS
+        </a>
+        <a href="">
+          LIVROS
+        </a>
+        <a href="">
+          CALÇADOS
+        </a>
+        <a href="">
+          ACESSÓRIOS
+        </a>
+        <a href="">
+          PARA A CASA
+        </a>
+        <a href="">
+          ESPORTE
+        </a>
+    </section>
+
+    <main class="cadastroproduto">
+        <section class="containergeral">
+          <h1>Cadastre seu Produto</h1>
+          <div class="containersecundario">
+            <div>
+              <p class="lembrete">Lembre-se a descrição de seu produto tem importância ìmpar à decisão do consumidor!</p>
+              <form>
+                <div class="formrow">
+                  <label for="nomeproduto">Produto:</label>
+                  <input type="text" id="nomeproduto" name="nomeproduto">
+                </div>
+                <div class="formrow">
+                  <label for="marca">Marca:</label>
+                  <input type="text" id="marca" name="marca">
+                </div>
+                <div class="formrow">
+                  <label for="preco">Preço:</label>
+                  <input type="text" id="preco" name="preco">
+                </div>
+                <div class="formrow">
+                  <label for="categoria">Categoria:</label>
+                  <input type="text" id="categoria" name="categoria">
+                </div>
+                <div class="formrow">
+                  <label for="descproduto">Descrição:</label>
+                  <textarea id="descproduto" name="descproduto" rows="5"></textarea>
+                </div>
+              </form>
+            </div>
+            <div>
+              <form action="">
+                <div class="formrow">
+                  <label for="fotoproduto">Fotos:</label>
+                  <div class="fotoproduto" id="fotoproduto">
+                    <button type="button" class="img" onclick="document.getElementById('imgupload').click()">
+                      <input type="image" id="imgupload">
+                      <img src="./public/images/sample-img.svg">
+                    </button>
+                    <button type="button" class="img" onclick="document.getElementById('imgupload').click()">
+                      <input type="image" id="imgupload">
+                      <img src="./public/images/sample-img.svg">
+                    </button>
+                    <button type="button" class="img" onclick="document.getElementById('imgupload').click()">
+                      <input type="image" id="imgupload">
+                      <img src="./public/images/sample-img.svg">
+                    </button>
+                    <button type="button" class="img" onclick="document.getElementById('imgupload').click()">
+                      <input type="image" id="imgupload">
+                      <img src="./public/images/sample-img.svg">
+                    </button>
+                    <button type="button" class="img" onclick="document.getElementById('imgupload').click()">
+                      <input type="image" id="imgupload">
+                      <img src="./public/images/sample-img.svg">
+                    </button>
+                    <button type="button" class="img" onclick="document.getElementById('imgupload').click()">
+                      <input type="image" id="imgupload">
+                      <img src="./public/images/sample-img.svg">
+                    </button>
+                  </div>
+                </div>
+                <div class="formrow">
+                  <label for="desctec">Descrição Técnica:</label>
+                  <div class="desctec">
+                    <div class="formrow">
+                      <input type="checkbox">
+                      <input type="text" id="catdesc1" name="catdesc1" value="Cor">
+                      <p>:</p>
+                      <input type="text" id="desctec1" name="desctec1" value="Bege">
+                    </div>
+                    <div class="formrow">
+                      <input type="checkbox">
+                      <input type="text" id="catdesc2" name="catdesc2" value="Tipo de Material">
+                      <p>:</p>
+                      <input type="text" id="desctec2" name="desctec2" value="Tecido Premium">
+                    </div>
+                    <div class="formrow">
+                      <input type="checkbox">
+                      <input type="text" id="catdesc3" name="catdesc3" value="Composição">
+                      <p>:</p>
+                      <input type="text" id="desctec3" name="desctec3" value="98% Algodão, 2% Elastano">
+                    </div>
+                    <div class="formrow">
+                      <input type="checkbox">
+                      <input type="text" id="catdesc4" name="catdesc4" value="Código">
+                      <p>:</p>
+                      <input type="text" id="desctec4" name="desctec4" value="0052221017">
+                    </div>
+                    <div class="formrow">
+                      <input type="checkbox">
+                      <input type="text" id="catdesc5" name="catdesc5" value="Tamanho">
+                      <p>:</p>
+                      <input type="text" id="desctec5" name="desctec5" value="G">
+                    </div>
+                    <div class="formrow">
+                      <input type="checkbox">
+                      <input type="text" id="catdesc6" name="catdesc6" value="">
+                      <p>:</p>
+                      <input type="text" id="desctec6" name="desctec6" value="">
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="containersecundario">
+            <button disabled>Deletar</button>
+            <button>Enviar</button>
+          </div>
+        </section>
+      </main>
+
+    <footer>
+        <section class="fbutton">
+        <a href="./sobre.html">
+            SOBRE A <img src="./public/images/logo-mini.svg" alt="Mini Logo DO$">
+        </a>
+        <a href="./contato.html">
+            FALE CONOSCO
+        </a>
+        <a href="./trabalheconosco.html">
+            TRABALHE CONOSCO
+        </a>
+        <a href="./faq.html">
+            FAQ
+        </a>
+        </section>
+        <section class="mlogo">
+        <a href="/home.html"><img src="./public/images/logo-mini.svg" alt="Mini Logo DO$"></a>
+        </section>
+    </footer>
+
+</body>
+
+</html>
