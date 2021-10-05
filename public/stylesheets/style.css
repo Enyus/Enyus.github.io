@@ -932,3 +932,41 @@ main.paginaloja div.resumopedidos div.containerinfo p {
     margin-left: 5%;
   }
 }
+
+/* Os itens abaixo são apenas relativos à página home estática, não devendo aparecer nos conteúdos .ejs do projeto principal */
+
+aside.estatica {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  cursor: pointer;
+}
+
+aside.estatica p {
+  width: 100%;
+  text-align: center;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+aside.estatica div.content {
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: fixed;
+  left: 50px;
+  height: 100%;
+  background-color: #fff;
+  padding: 60px 10px;
+}
+
+aside.estatica:hover  div.content {
+  display: flex;
+}
+
+/* Os itens acima são apenas relativos à página home estática, não devendo aparecer nos conteúdos .ejs do projeto principal */ 
