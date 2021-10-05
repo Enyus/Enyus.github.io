@@ -934,9 +934,9 @@ main.paginaloja div.resumopedidos div.containerinfo p {
 
   /* Os itens abaixo são apenas relativos à página home estática, não devendo aparecer nos conteúdos .ejs do projeto principal */
   aside.estatica {
-    top: 45%;
-    bottom: 45%;
-    height: unset;
+    top: 45% !important;
+    bottom: 45% !important;
+    height: unset !important;
   }
   /* Os itens acima são apenas relativos à página home estática, não devendo aparecer nos conteúdos .ejs do projeto principal */ 
 }
