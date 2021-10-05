@@ -18,7 +18,7 @@ header, .header-menu {
 }
 
 header {
-  height: 15vh;
+  min-height: 15vh;
 }
 
 header section {
@@ -33,7 +33,7 @@ header section.header-principal .logo {
 
 header section.header-principal .logo img {
   max-width: 100%;
-  height: 100px;
+  height: auto;
 }
 
 header .header-principal .busca {
@@ -77,6 +77,7 @@ header .header-principal .hbutton img {
 
 header .header-principal .hbutton div {
   width: 25%;
+  margin: auto;
 }
 
 .header-menu {
@@ -97,9 +98,30 @@ header a, footer a, .header-menu a {
   text-decoration: none;
 }
 
+header section.buscamobile {
+  justify-content: space-around;
+  padding: 0;
+  width: 100%;
+  display: none;
+}
+
+header section.buscamobile p {
+  margin: 0;
+}
+
+header section.buscamobile input {
+  width: 80vw;
+  margin-left: 10px;
+}
+
+header section.buscamobile a {
+  position: relative;
+  left: -29px;
+}
+
 footer {
   background-color: #FFFFFF;
-  width: 100%;
+  width: 100vw;
   padding: 0 3%;
   display: flex;
   position: fixed;
@@ -131,6 +153,46 @@ footer .mlogo {
   width: 40%;
   display: flex;
   justify-content: end;
+}
+
+footer section.fmobile {
+  display: none;
+}
+
+footer section.fmobile div,
+footer section.fmobile a {
+  width: 50vw;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  margin: auto 0 auto 0;
+}
+
+footer section.fmobile div:first-child {
+  border-right: solid 1px;
+}
+
+footer section.fmobile div.fmenu p {
+  margin: 0;
+}
+
+footer section.fmobile div.fmenu div.contentfmenu {
+  position: fixed;
+  width: 50vw;
+  height: 50vh;
+  bottom: 50px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: white;
+}
+
+footer section.fmobile div.fmenu:hover div.contentfmenu {
+  display: flex;
+}
+
+footer section.fmobile div.fmenu div.contentfmenu a {
+  font-size: 20px;
 }
 
 body section.banner {
@@ -352,6 +414,8 @@ aside div {
 aside h2 {
   text-align: center;
   font-size: inherit;
+  margin: 0;
+  padding: 10px;
 }
 
 aside form div {
@@ -592,6 +656,7 @@ main.cadastroproduto section.containergeral button {
   font-weight: bold;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
+  margin-bottom: 20px;
 }
 
 main.login section.containergeral p:nth-last-child(2),
@@ -808,40 +873,62 @@ main.paginaloja div.resumopedidos div.containerinfo p {
   text-align: end;
 }
 
-/* Os itens abaixo são apenas relativos à página home estática, não devendo aparecer nos conteúdos .ejs do projeto principal */
 
-aside.estatica {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  height: 100%;
-  width: 50px;
-  display: flex;
-  align-items: center;
-  justify-items: center;
-  cursor: pointer;
+/* Fazendo as alterações para mobile: */
+@media screen and (max-width: 720px) {
+  header .logo, header .header-principal .hbutton {
+    width: 50vw !important;
+  }
+
+  header section.buscamobile, footer section.fmobile {
+    display: flex;
+  }
+
+  main.cadastroproduto section.containergeral form div.formrow div.desctec div.formrow {
+    display: flex !important;
+  }
+  
+  main.trabalheconosco div.containersecundario, main section.containergeral div.buttonscontato div, div.ofertasrow, main section.containergeral form.contato, main.paginaproduto div.produto, main.resultadobusca, main.trabalheconosco div.containersecundario, main.cadastroproduto div.containersecundario, main.paginacliente div.containersecundario, main.paginaloja div.containersecundario, main.cadastroproduto section.containergeral form div.formrow {
+    display: block;
+  }
+
+  section.fbutton, section.mlogo, div.hbutton p, section.header-menu, header .header-principal .busca, main.paginaproduto div.fotosproduto div.miniimg, aside div, aside form {
+    display: none;
+  }
+
+  footer {
+    padding: 0;
+  }
+
+  main section.containergeral div.buttonscontato button {
+    width: 200px;
+  }
+
+  main.trabalheconosco div.containersecundario div.imagem, main.trabalheconosco div.containersecundario div.form, main section.containergeral form.contato div, main section.containergeral form.contato input[type="submit"], main.paginaproduto div.descgeral, main.paginaproduto div.descgeral div.subcontainer div.desc, main.paginaproduto div.descgeral div.subcontainer div.comprar, main.paginaproduto div.descgeral div.subcontainer div.comprar form, aside, main.paginacliente section.containergeral div.menu-cliente, main.paginaloja section.containergeral div.menu-loja, main.paginacliente section.containergeral div.pedidosrecentes, main.paginacliente section.containergeral div.buscasrecentes, main.paginaloja section.containergeral div.faturadorecentemente, main.paginaloja section.containergeral div.resumopedidos, main.paginacliente section.containergeral div.pedidosrecentes, main.paginacliente section.containergeral div.buscasrecentes, main.paginaloja section.containergeral div.faturadorecentemente, main.paginaloja section.containergeral div.resumopedidos, main.trabalheconosco div.containersecundario div.form, main.trabalheconosco div.containersecundario div.imagem, main.cadastroproduto div.containersecundario div {
+    width: 100%;
+    margin: 0;
+  }
+
+  main.paginaproduto div.fotosproduto {
+    width: 100%;
+    height: fit-content;
+    justify-content: center;
+  }
+
+  main.paginaproduto div.descgeral div.subcontainer {
+    display: block;
+    width: 100%;
+  }
+
+  aside:hover form {
+    display: block;
+  }
+
+  body main a {
+    max-width: 100%;
+  }
+
+  main.cadastroproduto section.containergeral button {
+    margin-left: 5%;
+  }
 }
-
-aside.estatica p {
-  width: 100%;
-  text-align: center;
-  font-size: larger;
-  font-weight: bolder;
-}
-
-aside.estatica div.content {
-  display: none;
-  flex-direction: column;
-  justify-content: space-evenly;
-  position: fixed;
-  left: 50px;
-  height: 100%;
-  background-color: #fff;
-  padding: 60px 10px;
-}
-
-aside.estatica:hover  div.content {
-  display: flex;
-}
-
-/* Os itens acima são apenas relativos à página home estática, não devendo aparecer nos conteúdos .ejs do projeto principal */
