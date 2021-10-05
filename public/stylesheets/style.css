@@ -931,6 +931,14 @@ main.paginaloja div.resumopedidos div.containerinfo p {
   main.cadastroproduto section.containergeral button {
     margin-left: 5%;
   }
+
+  /* Os itens abaixo são apenas relativos à página home estática, não devendo aparecer nos conteúdos .ejs do projeto principal */
+  aside.estatica {
+    top: 45%;
+    bottom: 45%;
+    height: unset;
+  }
+  /* Os itens acima são apenas relativos à página home estática, não devendo aparecer nos conteúdos .ejs do projeto principal */ 
 }
 
 /* Os itens abaixo são apenas relativos à página home estática, não devendo aparecer nos conteúdos .ejs do projeto principal */
