@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Rajdhani', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    margin: 0;
+    background-color: #DCDDE1;
+}
+
+header, .header-menu {
+background-color: #FFFFFF;
+width: 100%;
+padding: 0 3%;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+header {
+min-height: 15vh;
+}
+
+header section {
+display: flex;
+padding: 10px 0;
+align-items: center;
+}
+
+header .header-principal .logo {
+width: 20%;
+}
+
+header .header-principal .logo img {
+max-width: 100%;
+height: auto;
+}
+
+header .header-principal .busca {
+width: 50%;
+display: flex;
+align-items: center;
+}
+
+header .header-principal .busca p {
+width: 20%;
+text-align: right;
+padding-right: 10px;
+font-size: 12px;
+line-height: 14px;
+}
+
+header .header-principal .busca input {
+width: 70%;
+height: 10%;
+font-size: 18px;
+line-height: 23px;
+}
+
+header .header-principal .busca a {
+background: none;
+border: none;
+position: relative;
+left: -35px;
+}
+
+header .header-principal .hbutton {
+width: 30%;
+display: flex;
+justify-content: space-evenly;
+text-align: center;
+}
+
+header .header-principal .hbutton img {
+height: 50%;
+}
+
+header .header-principal .hbutton div {
+width: 25%;
+margin: auto;
+}
+
+.header-menu {
+display: flex;
+justify-content: space-around;
+position: sticky;
+top: 0;
+padding: 10px 3%;
+height: 5vh;
+align-items: center;
+}
+
+header a, footer a, .header-menu a {
+font-weight: bold;
+font-size: 14px;
+line-height: 16px;
+color: #000;
+text-decoration: none;
+}
+
+header section.buscamobile {
+justify-content: space-around;
+padding: 0;
+width: 100%;
+display: none;
+}
+
+header section.buscamobile p {
+margin: 0;
+}
+
+header section.buscamobile input {
+width: 80vw;
+margin-left: 10px;
+}
+
+header section.buscamobile a {
+position: relative;
+left: -29px;
+}
+
+
+.carrinho-entrega {
+    margin: 0 25px 80px 25px;
+}
+
+.carrinho-entrega .processo-da-compra div {
+    height: 45px;
+    margin: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 280px;
+    background-color: #C4C4C4;
+}
+    
+.carrinho-entrega .processo-da-compra div a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-weight: 800;
+    transition: background-color 0.1s;
+} .carrinho-entrega .processo-da-compra div a:hover {
+    background-color: #aaaaaa;
+}
+.carrinho-entrega .processo-da-compra .entrega {
+    border-bottom: 4px solid #e84218
+}
+
+.carrinho-entrega .container-entrega {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.carrinho-entrega .container-entrega section {
+    display: flex;
+    background-color: #FFFFFF;
+    padding: 35px;
+}
+
+.carrinho-entrega .dados-destinatario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 260px;
+    width: 30%;
+}
+.carrinho-entrega .dados-destinatario div {
+    display: flex;
+    justify-content: space-between;
+}
+.carrinho-entrega .dados-destinatario h3 {
+    margin: 0;
+    font-size: 18px;
+}
+.carrinho-entrega .dados-destinatario img {
+    height: 20px;
+    width: 20px;
+}
+.carrinho-entrega .dados-destinatario .contato {
+    flex-direction: column;
+}
+
+.carrinho-entrega .dados-destinatario .contato p {
+    margin: 0;
+}
+
+
+.carrinho-entrega .entrega {
+    flex-direction: column;
+    margin: 0 34px;
+    height: 657px;
+    width: 31%;
+}
+.carrinho-entrega .entrega div {
+    margin-bottom: 5px;
+}
+.carrinho-entrega .entrega h3 {
+    margin: 0 0 30px 0;
+}
+.carrinho-entrega .entrega label {
+    padding-left: 5px;
+    font-size: 14px;
+    color: #999999;
+}
+.carrinho-entrega .entrega input {
+    padding-left: 10px;
+    height: 42px;
+    width: 70%;
+    font-size: 16px;
+}
+.carrinho-entrega .entrega .cep {
+    display: flex;
+    flex-direction: column;
+}
+.carrinho-entrega .entrega .cep div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.carrinho-entrega .entrega .cep .nao-sei-cep {
+    font-weight: 800;
+    font-size: 14px;
+} 
+.carrinho-entrega .entrega .endereco-entrega {
+    border: 1px solid rgb(120, 120, 120);
+    padding: 20px 10px;
+}
+.carrinho-entrega .entrega .endereco-entrega p {
+    margin: 0;
+    font-size: 16px;
+}
+.carrinho-entrega .entrega .numero-compl div {
+    display: flex;
+}
+.carrinho-entrega .entrega .numero-compl div div{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.carrinho-entrega .entrega #numero-endereco {
+    width: 90%;
+}
+.carrinho-entrega .entrega #compl-endereco {
+    width: 100%;
+}
+.carrinho-entrega .entrega .numero-compl a{
+    color: rgb(85, 85, 85);
+    font-size: 10px;
+    font-weight: 800;
+}.carrinho-entrega .entrega .numero-compl a:hover {
+    text-decoration: underline;
+}
+.carrinho-entrega .entrega .cep .nao-sei-cep {
+    color: rgb(85, 85, 85);
+    font-size: 10px;
+    font-weight: 800;
+}.carrinho-entrega .entrega .cep .nao-sei-cep:hover {
+    text-decoration: underline;
+}
+.carrinho-entrega .entrega .modalidade-entrega {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.carrinho-entrega .entrega .modalidade-entrega .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10px;
+    border: 1px solid rgb(120, 120, 120);
+}
+.carrinho-entrega .entrega .modalidade-entrega .container label {
+    color: black;
+}
+.carrinho-entrega .entrega .modalidade-entrega .container div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+}
+.carrinho-entrega .entrega .modalidade-entrega input {
+    height: 20px;
+    width: 20px;
+}
+
+
+.carrinho-entrega section.resumo {
+    display: flex;
+    flex-direction: column;
+    width: 29%;
+    background-color: #f1f1f1;
+}
+.carrinho-entrega section.resumo h3 {
+    margin: 0
+}
+.carrinho-entrega section.resumo table {
+    margin: 20px 0 60px 0;
+    width: 100%;
+    border: 1px solid black;
+}
+.carrinho-entrega section.resumo table td.img {
+    height: 118px;
+    width: 75px;
+}
+.carrinho-entrega section.resumo table img {
+    width: 100%;
+}
+.carrinho-entrega section.resumo table h3 {
+    margin: 0;
+    font-size: 13px;
+}
+.carrinho-entrega section.resumo table h4 {
+    margin: 0;
+    font-size: 12px;
+}
+.carrinho-entrega section.resumo table h4.dados {
+    margin-left: 5px;
+    font-size: 12px;
+    color: #837F7F;
+}
+.carrinho-entrega section.resumo table td {
+    border-bottom: 1px solid rgb(192, 192, 192);
+}
+.carrinho-entrega section.resumo table div {
+    display: flex;
+}
+.carrinho-entrega section.resumo .total div {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin: 15px 0;
+    border-bottom: 1px solid rgb(192, 192, 192);
+}
+.carrinho-entrega section.resumo .total div p {
+    margin-bottom: 0px;   
+}
+.carrinho-entrega section.resumo .ir-pagamento {
+    border: 1px solid #e84218;
+    margin-top: 20px;
+    height: 39px;
+    width: 100%;
+    background-color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.1s;
+}.carrinho-entrega section.resumo .ir-pagamento:hover {
+    background-color: #fff2ef ;
+}
+
+
+
+
+
+footer {
+    background-color: #FFFFFF;
+    width: 100vw;
+    padding: 0 3%;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    height: 5vh;
+    min-height: 50px;
+    align-items: center;
+    }
+    
+    footer .fbutton {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    }
+    
+    footer .fbutton a {
+    display: flex;
+    align-items: center;
+    }
+    
+    footer .fbutton a img {
+    height: 16px;
+    position: relative;
+    left: 4px;
+    }
+    
+    footer .mlogo {
+    width: 40%;
+    display: flex;
+    justify-content: end;
+    }
+    
+    footer section.fmobile {
+    display: none;
+    }
+    
+    footer section.fmobile div,
+    footer section.fmobile a {
+    width: 50vw;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin: auto 0 auto 0;
+    }
+    
+    footer section.fmobile div:first-child {
+    border-right: solid 1px;
+    }
+    
+    footer section.fmobile div.fmenu p {
+    margin: 0;
+    }
+    
+    footer section.fmobile div.fmenu div.contentfmenu {
+    position: fixed;
+    width: 50vw;
+    height: 50vh;
+    bottom: 50px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+    }
+    
+    footer section.fmobile div.fmenu:hover div.contentfmenu {
+    display: flex;
+    }
+    
+    footer section.fmobile div.fmenu div.contentfmenu a {
+    font-size: 20px;
+    }
+
+/* Fazendo as alterações para mobile: */
+@media screen and (max-width: 720px) {
+    header .logo, header .header-principal .hbutton {
+        width: 50vw !important;
+      }
+    
+    header section.buscamobile, footer section.fmobile {
+       display: flex;
+    }
+    
+    footer, .carrinho-entrega .processo-da-compra div {
+        padding: 0;
+      }
+
+    header .header-principal .busca, div.hbutton p, section.header-menu, section.fbutton, section.mlogo, .carrinho-entrega .processo-da-compra div .identificacao, .carrinho-entrega .processo-da-compra div .sacola, .carrinho-entrega .processo-da-compra div .pagamento {
+        display: none;
+    }
+
+    .carrinho-entrega .container-entrega {
+        display: block !important;
+    }
+
+    .carrinho-entrega .resumo, .carrinho-entrega .container-carrinho .container-sacola {
+        width: unset;
+        height: unset;
+        margin-bottom: 10px;
+    }
+
+    .carrinho-entrega .container-carrinho .container-sacola table {
+        display: none;
+    }
+
+    .carrinho-entrega .container-carrinho .container-sacola .table-mobile {
+        display: flex;
+        background-color: white;
+    }
+
+    .carrinho-entrega .container-carrinho .container-sacola img {
+        width: 130px;
+        height: unset;
+    }
+
+    .carrinho-entrega .container-carrinho .container-sacola .quantidade {
+        display: block;
+        text-align: center;
+        margin: auto;
+    }
+
+    .carrinho-entrega .container-carrinho .container-sacola .dados-produto {
+        margin: auto;
+    }
+
+    .carrinho-entrega .container-entrega section {
+        width: 100%;
+    }
+
+    .carrinho-entrega .entrega {
+        margin: 10px 0;
+    }
+}
