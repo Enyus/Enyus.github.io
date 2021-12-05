@@ -200,13 +200,32 @@ left: -29px;
 .container-pagamento .pagamento .forma-pagamento,
 .container-pagamento .pagamento .dados-pagamento {
     padding: 26px;
-    
+}
+.container-pagamento .pagamento p {
+    margin: 0;
 }
 
-
+.container-pagamento .forma-pagamento input {
+    display: none;
+}.container-pagamento .forma-pagamento input:checked ~ label {
+    border: none;
+    color: white;
+    background-color: #e84218;
+}
+.container-pagamento .forma-pagamento label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    height: 39px;
+    width: 100%;
+    font-size: 14px;
+    border: 1px solid #494949;
+    cursor: pointer;
+}
 
 .carrinho-pagamento section.resumo {
-    display: flex;
+    display: flex;  
     flex-direction: column;
     width: 29%;
     background-color: #f1f1f1;
