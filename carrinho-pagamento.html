@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagamento</title>
-    <link rel='stylesheet' href='./public/stylesheets/style.css' />
+    <link rel='stylesheet' href='./public/stylesheets/carrinho-pagamento.css' />
   </head>
 
 <body>
@@ -71,11 +71,205 @@
         </a>
     </section>
 
-    <main>
-
-        <h1>Under Construction...</h1>
-
-    </main>
+    <main class="carrinho-pagamento">
+      <section class="processo-da-compra">
+          <div>
+              <a class="sacola" href="./carrinho-sacola.html">Sacola</a>
+              <a class="identificacao" href="./carrinho-identificacao.html">Identificação</a>
+              <a class="entrega"href="./carrinho-entrega.html">Entrega</a>
+              <a class="pagamento" href="./carrinho-pagamento.html">Pagamento</a>
+          </div>
+      </section>
+      <div class="container-pagamento">
+          <div class="dest-entr-pag">
+              <div class="destinatario-entrega">
+                  <section class="dados-destinatario">
+                      <div class="titulo-div">
+                          <div>
+                              <h3>Dados do Destinatário</h3>
+                              <a href=""><img src="./public/images/carrinho-editar.png" alt="edit-destinatario"></a>
+                          </div>
+                          <p>Fulano de Tal</p>
+                      </div>
+                      <div class="contato">
+                          <p>fulano@tal.com.br</p>
+                          <p>(11) 99999-9999</p>
+                      </div>
+                  </section>
+                  <section class="dados-entrega">
+                      <div class="titulo-div">
+                          <div>
+                              <h3>Entrega</h3>
+                              <a href=""><img src="./public/images/carrinho-editar.png" alt="edit-destinatario"></a>
+                          </div>
+                      </div>
+                      <div class="endereco-entrega">
+                          <p>Rua Pedro Paulo, 12, Casa A</p>
+                          <p>Guaianases - São Paulo - SP</p>
+                          <p>XXXX-XXX</p>
+                          <div>
+                              <p>Expressa - Em até 2 dias úteis</p>
+                          </div>
+                      </div>
+                  </section>
+              </div>
+              <div class="pagamento">
+                  <section>
+                      <form action="">
+                          <div class="forma-pagamento">
+                              <p>Formas de pagamento</p>
+                              <button>BOLETO</button>
+                              <button>CARTÃO PRESENTE</button>
+                              <button>CARTÃO DE CRÉDITO</button>
+                              <button>PIX</button>
+                          </div>
+                          <div class="dados-pagamento">
+                              <p>Dados do cartão</p>
+                              <div>
+                                  <label for="">Número do Cartão</label>
+                                  <select name="" id="">
+                                  <input type="text" name="" id="">    
+                                  </select>
+                              </div>
+                              <div>
+                                  <label for="">Parcelamento</label>
+                                  <option value="1">À vista</option>
+                                      <option value="2">2x s/ juros</option>
+                                      <option value="3">3x s/ juros</option>
+                                      <option value="4">4 s/ juros</option>
+                                      <option value="5">5x s/ juros</option>
+                                      <option value="6">6x s/ juros</option>
+                                      <option value="7">7x s/ juros/option>
+                                      <option value="8">8x s/ juros</option>
+                                      <option value="9">9x s/ juros</option>
+                                      <option value="10">10x s/ juros </option>
+                                      <option value="11">11x s/ juros</option>
+                                      <option value="12">12x s/ juros</option>
+                              </div>
+                              <div>
+                                  <label for=""></label>
+                                  <input type="text">
+                              </div>
+                              <div>
+                                  <div>
+                                      <label for=""></label>
+                                      <select name="" id="">
+                                          <option value="1">1</option>
+                                          <option value="2">2</option>
+                                          <option value="3">3</option>
+                                          <option value="4">4</option>
+                                          <option value="5">5</option>
+                                          <option value="6">6</option>
+                                          <option value="7">7</option>
+                                          <option value="8">8</option>
+                                          <option value="9">9</option>
+                                          <option value="10">10</option>
+                                          <option value="11">11</option>
+                                          <option value="12">12</option>
+                                      </select>
+                                  </div>
+                                  <p>/</p>
+                                  <div>
+                                      <label for=""></label>
+                                      <select name="" id="">
+                                          <option value="2021">2021</option>
+                                          <option value="2022">2022</option>
+                                          <option value="2023">2023</option>
+                                          <option value="2024">2024</option>
+                                          <option value="2025">2025</option>
+                                          <option value="2026">2026</option>
+                                          <option value="2027">2027</option>
+                                          <option value="2028">2028</option>
+                                          <option value="2029">2029</option>
+                                          <option value="2030">2030</option>
+                                          <option value="2031">2031</option>
+                                          <option value="2032">2032</option>
+                                      </select>
+                                  </div>
+                              </div>
+                              <div>
+                                  <p>Código de segurança</p>
+                                  <input type="text" name="" id="">
+                              </div>
+                              <div>
+                                  <p>CPF do titular</p>
+                                  <input type="text" name="" id="" placeholder="999.999.999-99">
+                              </div>
+                          </div>
+                          <img src="" alt="">
+                      </form>
+                     
+                  </section>
+              </div>
+          </div>
+          <section class="resumo">
+              <h3 class="resumo">Resumo</h3>
+              <div>
+                  <table>
+                      <tr>
+                          <td class="img"><img src="./public/images/calca-bege.png" alt=""></td>
+                          <td class="produto">
+                              <h3 class="label">CALÇA BEGE</h3>
+                              <div class="tamanho">
+                                  <h4 class="label">Tamanho:</h4>
+                                  <h4 class="dados">M</h4>
+                              </div>
+                              <div class="cor">
+                                  <h4 class="label">Cor:</h4>
+                                  <h4 class="dados">BEGE</h4>
+                              </div>
+                              <div class="cor">
+                                  <h4 class="label">cód.: </h4>
+                                  <h4 class="dados">205455548</h4>
+                              </div>
+                          </td>
+                          <td>
+                              <h4>R$ 100,00</h4>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td><img src="./public/images/calca-bege.png" alt=""></td>
+                          <td class="produto">
+                              <h3 class="label">CALÇA BEGE</h3>
+                              <div class="tamanho">
+                                  <h4 class="label">Tamanho:</h4>
+                                  <h4 class="dados">M</h4>
+                              </div>
+                              <div class="cor">
+                                  <h4 class="label">Cor:</h4>
+                                  <h4 class="dados">BEGE</h4>
+                              </div>
+                              <div class="cor">
+                                  <h4 class="label">cód.: </h4>
+                                  <h4 class="dados">205455548</h4>
+                              </div>
+                          </td>
+                          <td>
+                              <h4>R$ 100,00</h4>
+                          </td>
+                      </tr>
+                  </table>
+              </div>
+              <div class="total">
+                  <div>
+                      <p>Subtotal</p>
+                      <p>R$ 100,00</p>
+                  </div>
+                  <div>
+                      <p>Taxa de entrega</p>
+                      <p>à calcular</p>
+                  </div>
+                  <div class="total">
+                      <p>Total</p>
+                      <p>R$ 100,00</p>
+                  </div>
+              </div>
+              <div>
+                  <button class="ir-pagamento" type="submit">FINALIZAR COMPRA</button>
+              </div>
+          </section>
+      </div>
+  </main>
 
     <footer>
         <section class="fbutton">

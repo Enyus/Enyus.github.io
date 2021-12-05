@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Rajdhani', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    margin: 0;
+    background-color: #DCDDE1;
+}
+
+header, .header-menu {
+background-color: #FFFFFF;
+width: 100%;
+padding: 0 3%;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+header {
+min-height: 15vh;
+}
+
+header section {
+display: flex;
+padding: 10px 0;
+align-items: center;
+}
+
+header .header-principal .logo {
+width: 20%;
+}
+
+header .header-principal .logo img {
+max-width: 100%;
+height: auto;
+}
+
+header .header-principal .busca {
+width: 50%;
+display: flex;
+align-items: center;
+}
+
+header .header-principal .busca p {
+width: 20%;
+text-align: right;
+padding-right: 10px;
+font-size: 12px;
+line-height: 14px;
+}
+
+header .header-principal .busca input {
+width: 70%;
+height: 10%;
+font-size: 18px;
+line-height: 23px;
+}
+
+header .header-principal .busca a {
+background: none;
+border: none;
+position: relative;
+left: -35px;
+}
+
+header .header-principal .hbutton {
+width: 30%;
+display: flex;
+justify-content: space-evenly;
+text-align: center;
+}
+
+header .header-principal .hbutton img {
+height: 50%;
+}
+
+header .header-principal .hbutton div {
+width: 25%;
+margin: auto;
+}
+
+.header-menu {
+display: flex;
+justify-content: space-around;
+position: sticky;
+top: 0;
+padding: 10px 3%;
+height: 5vh;
+align-items: center;
+}
+
+header a, footer a, .header-menu a {
+font-weight: bold;
+font-size: 14px;
+line-height: 16px;
+color: #000;
+text-decoration: none;
+}
+
+header section.buscamobile {
+justify-content: space-around;
+padding: 0;
+width: 100%;
+display: none;
+}
+
+header section.buscamobile p {
+margin: 0;
+}
+
+header section.buscamobile input {
+width: 80vw;
+margin-left: 10px;
+}
+
+header section.buscamobile a {
+position: relative;
+left: -29px;
+}
+
+
+.carrinho-pagamento {
+    margin: 0 25px 80px 25px;
+}
+.carrinho-pagamento .processo-da-compra div {
+    height: 45px;
+    margin: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 280px;
+    background-color: #C4C4C4;
+}
+.carrinho-pagamento .processo-da-compra div a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-weight: 800;
+    transition: background-color 0.1s;
+} .carrinho-pagamento .processo-da-compra div a:hover {
+    background-color: #aaaaaa;
+}
+.carrinho-pagamento .processo-da-compra .pagamento {
+    border-bottom: 4px solid #e84218
+}
+
+
+.carrinho-pagamento .container-pagamento {
+    display: flex;
+    justify-content: space-between;
+}
+.carrinho-pagamento .container-pagamento img {
+    width: 20px;
+}            
+.carrinho-pagamento .container-pagamento .dest-entr-pag {
+    width: 69%;
+}
+.carrinho-pagamento .destinatario-entrega {
+    display: flex;
+    justify-content: space-between;
+}
+.carrinho-pagamento .destinatario-entrega section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 26px;
+    background-color: white;
+    height: 156px;
+}
+.carrinho-pagamento .destinatario-entrega section h3,
+.carrinho-pagamento .destinatario-entrega section p {
+    margin: 0;
+}
+.carrinho-pagamento .destinatario-entrega section p {
+    font-size: 14px;
+}
+.container-pagamento .destinatario-entrega .titulo-div div {
+    display: flex;
+    justify-content: space-between;
+}
+.container-pagamento .destinatario-entrega .dados-destinatario {
+    width: 43%;
+}
+.container-pagamento .destinatario-entrega .dados-entrega {
+    width: 55%;
+}
+.container-pagamento .pagamento {
+    margin-top: 16px;
+    background-color: white;
+}
+.container-pagamento .pagamento form {
+    display: flex;
+}
+.container-pagamento .pagamento .forma-pagamento,
+.container-pagamento .pagamento .dados-pagamento {
+    padding: 26px;
+    
+}
+
+
+
+.carrinho-pagamento section.resumo {
+    display: flex;
+    flex-direction: column;
+    width: 29%;
+    background-color: #f1f1f1;
+}
+.carrinho-pagamento section.resumo h3 {
+    margin: 0
+}
+.carrinho-pagamento section.resumo table {
+    margin: 20px 0 60px 0;
+    width: 100%;
+    border: 1px solid black;
+}
+.carrinho-pagamento section.resumo table td.img {
+    height: 118px;
+    width: 75px;
+}
+.carrinho-pagamento section.resumo table img {
+    width: 100%;
+}
+.carrinho-pagamento section.resumo table h3 {
+    margin: 0;
+    font-size: 13px;
+}
+.carrinho-pagamento section.resumo table h4 {
+    margin: 0;
+    font-size: 12px;
+}
+.carrinho-pagamento section.resumo table h4.dados {
+    margin-left: 5px;
+    font-size: 12px;
+    color: #837F7F;
+}
+.carrinho-pagamento section.resumo table td {
+    border-bottom: 1px solid rgb(192, 192, 192);
+}
+.carrinho-pagamento section.resumo table div {
+    display: flex;
+}
+.carrinho-pagamento section.resumo .total div {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin: 15px 0;
+    border-bottom: 1px solid rgb(192, 192, 192);
+}
+.carrinho-pagamento section.resumo .total div p {
+    margin-bottom: 0px;   
+}
+.carrinho-pagamento section.resumo .ir-pagamento {
+    border: 1px solid #e84218;
+    margin-top: 20px;
+    height: 39px;
+    width: 100%;
+    background-color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.1s;
+}.carrinho-pagamento section.resumo .ir-pagamento:hover {
+    background-color: #fff2ef ;
+}
+
+
+footer {
+    background-color: #FFFFFF;
+    width: 100vw;
+    padding: 0 3%;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    height: 5vh;
+    min-height: 50px;
+    align-items: center;
+    }
+    
+    footer .fbutton {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    }
+    
+    footer .fbutton a {
+    display: flex;
+    align-items: center;
+    }
+    
+    footer .fbutton a img {
+    height: 16px;
+    position: relative;
+    left: 4px;
+    }
+    
+    footer .mlogo {
+    width: 40%;
+    display: flex;
+    justify-content: end;
+    }
+    
+    footer section.fmobile {
+    display: none;
+    }
+    
+    footer section.fmobile div,
+    footer section.fmobile a {
+    width: 50vw;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin: auto 0 auto 0;
+    }
+    
+    footer section.fmobile div:first-child {
+    border-right: solid 1px;
+    }
+    
+    footer section.fmobile div.fmenu p {
+    margin: 0;
+    }
+    
+    footer section.fmobile div.fmenu div.contentfmenu {
+    position: fixed;
+    width: 50vw;
+    height: 50vh;
+    bottom: 50px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+    }
+    
+    footer section.fmobile div.fmenu:hover div.contentfmenu {
+    display: flex;
+    }
+    
+    footer section.fmobile div.fmenu div.contentfmenu a {
+    font-size: 20px;
+    }
+
+/* Fazendo as alterações para mobile: */
+@media screen and (max-width: 720px) {
+    header .logo, header .header-principal .hbutton {
+        width: 50vw !important;
+      }
+    
+    header section.buscamobile, footer section.fmobile {
+       display: flex;
+    }
+    
+    footer, .carrinho-entrega .processo-da-compra div {
+        padding: 0;
+      }
+
+    header .header-principal .busca, div.hbutton p, section.header-menu, section.fbutton, section.mlogo, .carrinho-entrega .processo-da-compra div .identificacao, .carrinho-entrega .processo-da-compra div .sacola, .carrinho-entrega .processo-da-compra div .pagamento {
+        display: none;
+    }
+
+    .carrinho-entrega .container-entrega {
+        display: block !important;
+    }
+
+    .carrinho-entrega .resumo, .carrinho-entrega .container-carrinho .container-sacola {
+        width: unset;
+        height: unset;
+        margin-bottom: 10px;
+    }
+
+    .carrinho-entrega .container-carrinho .container-sacola table {
+        display: none;
+    }
+
+    .carrinho-entrega .container-carrinho .container-sacola .table-mobile {
+        display: flex;
+        background-color: white;
+    }
+
+    .carrinho-entrega .container-carrinho .container-sacola img {
+        width: 130px;
+        height: unset;
+    }
+
+    .carrinho-entrega .container-carrinho .container-sacola .quantidade {
+        display: block;
+        text-align: center;
+        margin: auto;
+    }
+
+    .carrinho-entrega .container-carrinho .container-sacola .dados-produto {
+        margin: auto;
+    }
+
+    .carrinho-entrega .container-entrega section {
+        width: 100%;
+    }
+
+    .carrinho-entrega .entrega {
+        margin: 10px 0;
+    }
+}
+
+
+/* Fazendo as alterações para mobile: */
+@media screen and (max-width: 720px) {
+    header .logo, header .header-principal .hbutton {
+        width: 50vw !important;
+      }
+    
+    header section.buscamobile, footer section.fmobile {
+       display: flex;
+    }
+    
+    footer, .carrinho-pagamento .processo-da-compra div {
+        padding: 0;
+      }
+
+    header .header-principal .busca, div.hbutton p, section.header-menu, section.fbutton, section.mlogo, .carrinho-pagamento .processo-da-compra div .identificacao, .carrinho-pagamento .processo-da-compra div .entrega, .carrinho-pagamento .processo-da-compra div .sacola {
+        display: none;
+    }
+
+    .carrinho-pagamento .container-pagamento {
+        display: block;
+    }
+
+    .carrinho-pagamento .container-pagamento .dest-entr-pag, .container-pagamento .destinatario-entrega .dados-destinatario, .container-pagamento .destinatario-entrega .dados-entrega {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .carrinho-pagamento .destinatario-entrega {
+        display: block;
+        width: 100%;
+    }
+
+    .container-pagamento .pagamento .forma-pagamento, .container-pagamento .pagamento .dados-pagamento {
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .container-pagamento .pagamento .forma-pagamento button {
+        margin: 10px;
+    }
+
+    .container-pagamento .pagamento .forma-pagamento{
+        text-align: center;
+    }
+
+    .carrinho-pagamento section.resumo {
+        width: 100%;
+        padding: 5px;
+    }
+}
