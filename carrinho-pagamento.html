@@ -137,13 +137,13 @@
                             </div>
                             <div class="dados-pagamento">
                                 <p>Dados do cartão</p>
-                                <div>
-                                    <label for="">Número do Cartão</label>
-                                    <input type="text" name="" id="">
+                                <div class="numero-cartao">
+                                    <label for="numero-cartao">Número do Cartão</label>
+                                    <input type="text" name="numero-cartao" id="numero-cartao" required>
                                 </div>
-                                <div>
-                                    <label for="">Parcelamento</label>
-                                    <select name="" id="">
+                                <div class="parcelamento">
+                                    <label for="parcelamento">Parcelamento</label>
+                                    <select name="parcelamento" id="parcelamento">
                                         <option value="1">À vista</option>
                                         <option value="2">2x s/ juros</option>
                                         <option value="3">3x s/ juros</option>
@@ -158,57 +158,60 @@
                                         <option value="12">12x s/ juros</option>
                                     </select>
                                 </div>
-                                <div>
-                                    <label for="">Nome impresso no cartão</label>
-                                    <input type="text" name="" id="">
+                                <div class="nome-cartao">
+                                    <label for="nome-cartao">Nome impresso no cartão</label>
+                                    <input type="text" name="nome-cartao" id="nome-cartao">
                                 </div>
-                                <div>
+                                <div class="validade-cartao">
+                                    <label for="validade-cartao">Validade</label>
                                     <div>
-                                        <label for="">Validade</label>
-                                        <select name="" id="">
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                            <option value="6">6</option>
-                                            <option value="7">7</option>
-                                            <option value="8">8</option>
-                                            <option value="9">9</option>
-                                            <option value="10">10</option>
-                                            <option value="11">11</option>
-                                            <option value="12">12</option>
-                                        </select>
-                                    </div>
-                                    <p>/</p>
-                                    <div>
-                                        <label for=""></label>
-                                        <select name="" id="">
-                                            <option value="2021">2021</option>
-                                            <option value="2022">2022</option>
-                                            <option value="2023">2023</option>
-                                            <option value="2024">2024</option>
-                                            <option value="2025">2025</option>
-                                            <option value="2026">2026</option>
-                                            <option value="2027">2027</option>
-                                            <option value="2028">2028</option>
-                                            <option value="2029">2029</option>
-                                            <option value="2030">2030</option>
-                                            <option value="2031">2031</option>
-                                            <option value="2032">2032</option>
-                                        </select>
+                                        <div class="mes-validade">
+                                            <select name="validade-cartao" id="validade-cartao">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                            </select>
+                                        </div>
+                                        <p>/</p>
+                                        <div class="ano-validade">
+                                            <label for="ano-validade"></label>
+                                            <select name="ano-validade" id="ano-validade">
+                                                <option value="2021">2021</option>
+                                                <option value="2022">2022</option>
+                                                <option value="2023">2023</option>
+                                                <option value="2024">2024</option>
+                                                <option value="2025">2025</option>
+                                                <option value="2026">2026</option>
+                                                <option value="2027">2027</option>
+                                                <option value="2028">2028</option>
+                                                <option value="2029">2029</option>
+                                                <option value="2030">2030</option>
+                                                <option value="2031">2031</option>
+                                                <option value="2032">2032</option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
-                                <div>
-                                    <label for="dados-pagamento">Código de segurança</label>
-                                    <input type="text" name="dados-pagamento" id="dados-pagamento">
+                                
+                                <div class="cod-seguranca">
+                                    <label for="cod-seguranca">Código de segurança</label>
+                                    <input type="text" name="cod-seguranca" id="cod-seguranca">
                                 </div>
-                                <div>
-                                    <label>CPF do titular</label>
-                                    <input type="text" name="" id="" placeholder="999.999.999-99">
+                                <div class="cpf-titular-cartao">
+                                    <label for="cpf-titular-cartao">CPF do titular</label>
+                                    <input type="text" name="cpf-titular-cartao" id="cpf-titular-cartao" placeholder="999.999.999-99">
                                 </div>
                             </div>
-                            <img src="" alt="">
+                            <img src="./public/images/cartões-bandeiras.png" class="img-cartoes" alt="bandeiras-cartoes">
                         </form>
                        
                     </section>

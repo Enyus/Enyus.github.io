@@ -155,7 +155,7 @@ left: -29px;
     display: flex;
     justify-content: space-between;
 }
-.carrinho-pagamento .container-pagamento img {
+.carrinho-pagamento .container-pagamento .destinatario-entrega img {
     width: 20px;
 }            
 .carrinho-pagamento .container-pagamento .dest-entr-pag {
@@ -191,20 +191,29 @@ left: -29px;
     width: 55%;
 }
 .container-pagamento .pagamento {
+    padding: 26px;
+    height: 505px;
     margin-top: 16px;
     background-color: white;
 }
+
 .container-pagamento .pagamento form {
     display: flex;
 }
-.container-pagamento .pagamento .forma-pagamento,
-.container-pagamento .pagamento .dados-pagamento {
-    padding: 26px;
-}
 .container-pagamento .pagamento p {
-    margin: 0;
+    font-size: 18px;
+    font-weight: 800;
+    margin: 0 0 20px 0;
 }
-
+.container-pagamento .forma-pagamento {
+    padding-right: 26px;
+    margin-right: 26px;
+    height: 425px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid black;
+}
 .container-pagamento .forma-pagamento input {
     display: none;
 }.container-pagamento .forma-pagamento input:checked ~ label {
@@ -223,12 +232,51 @@ left: -29px;
     border: 1px solid #494949;
     cursor: pointer;
 }
+.container-pagamento .dados-pagamento {
+    width: 298px;
+}
+.container-pagamento .img-cartoes {
+    margin-top: 60px;
+    height: 45px;
+}
+.container-pagamento .dados-pagamento div {
+    display: flex;
+    flex-direction: column;
+}
+.container-pagamento .dados-pagamento div input,
+.container-pagamento .dados-pagamento div select {
+    padding-left: 10px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    height: 38px;
+}
+.container-pagamento .dados-pagamento div select,
+.container-pagamento .dados-pagamento .validade-cartao div {
+    display: flex;
+    flex-direction: row;
+}
+.container-pagamento .validade-cartao select {
+    font-size: 14px;
+    width: 106px;
+}
+.container-pagamento .validade-cartao p {
+    display: flex;
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0 10px;
+}
+.container-pagamento .cod-seguranca input {
+    width: 65px;
+}
+
+
 
 .carrinho-pagamento section.resumo {
     display: flex;  
     flex-direction: column;
     width: 29%;
     background-color: #f1f1f1;
+    padding: 30px;
 }
 .carrinho-pagamento section.resumo h3 {
     margin: 0
@@ -274,17 +322,20 @@ left: -29px;
 .carrinho-pagamento section.resumo .total div p {
     margin-bottom: 0px;   
 }
-.carrinho-pagamento section.resumo .ir-pagamento {
+.carrinho-pagamento section.resumo .finalizar-compra {
     border: 1px solid #e84218;
     margin-top: 20px;
     height: 39px;
     width: 100%;
     background-color: white;
     font-size: 16px;
+    font-weight: 800;
+    color: #e84218;
     cursor: pointer;
-    transition: background-color 0.1s;
-}.carrinho-pagamento section.resumo .ir-pagamento:hover {
-    background-color: #fff2ef ;
+    transition: color 0.1s, background-color 0.1s;
+}.carrinho-pagamento section.resumo .finalizar-compra:hover {
+    color: white;
+    background-color:#e84218;
 }
 
 
@@ -453,7 +504,7 @@ footer {
         margin-bottom: 5px;
     }
 
-    .carrinho-pagamento .destinatario-entrega {
+    .carrinho-pagamento .destinatario-entrega, .container-pagamento .pagamento form {
         display: block;
         width: 100%;
     }
@@ -469,10 +520,24 @@ footer {
 
     .container-pagamento .pagamento .forma-pagamento{
         text-align: center;
+        border: none;
+        height: auto;
     }
 
     .carrinho-pagamento section.resumo {
         width: 100%;
         padding: 5px;
+    }
+
+    .container-pagamento .pagamento {
+        height: auto;
+    }
+
+    .container-pagamento .dados-pagamento div input {
+        width: 250px;
+    }
+
+    .container-pagamento .dados-pagamento {
+        width: 100%;
     }
 }
