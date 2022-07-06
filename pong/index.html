@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong com JS Puro</title>
+    <link rel='stylesheet' href='./style.css' />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+</head>
+<body>
+
+    <div class="jogo">
+        <aside class="sidebarleft">
+            <input type="range" min="-15" max="227" id="range">
+        </aside>
+    
+        <main class="canvas">
+            <div class="pontos">
+                <p class="pontosJ" id="pontosJogador">0</p>
+                <p class="pontosIA" id="pontosIA">0</p>
+            </div>
+    
+            <div class="linha"></div>
+    
+            <div class="bolinha" id="bolinha"></div>
+    
+            <div class="raqueteJogador" id="raqueteJogador"></div>
+    
+            <div class="raqueteIA" id="raqueteIA"></div>
+
+            <div class="resultado" id="resultado">
+                <p id="mensagem">Você Ganhou!</p>
+                <button onclick="reset()">Recomeçar</button>
+            </div>
+    
+        </main>
+    
+        <aside class="sidebaright">
+            <div class="botaojogar" id="botaojogar">
+                <button onclick="jogar()"><img src="./images/botaoplay.svg"></button>
+                <p class="legendabotao">Jogar</p>
+            </div>
+            <div class="botaopausar" id="botaopausar">
+                <button onclick="pausar()"><img src="./images/botaopausa.svg"></button>
+                <p class="legendabotao">Pausar</p>
+            </div>
+        </aside>
+    </div>
+
+    <div class="virarcelular">
+        <p>Vire seu celular na horizontal para começar a jogar...</p>
+        <img src="./images/rotatephone.png">
+    </div>
+
+</body>
+
+<script src="./index.js"></script>
+</html>
