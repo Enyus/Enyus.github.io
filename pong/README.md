@@ -6,6 +6,7 @@ A ideia partiu do curso "Jogos clássicos parte 1: Pong com Javascript" da <a hr
 ### A Fazer:
 * Ajuste fino das colisões com as raquetes, especialmente a do jogador quando y é próximo de 0;
 * Correção do bug na transição do controle por mouse para por teclado
+* Limpar o código
 
 ### Por Enquanto está assim:
 Atualizado em 06/07/2022:

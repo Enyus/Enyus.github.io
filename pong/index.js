@@ -91,6 +91,7 @@ function atualizar() {
 };
 
 function jogar() {
+    toggleFullScreen();
     divBotaoJogar.style.display = "none";
     divBotaoPausar.style.display = "flex";
     pause = false;
@@ -115,6 +116,7 @@ function pausar() {
     iconeRaqueteJogador.style.top = `${raqueteJogador.y}px`;
     raqueteIA.y = 27.5;
     iconeRaqueteIA.style.top = `${raqueteIA.y}px`;
+    toggleFullScreen();
 };
 
 function checarVencedor () {
@@ -156,3 +158,29 @@ inputRange.oninput = (e) => {
     raqueteJogador.y = inputRange.value;
     iconeRaqueteJogador.style.top = `${raqueteJogador.y}px`;
 }
+
+// Função para deixar em FullScreen:
+function toggleFullScreen() {
+    if (!document.fullscreenElement &&    // alternative standard method
+        !document.mozFullScreenElement && !document.webkitFullscreenElement && !document.msFullscreenElement ) {  // current working methods
+      if (document.documentElement.requestFullscreen) {
+        document.documentElement.requestFullscreen();
+      } else if (document.documentElement.msRequestFullscreen) {
+        document.documentElement.msRequestFullscreen();
+      } else if (document.documentElement.mozRequestFullScreen) {
+        document.documentElement.mozRequestFullScreen();
+      } else if (document.documentElement.webkitRequestFullscreen) {
+        document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+      }
+    } else {
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+      } else if (document.msExitFullscreen) {
+        document.msExitFullscreen();
+      } else if (document.mozCancelFullScreen) {
+        document.mozCancelFullScreen();
+      } else if (document.webkitExitFullscreen) {
+        document.webkitExitFullscreen();
+      }
+    }
+  };
