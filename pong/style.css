@@ -118,9 +118,8 @@ div.virarcelular img {
 }
 
 div.resultado {
-    position: fixed;
-    left: 40%;
-    top: 20%;
+    position: relative;
+    top: -15%;
     display: none;
 }
 
