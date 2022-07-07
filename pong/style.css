@@ -154,7 +154,7 @@ div.resultado button {
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 450px) {
     div.jogo {
         display: none;
     }

@@ -25,17 +25,6 @@ let raqueteIA = {
     chanceErrar: 0
 };
 
-// Variáveis dos Pontos:
-let pontosJogador = 0;
-let pontosIA = 0;
-let marcadorPontosJogador = document.getElementById("pontosJogador");
-let marcadorPontosIA = document.getElementById("pontosIA");
-let mensagemFim = document.getElementById("mensagem");
-let divResultado = document.getElementById("resultado");
-
-// Variáveis do Controle:
-let inputRange = document.getElementById("range");
-
 /* Correlações das variáveis Y entre bolinha e raquetes:
     - Quando a posição é relativa, ela é relativa ao height/width do 'objeto' (no caso da div)
     - Assim, a bolinha é o sprite principal (pois aparece primeiro no html), então suas coordenadas podem ser consideradas as 'absolutas'
@@ -47,6 +36,22 @@ let inputRange = document.getElementById("range");
         -- raqueteIA.y =  15px (height da bolinha) + 70px (height da Raquete do Jogador) + bolinha.y = bolinha.y + 85
 */
 
+// Variáveis dos Pontos:
+let pontosJogador = 0;
+let pontosIA = 0;
+let marcadorPontosJogador = document.getElementById("pontosJogador");
+let marcadorPontosIA = document.getElementById("pontosIA");
+let mensagemFim = document.getElementById("mensagem");
+let divResultado = document.getElementById("resultado");
+
+// Variáveis do Controle:
+let inputRange = document.getElementById("range");
+
+// Variáveis de Som:
+let trilhaSonoroa = document.getElementById("somtrilha");
+let somPonto = document.getElementById("somponto");
+let somRaquete = document.getElementById("somraquete");
+
 function moverBolinha() {
     if(!pause) {
         if (bolinha.x >= 351.5 || bolinha.x <= 0 ||
@@ -55,9 +60,12 @@ function moverBolinha() {
             bolinha.velx *= -1;
             if (bolinha.x >= 351.5) {
                 pontosJogador += 1;
-            };
-            if (bolinha.x <= 0) {
+                somPonto.play();
+            } else if (bolinha.x <= 0) {
                 pontosIA += 1;
+                somPonto.play();
+            } else {
+                somRaquete.play();
             }
         };
         if (bolinha.y >= 290 || bolinha.y <= 0 ||
@@ -92,6 +100,7 @@ function atualizar() {
 
 function jogar() {
     toggleFullScreen();
+    trilhaSonoroa.play();
     divBotaoJogar.style.display = "none";
     divBotaoPausar.style.display = "flex";
     pause = false;
@@ -116,6 +125,7 @@ function pausar() {
     iconeRaqueteJogador.style.top = `${raqueteJogador.y}px`;
     raqueteIA.y = 27.5;
     iconeRaqueteIA.style.top = `${raqueteIA.y}px`;
+    trilhaSonoroa.pause();
     toggleFullScreen();
 };
 
