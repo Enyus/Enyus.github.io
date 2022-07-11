@@ -56,7 +56,7 @@ function moverBolinha() {
     if(!pause) {
         if (bolinha.x >= 351.5 || bolinha.x <= 0 ||
             (bolinha.x >= 330.5 && bolinha.y >= raqueteIA.y + 72.5 && bolinha.y <= raqueteIA.y + 152.5 ) ||
-            (bolinha.x <= 24.5 && bolinha.y >= raqueteJogador.y - 2.5 && bolinha.y <= raqueteJogador.y + 82.5 ) ) {
+            (bolinha.x <= 24.5 && bolinha.y >= raqueteJogador.y - 15 && bolinha.y <= raqueteJogador.y + 77.5 ) ) {
             bolinha.velx *= -1;
             if (bolinha.x >= 351.5) {
                 pontosJogador += 1;
@@ -165,7 +165,7 @@ window.onkeydown = (e) => {
 
 inputRange.oninput = (e) => {
     // console.log(inputRange.value);
-    raqueteJogador.y = inputRange.value;
+    raqueteJogador.y = parseInt(inputRange.value);
     iconeRaqueteJogador.style.top = `${raqueteJogador.y}px`;
 }
 
