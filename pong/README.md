@@ -4,11 +4,17 @@ Este é um pequeno teste de conceito cujo objetivo é criar uma réplica do jogo
 A ideia partiu do curso "Jogos clássicos parte 1: Pong com Javascript" da <a href="https://www.alura.com.br/">@Alura</a>, onde é usada a lib P5.js, mas achei oportuno tentar fazer em JavaScript puro como desafio.
 
 ### A Fazer:
-* Ajuste fino das colisões com as raquetes, especialmente a do jogador quando y é próximo de 0;
-* Correção do bug na transição do controle por mouse para por teclado
 * Limpar o código
 
+### Feito:
+* Ajuste fino das colisões com as raquetes, especialmente a do jogador quando y é próximo de 0;
+* Correção do bug na transição do controle por mouse para por teclado;
+* Corrigir problema de quando a bolinha fica presa na raquete;
+
 ### Por Enquanto está assim:
+Atualizado em 11/07/2022:
+<img src="https://media.giphy.com/media/eRATjM94rRNwTtWvwV/giphy.gif">
+
 Atualizado em 06/07/2022:
 <img src="https://media.giphy.com/media/nDaCGE7tFZFRjTnIzs/giphy.gif">
 

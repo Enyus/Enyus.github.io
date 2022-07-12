@@ -54,6 +54,7 @@ let somRaquete = document.getElementById("somraquete");
 
 function moverBolinha() {
     if(!pause) {
+        // Checando as condições de colizão no eixo x
         if (bolinha.x >= 351.5 || bolinha.x <= 0 ||
             (bolinha.x >= 330.5 && bolinha.y >= raqueteIA.y + 72.5 && bolinha.y <= raqueteIA.y + 152.5 ) ||
             (bolinha.x <= 24.5 && bolinha.y >= raqueteJogador.y - 15 && bolinha.y <= raqueteJogador.y + 77.5 ) ) {
@@ -68,10 +69,25 @@ function moverBolinha() {
                 somRaquete.play();
             }
         };
+        // Checando as condições de colizão no eixo y
         if (bolinha.y >= 290 || bolinha.y <= 0 ||
             (bolinha.x > 330.5 && ( (bolinha.y < raqueteIA.y + 72.5 && bolinha.y >= raqueteIA.y + 52.5 && bolinha.vely > 0) || (bolinha.y > raqueteIA.y + 152.5 && bolinha.y <= raqueteIA.y + 172.5 && bolinha.vely < 0 ) ) ) ||
             (bolinha.x < 24.5 && ( (bolinha.y < raqueteJogador.y - 2.5 && bolinha.y >= raqueteJogador.y - 22.5 && bolinha.vely > 0 ) || (bolinha.y >= raqueteJogador.y + 87.5 && bolinha.y <= raqueteJogador.y + 107.5 && bolinha.vely < 0 ) ) ) ) {
             bolinha.vely *= -1;
+        };
+        // Checando se a bolinha está presa 'dentro' de uma da raquete da IA:
+        if ( bolinha.x > 335  && (bolinha.y >= raqueteIA.y + 72.5) && (bolinha.y <= raqueteIA.y + 52.5 ) ) {
+            bolinha.x = 335;
+            if (bolinha.velx > 0) {
+                bolinha.velx *= -1;
+            }
+        };
+        // Checando se a bolinha está presa 'dentro' de uma da raquete do Jogador:
+        if( bolinha.x < 24.5 && bolinha.y >= raqueteJogador.y - 15 && bolinha.y <= raqueteJogador.y + 77.5 ) {
+            bolinha.x = 24.5;
+            if (bolinha.velx < 0) {
+                bolinha.velx *= -1;
+            }
         };
         atualizar();
     };
@@ -88,6 +104,8 @@ function atualizar() {
     if (count == 200) {
         raqueteIA.chanceErrar = parseInt(Math.random()*(35 + 60) - 60);
         count = 0;
+        bolinha.velx+=1;
+        bolinha.vely+=1;
     }
     iconeRaqueteIA.style.top = `${raqueteIA.y}px`;
     marcadorPontosJogador.innerHTML = pontosJogador;
@@ -122,6 +140,7 @@ function pausar() {
     iconeBolinha.style.left = `${bolinha.x}px`;
     iconeBolinha.style.top = `${bolinha.y}px`;
     raqueteJogador.y = 97.5;
+    inputRange.value = 106;
     iconeRaqueteJogador.style.top = `${raqueteJogador.y}px`;
     raqueteIA.y = 27.5;
     iconeRaqueteIA.style.top = `${raqueteIA.y}px`;
@@ -164,7 +183,6 @@ window.onkeydown = (e) => {
 };
 
 inputRange.oninput = (e) => {
-    // console.log(inputRange.value);
     raqueteJogador.y = parseInt(inputRange.value);
     iconeRaqueteJogador.style.top = `${raqueteJogador.y}px`;
 }
