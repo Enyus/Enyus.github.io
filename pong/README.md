@@ -3,13 +3,18 @@ Este é um pequeno teste de conceito cujo objetivo é criar uma réplica do jogo
 
 A ideia partiu do curso "Jogos clássicos parte 1: Pong com Javascript" da <a href="https://www.alura.com.br/">@Alura</a>, onde é usada a lib P5.js, mas achei oportuno tentar fazer em JavaScript puro como desafio.
 
+### Teste Aqui:
+Coloquei o projeto no meu github.io, e ele pode ser testado diretamente na web <a href="https://enyus.github.io/pong/">AQUI</a>.
+
 ### A Fazer:
-* Limpar o código
+* Descobrir bug de velocidade da bolinha diminuir
+* Descobrir bug de velocidade y da bolinha ficar zero
 
 ### Feito:
 * Ajuste fino das colisões com as raquetes, especialmente a do jogador quando y é próximo de 0;
 * Correção do bug na transição do controle por mouse para por teclado;
 * Corrigir problema de quando a bolinha fica presa na raquete;
+* Limpar o código
 
 ### Por Enquanto está assim:
 
