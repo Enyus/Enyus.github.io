@@ -54,7 +54,7 @@ let somRaquete = document.getElementById("somraquete");
 
 function moverBolinha() {
     if(!pause) {
-        // Checando as condições de colizão no eixo x
+        // Checando as condições de colisão no eixo x
         if (bolinha.x >= 351.5 || bolinha.x <= 0 ||
             (bolinha.x >= 330.5 && bolinha.y >= raqueteIA.y + 72.5 && bolinha.y <= raqueteIA.y + 152.5 ) ||
             (bolinha.x <= 24.5 && bolinha.y >= raqueteJogador.y - 15 && bolinha.y <= raqueteJogador.y + 77.5 ) ) {
@@ -69,7 +69,7 @@ function moverBolinha() {
                 somRaquete.play();
             }
         };
-        // Checando as condições de colizão no eixo y
+        // Checando as condições de colisão no eixo y
         if (bolinha.y >= 290 || bolinha.y <= 0 ||
             (bolinha.x > 330.5 && ( (bolinha.y < raqueteIA.y + 72.5 && bolinha.y >= raqueteIA.y + 52.5 && bolinha.vely > 0) || (bolinha.y > raqueteIA.y + 152.5 && bolinha.y <= raqueteIA.y + 172.5 && bolinha.vely < 0 ) ) ) ||
             (bolinha.x < 24.5 && ( (bolinha.y < raqueteJogador.y - 2.5 && bolinha.y >= raqueteJogador.y - 22.5 && bolinha.vely > 0 ) || (bolinha.y >= raqueteJogador.y + 87.5 && bolinha.y <= raqueteJogador.y + 107.5 && bolinha.vely < 0 ) ) ) ) {
@@ -101,6 +101,7 @@ function atualizar() {
     iconeBolinha.style.left = `${bolinha.x}px`;
     iconeBolinha.style.top = `${bolinha.y}px`;
     raqueteIA.y = bolinha.y - 100 + raqueteIA.chanceErrar;
+    // A cada 2 segundos, alterar a chance da Raquete IA acertar e aumentar a velocidade da bolinha:
     if (count == 200) {
         raqueteIA.chanceErrar = parseInt(Math.random()*(35 + 60) - 60);
         count = 0;
@@ -122,12 +123,6 @@ function jogar() {
     divBotaoJogar.style.display = "none";
     divBotaoPausar.style.display = "flex";
     pause = false;
-    pontosJogador = 0;
-    pontosIA = 0;
-    marcadorPontosJogador.innerHTML = pontosJogador;
-    marcadorPontosIA.innerHTML = pontosIA;
-    mensagemFim.innerHTML = "";
-    divResultado.style.display = "none";
     moverBolinha();
 };
 
@@ -135,15 +130,7 @@ function pausar() {
     divBotaoJogar.style.display = "flex";
     divBotaoPausar.style.display = "none";
     pause = true;
-    bolinha.x = 177.5;
-    bolinha.y = 147.5;
-    iconeBolinha.style.left = `${bolinha.x}px`;
-    iconeBolinha.style.top = `${bolinha.y}px`;
-    raqueteJogador.y = 97.5;
-    inputRange.value = 106;
-    iconeRaqueteJogador.style.top = `${raqueteJogador.y}px`;
-    raqueteIA.y = 27.5;
-    iconeRaqueteIA.style.top = `${raqueteIA.y}px`;
+    reset();
     trilhaSonoroa.pause();
     toggleFullScreen();
 };
@@ -168,8 +155,20 @@ function reset () {
     marcadorPontosIA.innerHTML = pontosIA;
     mensagemFim.innerHTML = "";
     divResultado.style.display = "none";
+    bolinha.x = 177.5;
+    bolinha.y = 147.5;
+    bolinha.velx = 3;
+    bolinha.vely = 3;
+    iconeBolinha.style.left = `${bolinha.x}px`;
+    iconeBolinha.style.top = `${bolinha.y}px`;
+    raqueteJogador.y = 97.5;
+    inputRange.value = 106;
+    iconeRaqueteJogador.style.top = `${raqueteJogador.y}px`;
+    raqueteIA.y = 27.5;
+    iconeRaqueteIA.style.top = `${raqueteIA.y}px`;
 }
 
+// Controle com as setas no teclado:
 window.onkeydown = (e) => {
     if (e.key == "ArrowUp" && raqueteJogador.y >= -20) {
         raqueteJogador.y -= raqueteJogador.vely;
@@ -182,6 +181,7 @@ window.onkeydown = (e) => {
     iconeRaqueteJogador.style.top = `${raqueteJogador.y}px`;
 };
 
+// Controle com o Input Range para viabilizar jogo no mobile:
 inputRange.oninput = (e) => {
     raqueteJogador.y = parseInt(inputRange.value);
     iconeRaqueteJogador.style.top = `${raqueteJogador.y}px`;

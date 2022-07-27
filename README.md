@@ -9,3 +9,8 @@ Repositório original do projeto: https://github.com/Enyus/PIDH2021-Digital-Outl
 Este é um pequeno teste de conceito cujo objetivo é criar uma réplica do jogo PONG com apenas HTML, CSS e JavaScript.
 
 Repositório original do projeto: https://github.com/Enyus/Pong-JS-Puro
+
+## <a href="/">7DaysOfCode - JavaScript</a>
+Desafios do #7DaysOfCode em Javascript da Alura, projeto em que a cada dia, durante sete dias, um desafio era lançado para resolução em JavaScript.
+
+Repositório original do projeto: https://github.com/Enyus/7DoC-JS
