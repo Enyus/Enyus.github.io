@@ -10,7 +10,7 @@ Este é um pequeno teste de conceito cujo objetivo é criar uma réplica do jogo
 
 <a href="https://github.com/Enyus/Pong-JS-Puro">Repositório original do projeto</a>
 
-## <a href="/">7DaysOfCode - JavaScript</a>
+## <a href="https://enyus.github.io/7DoC-JS">7DaysOfCode - JavaScript</a>
 Desafios do #7DaysOfCode em Javascript da Alura, projeto em que a cada dia, durante sete dias, um desafio era lançado para resolução em JavaScript.
 
 <a href="https://github.com/Enyus/7DoC-JS">Repositório original do projeto</a>
