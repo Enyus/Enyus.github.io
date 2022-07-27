@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia 2 - Variáveis</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <main>
+        <h1>#7DaysOfCode - JavaScript</h1>
+        <h2>Dia 2: Variáveis</h2>
+
+        <div>
+            <p>Ativar o console do navegador para ver os resultados dos testes.</p>
+        </div>
+
+        <div>
+            <h2>Apresentação</h2>
+            <p>Variáveis são os blocos básicos de construção de qualquer sistema e são essenciais para processar
+                qualquer tipo de informação, seja ela de uma pessoa logada no sistema ou mesmo para exibir detalhes de
+                produtos em um catálogo de e-commerce.</p>
+        </div>
+
+        <div>
+            <h2>Tarefa</h2>
+            <p>Desenvolver um programa que faça as seguintes perguntas para o usuário:</p>
+            <ul>
+                <li>Qual o seu nome?</li>
+                <li>Quantos anos você tem?</li>
+                <li>Qual linguagem de programação você está estudando?</li>
+            </ul>
+            <p><strong>No final, o sistema vai exibir a mensagem:</strong></p>
+            <p>"Olá [nome], você tem [idade] anos e já está aprendendo [linguagem]!"</p>
+            <br>
+            <h3>Exercício Opcional</h3>
+            <p>Você vai complementar o código para que, depois de exibir a mensagem anterior, o programa pergunte:</p>
+            <p><em>Você gosta de estudar [linguagem]? Responda com o número 1 para SIM ou 2 para NÃO.</em></p>
+            <p>E aí, dependendo da resposta, ele deve mostrar uma das seguintes mensagens:</p>
+            <p><em>1 > Muito bom! Continue estudando e você terá muito sucesso.</em></p>
+            <p><em>2 > Ahh que pena... Já tentou aprender outras linguagens?</em></p>
+        </div>
+
+        <div id="resolucao">
+            <h2>Resolução</h2>
+            <p>O interessante deste desafio, na minha opinião, foi descobrir os seguintes pontos:</p>
+            <ul>
+                <li>O retorno da função prompt() é sempre uma string.</li>
+                <li>Me parece que a primeira linha da função que escrevi para a resolução só é executada após a
+                    resolução dos prompts, o que preciso estudar mais sobre.</li>
+                <li>Descobri a função <em>"document.location.reload(true);"</em> que recarrega a página completamente
+                    através de JavaScript.</li>
+            </ul>
+            <button onclick="resolver()" id="botao-resolver">Testar Resolução</button>
+
+        </div>
+
+    </main>
+</body>
+
+<script src="./day2.js"></script>
+
+</html>

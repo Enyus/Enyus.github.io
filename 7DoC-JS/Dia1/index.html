@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia 1 - Operadores</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <main>
+        <h1>#7DaysOfCode - JavaScript</h1>
+        <h2>Dia 1: Operadores</h2>
+
+        <div>
+            <p>Ativar o console do navegador para ver os resultados dos testes.</p>
+        </div>
+
+        <div id="problema">
+            <h2>Problema</h2>
+            <p>Problema de comparação de duas Variáveis com tipos diferentes</p>
+            <p class="teste">console.log( false == '0' );</p>
+            <p class="teste">console.log( null == undefined );</p>
+            <p class="teste">console.log( " \t\r\n" == 0 );</p>
+            <p class="teste">console.log( ' ' == 0 );</p>
+            <p>Todos retornam true.</p>
+            <button onclick="testar()" id="botao-teste">Testar</button>
+        </div>
+
+        <div>
+            <h2>Tarefa</h2>
+            <p>Reescrever o código abaixo de maneira que ele imprima as informações de maneira correta, que faça sentido
+                e sem erros:</p>
+            <p>let numeroUm = 1</p>
+            <p>let stringUm = '1'</p>
+            <p>let numeroTrinta = 30</p>
+            <p>let stringTrinta = '30'</p>
+            <p>let numeroDez = 10</p>
+            <p>let stringDez = '10'</p>
+            <br>
+            <p>if (COMPARAR O numeroUm e a stringUm) {</p>
+            <p>console.log('As variáveis numeroUm e stringUm tem o mesmo valor, mas tipos diferentes')</p>
+            <p>} else {</p>
+            <p>console.log('As variáveis numeroUm e stringUm não tem o mesmo valor')</p>
+            <p>}</p>
+            <br>
+            <p>if (COMPARAR O numeroTrinta e a stringTrinta) {</p>
+            <p>console.log('As variáveis numeroTrinta e stringTrinta tem o mesmo valor e mesmo tipo')</p>
+            <p>} else {</p>
+            <p>console.log('As variáveis numeroTrinta e stringTrinta não tem o mesmo tipo')</p>
+            <p>}</p>
+            <br>
+            <p>if (COMPARAR O numeroDez e a stringDez) {</p>
+            <p>console.log('As variáveis numeroDez e stringDez tem o mesmo valor, mas tipos diferentes')</p>
+            <p>} else {</p>
+            <p>console.log('As variáveis numeroDez e stringDez não tem o mesmo valor')</p>
+            <p>}</p>
+        </div>
+
+        <div id="resolucao">
+            <h2>Resolução</h2>
+            <p>A questão está no tipo de operador lógico. Usar o comparador '==' compara apenas os valores das variáveis, enquanto o operador '===' compara o valor E o tipo de dado.</p>
+            <br>
+            <p>if (numeroUm == stringUm) {</p>
+            <p>console.log('As variáveis numeroUm e stringUm tem o mesmo valor, mas tipos diferentes')</p>
+            <p>} else {</p>
+            <p>console.log('As variáveis numeroUm e stringUm não tem o mesmo valor')</p>
+            <p>}</p>
+            <br>
+            <p>if (numeroTrinta === stringTrinta) {</p>
+            <p>console.log('As variáveis numeroTrinta e stringTrinta tem o mesmo valor e mesmo tipo')</p>
+            <p>} else {</p>
+            <p>console.log('As variáveis numeroTrinta e stringTrinta não tem o mesmo tipo')</p>
+            <p>}</p>
+            <br>
+            <p>if (numeroDez == stringDez) {</p>
+            <p>console.log('As variáveis numeroDez e stringDez tem o mesmo valor, mas tipos diferentes')</p>
+            <p>} else {</p>
+            <p>console.log('As variáveis numeroDez e stringDez não tem o mesmo valor')</p>
+            <p>}</p>
+            <button onclick="resolver()" id="botao-resolucao">Testar Resolução</button>
+
+        </div>
+
+    </main>
+</body>
+
+<script src="./day1.js"></script>
+
+</html>

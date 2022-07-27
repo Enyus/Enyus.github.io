@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto+Mono:wght@400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    background-color: black;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+div {
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 1px solid;
+    padding: 10px;
+}
+
+div:first-of-type {
+    border-top: 1px solid;
+}
+
+button {
+    margin: 0 auto;
+    display: block;
+    color: black;
+    cursor: pointer;
+}
+
+div.calc {
+    width: 100%;
+    max-width: 400px;
+    border: 3px solid;
+    padding: 10px 0;
+    border-radius: 20px;
+    margin: 10px auto;
+}
+
+div.calc-row {
+    width: 100%;
+    border: none;
+    display: flex;
+}
+
+div.calc-display {
+    width: 335px;
+    border: 1px solid;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #55584d;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 25px;
+    text-align: right;
+    line-height: 35px;
+}
+
+.calc-memory {
+    border: none;
+    font-size: 12px;
+    font-family: 'Orbitron', sans-serif;
+    line-height: 0px;
+    color: lightgray;
+    position: absolute;
+    margin-left: 30px;
+}
+
+div.calc button {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 30px;
+    transition: 0.5s;
+}
+
+div.calc button:hover {
+    background-color: darkgray;
+}
+
+div.calc button:active {
+    background-color: black;
+    color: white;
+}
+
+div.calc button#button0, div.calc #buttonClear {
+    width: 145px;
+}
