@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Orbitron:wght@500&family=Roboto+Mono:wght@400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: black;
+    color: whitesmoke;
+}
+
+main {
+    margin: 5% auto;
+    width: 90%;
+}
+
+article {
+    padding: 15px 10%;
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bolder;
+    font-style: italic;
+    margin-bottom: 20px;
+    text-emphasis: 20px;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+a {
+    color: blue;
+}
+
+a:visited {
+    color: darkgray;
+}
+
+a.repo::before {
+    content: '➜ ';
+    text-decoration: none;
+    color: blue;
+}
+
+p {
+    text-align: justify;
+    margin-bottom: 10px;
+}
