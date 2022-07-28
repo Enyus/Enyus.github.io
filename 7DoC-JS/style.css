@@ -11,6 +11,18 @@ body {
     background-color: black;
 }
 
+.main-index {
+    margin: 5% auto;
+    max-width: 600px;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    padding-bottom: 0.67em;
+}
+
+.lista-item {
+    margin-bottom: 10px;
+}
+
 h1 {
     text-align: center;
 }

@@ -25,6 +25,18 @@ body {
     opacity: 100%;
 }
 
+em {
+    text-align: right;
+    font-style: italic;
+    font-size: 15px;
+    display: block;
+    margin-right: 10px;
+}
+
+strong {
+    font-weight: bold;
+}
+
 main {
     margin: 5% auto;
     width: 90%;
