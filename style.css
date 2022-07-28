@@ -10,6 +10,21 @@ body {
     color: whitesmoke;
 }
 
+.capa {
+    width: 100%;
+    opacity: 50%;
+    max-height: 200px;
+    object-fit: cover;
+    object-position: top;
+    transition: all 1s;
+}
+
+.capa:hover {
+    height: fit-content;
+    max-height: fit-content;
+    opacity: 100%;
+}
+
 main {
     margin: 5% auto;
     width: 90%;
@@ -52,4 +67,28 @@ a.repo::before {
 p {
     text-align: justify;
     margin-bottom: 10px;
+}
+
+footer {
+    width: 35vw;
+    min-width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+
+ul {
+    margin-left: 20px;
+    list-style: disc;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.icone {
+    width: 50px;
+    margin: 0 10px;
+    border: solid white 2px;
+    border-radius: 25px;
 }
