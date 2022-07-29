@@ -108,3 +108,10 @@ div.calc button:active {
 div.calc button#button0, div.calc #buttonClear {
     width: 145px;
 }
+
+.calc-gif {
+    max-width: 100%;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: block;
+}

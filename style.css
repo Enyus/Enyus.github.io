@@ -45,6 +45,19 @@ main {
 article {
     padding: 15px 10%;
     margin-bottom: 20px;
+    transition: 1s;
+}
+
+article:hover {
+    background-color: #545454;
+    border-radius: 10px;
+}
+
+article img, article iframe {
+    display: block;
+    max-width: 100%;
+    margin: 10px auto;
+    border-radius: 10px;
 }
 
 h1 {
@@ -103,4 +116,9 @@ li {
     margin: 0 10px;
     border: solid white 2px;
     border-radius: 25px;
+    transition: 1s;
+}
+
+.icone:hover {
+    opacity: 50%;
 }

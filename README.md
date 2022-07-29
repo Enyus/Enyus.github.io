@@ -4,13 +4,16 @@
 Páginas Estáticas do Projeto Integrador do Grupo 3 da Digital House, realizado no segundo semestre de 2021, no curso WebFullStack
 
 <a href="https://github.com/Enyus/PIDH2021-Digital-Outlet">Repositório original do projeto</a>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Eh3SD-aoltk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## <a href="https://enyus.github.io/pong/">PONG com JavaScript puro</a>
 Este é um pequeno teste de conceito cujo objetivo é criar uma réplica do jogo PONG com apenas HTML, CSS e JavaScript.
 
 <a href="https://github.com/Enyus/Pong-JS-Puro">Repositório original do projeto</a>
+<img src="https://media.giphy.com/media/eRATjM94rRNwTtWvwV/giphy.gif">
 
 ## <a href="https://enyus.github.io/7DoC-JS">7DaysOfCode - JavaScript</a>
 Desafios do #7DaysOfCode em Javascript da Alura, projeto em que a cada dia, durante sete dias, um desafio era lançado para resolução em JavaScript.
 
 <a href="https://github.com/Enyus/7DoC-JS">Repositório original do projeto</a>
+<img src="https://media.giphy.com/media/402HofFrPzfATK7prR/giphy.gif">
