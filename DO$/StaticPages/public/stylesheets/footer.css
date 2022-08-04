@@ -1,0 +1,75 @@
+footer {
+    background-color: #FFFFFF;
+    width: 100vw;
+    padding: 0 3%;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    height: 5vh;
+    min-height: 50px;
+    align-items: center;
+  }
+  
+  footer .fbutton {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  footer .fbutton a {
+    display: flex;
+    align-items: center;
+  }
+  
+  footer .fbutton a img {
+    height: 16px;
+    position: relative;
+    left: 4px;
+  }
+  
+  footer .mlogo {
+    width: 40%;
+    display: flex;
+    justify-content: end;
+  }
+  
+  footer section.fmobile {
+    display: none;
+  }
+  
+  footer section.fmobile div,
+  footer section.fmobile a {
+    width: 50vw;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin: auto 0 auto 0;
+  }
+  
+  footer section.fmobile div:first-child {
+    border-right: solid 1px;
+  }
+  
+  footer section.fmobile div.fmenu p {
+    margin: 0;
+  }
+  
+  footer section.fmobile div.fmenu div.contentfmenu {
+    position: fixed;
+    width: 50vw;
+    height: 50vh;
+    bottom: 50px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+  }
+  
+  footer section.fmobile div.fmenu:hover div.contentfmenu {
+    display: flex;
+  }
+  
+  footer section.fmobile div.fmenu div.contentfmenu a {
+    font-size: 20px;
+  }

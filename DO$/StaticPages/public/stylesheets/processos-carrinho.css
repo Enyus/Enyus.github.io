@@ -1,0 +1,23 @@
+.processo-da-compra .menu-carrinho {
+    height: 45px;
+    margin: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 280px;
+    background-color: #C4C4C4;
+}
+    
+.processo-da-compra .menu-carrinho a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    color: black;
+    font-weight: 800;
+    text-align: center;
+    transition: background-color 0.1s;
+} .processo-da-compra .menu-carrinho a:hover {
+    background-color: #aaaaaa;
+}

@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Rajdhani', sans-serif;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  background-color: #DCDDE1;
+}
+
+header, .header-menu {
+  background-color: #FFFFFF;
+  width: 100%;
+  padding: 0 3%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+header {
+  min-height: 15vh;
+}
+
+header section {
+  display: flex;
+  padding: 10px 0;
+  align-items: center;
+}
+
+header .header-principal .logo {
+  width: 20%;
+}
+
+header .header-principal .logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+header .header-principal .busca {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+header .header-principal .busca p {
+  width: 20%;
+  text-align: right;
+  padding-right: 10px;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+header .header-principal .busca input {
+  width: 70%;
+  height: 10%;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+header .header-principal .busca a {
+  background: none;
+  border: none;
+  position: relative;
+  left: -35px;
+}
+
+header .header-principal .hbutton {
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+header .header-principal .hbutton img {
+  height: 50%;
+}
+
+header .header-principal .hbutton div {
+  width: 25%;
+  margin: auto;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: space-around;
+  position: sticky;
+  top: 0;
+  padding: 10px 3%;
+  height: 5vh;
+  align-items: center;
+}
+
+header .fotoPerfil {
+  height: 50px !important;
+  border-radius: 50%;
+}
+
+header a, footer a, .header-menu a {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000;
+  text-decoration: none;
+}
+
+header section.buscamobile {
+  justify-content: space-around;
+  padding: 0;
+  width: 100%;
+  display: none;
+}
+
+header section.buscamobile p {
+  margin: 0;
+}
+
+header section.buscamobile input {
+  width: 80vw;
+  margin-left: 10px;
+  height: 30px;
+}
+
+header section.buscamobile a {
+  position: relative;
+  left: -29px;
+}
+
+p.notificacaocarrinho {
+  background-color: red;
+  color: white;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: relative;
+  margin: 0;
+  top: 10px;
+  left: 70%;
+}

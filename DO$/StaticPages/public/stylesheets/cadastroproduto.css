@@ -1,0 +1,264 @@
+.cadastroproduto * {
+    margin: 0
+}
+.cadastroproduto {
+    display: flex;
+    justify-content: center;
+}
+.cadastroproduto form.produto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cadastroproduto input,
+.cadastroproduto select,
+.cadastroproduto textarea,
+.cadastroproduto .fotoproduto,
+.cadastroproduto .desctec {
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    border: 1px solid #C8D6E5;
+    outline: none;
+}
+.cadastroproduto .preco {
+    font-weight: 700;
+}
+.cadastroproduto .containergeral {
+    margin: 20px 0 70px 0;
+    padding: 20px;
+    background-color: white;
+    width: 80%;
+}
+.cadastroproduto .containergeral h1 {
+    margin: 20px;
+    text-align: center;
+    font-size: 36px;
+}
+.cadastroproduto .containergeral p {
+    text-align: center;
+}
+.cadastroproduto .subContainers {
+    display: flex;
+    align-items: center;
+}
+.cadastroproduto .subContainers .titleContainer {
+    width: 20%;
+    text-align: right;
+    padding-right: 10px;
+}
+.cadastroproduto .subContainers .container {    
+    margin: 2px;
+    /* padding: 0 15px; */
+    border: 1px solid #C8D6E5;
+    border-radius: 5px;
+    height: 210px;
+    width: 75%;
+}
+.cadastroproduto .sections {
+    display: flex;
+    justify-content: space-around;
+}
+.cadastroproduto .descProduto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+    width: 50%;
+}
+.cadastroproduto .fotosInfoTec {
+    width: 50%;
+}
+.cadastroproduto .descProduto .formrow {
+    display: flex;
+    align-items: center;
+}
+.cadastroproduto .descProduto .formrow label {
+    margin-right: 10px;
+    text-align: end;
+    width: 20%;
+}
+.cadastroproduto .descProduto input, 
+.cadastroproduto .descProduto select {
+    height: 33px;
+    width: 80%;
+}
+.cadastroproduto .descProduto textarea {
+    height: 149px;
+    width: 80%;
+}
+.cadastroproduto .fotoproduto {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4px 12px;
+    /* justify-content: space-around; */
+}
+
+.cadastroproduto .fotoproduto button {
+    width: 95.98px;
+    height: 95.98px;
+    margin: 0 8px;
+    padding: 0;
+}
+.cadastroproduto .fotoproduto button img {
+    width: 87px;
+    height: 87px;
+    margin-top: 3px;
+}
+.cadastroproduto .fotoproduto input[type="file"] {
+    display: none;
+}
+.cadastroproduto .desctec .formrow {
+    display: flex;
+    align-items: center;
+}
+.cadastroproduto .desctec .formrow input {
+    font-size: 14px;
+    margin: 5px
+}
+.cadastroproduto .desctec .formrow .col1 {
+    width: 40%;
+}
+.cadastroproduto .desctec .formrow .col2 {
+    width: 60%;
+}
+.cadastroproduto .estoquePromocao {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cadastroproduto .estoquePromocao input {
+    width: 15%;
+}
+.cadastroproduto .estoquePromocao label {
+    margin: 0 10px;
+}
+
+.cadastroproduto .containergeral .button {
+    margin: 0 20px 20px;
+    width: 300px;
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+    border-style: none;
+    border-radius: 20px;
+    border-width: 1px;
+    
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.cadastroproduto div.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #00000065;
+}    
+
+.cadastroproduto .modal-content {
+    background-color: #fefefe;
+    margin: 3% auto 15% auto;
+    border: 1px solid #888;
+    width: 50%;
+    opacity: 1;
+    transition: margin .8s;
+}
+.cadastroproduto form.produto button.delete:hover + div.modal > div.modal-content {
+    margin: 0% auto 15%;
+    opacity: 0;
+}
+
+.cadastroproduto div.modal .modal-container {
+    position: relative;
+    padding: 16px;
+    text-align: center;
+}    
+
+.cadastroproduto div.modal .modal-container p {
+    font-size: 16px;
+    text-align: center;
+}    
+
+.cadastroproduto div.modal button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}        
+.cadastroproduto div.modal button:hover {
+    opacity: 1;
+}        
+
+.cadastroproduto div.modal .cancelbtn,
+.cadastroproduto div.modal .deletebtn {
+    width: 100%;
+    font-weight: bold;
+}        
+
+.cadastroproduto div.modal .cancelbtn {
+    height: 10%;
+    font-size: 16px;
+    background-color: #ccc;
+    color: black;
+}        
+
+.cadastroproduto div.modal .deletebtn {
+    font-size: 26px;
+    background-color: #f44336;
+}        
+.cadastroproduto div.modal h1.atencao {
+    font-size: 24px;
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+.cadastroproduto .close {
+    position: absolute;
+    right: 5px;
+    top: -5px;
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+}
+
+.cadastroproduto .close:hover,
+.cadastroproduto .close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+.cadastroproduto .clearfix {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cadastroproduto .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.cadastroproduto .containergeral .delete {background-color: #830000;}
+.cadastroproduto .containergeral .submit {background-color: #E84118;}
+
+  @media screen and (max-width: 720px) {
+    main.cadastroproduto section.containergeral form div.formrow div.desctec div.formrow {
+        display: flex !important;
+    }
+    main.cadastroproduto div.containersecundario div {
+        width: 100%;
+        margin: 0;
+    }
+
+    main.cadastroproduto section.containergeral button {
+        margin-left: 5%;
+    }
+  }

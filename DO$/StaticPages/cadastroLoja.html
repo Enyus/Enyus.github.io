@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seja nosso Parceiro!</title>
+    <link rel="shortcut icon" href="/icon/favicon.png">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/header.css">
+    <link rel="stylesheet" href="/stylesheets/footer.css">
+</head>
+
+<body>
+  <header>
+    <section class="header-principal">
+      <div class="logo">
+        <a href="/"><img src="/images/logo.png" alt="Logo DO$"></a>
+      </div>
+      <div class="busca">
+        <p>Pesquise sua marca/produto:</p>
+        
+            <input type="text" id="campobusca">
+            
+              <a href="/resultadobusca" id="botaobuscar"><img src="/images/search-icon.png" alt="search"></a>
+      </div>
+      <div class="hbutton">
+
+        <div>
+          
+                      <a href="/login">
+                        <img src='/images/login.svg' alt="login">
+                        <p>LOG IN</p>
+                        
+                      </a>
+        </div>
+
+        <div>
+          
+                      <a href="/cadastroloja">
+                        <img src="/images/lojista.svg" alt="login lojista">
+                        <p>VENDA CONOSCO</p>
+                        
+                      </a>
+        </div>
+
+        <div>
+          <a href="/carrinho">
+            
+                <img src="/images/carrinho.svg" alt="carrinho">
+                <p>SEU CARRINHO</p>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="buscamobile">
+      <p>busca:</p>
+      
+          <input type="text" id="campobuscamobile">
+          
+            <a href="/resultadobusca" id="botaobuscarmobile"><img src="/images/search-icon.png" alt="search"></a>
+    </section>
+
+  </header>
+
+  <section class="header-menu">
+    <a href="/resultadobusca?page=1&categoria=1">ROUPAS</a>
+    <a href="/resultadobusca?page=1&categoria=2">LIVROS</a>
+    <a href="/resultadobusca?page=1&categoria=3">CALÇADOS</a>
+    <a href="/resultadobusca?page=1&categoria=4">ACESSÓRIOS</a>
+    <a href="/resultadobusca?page=1&categoria=5">PARA A CASA</a>
+    <a href="/resultadobusca?page=1&categoria=6">ESPORTE</a>
+  </section>
+
+  <main class="cadastroloja">
+    <section class="containergeral">
+
+      <h1>Seja nosso Parceiro de Negócios!</h1>
+      <p>Já é cadastrado? <a href="/login" style="color: blue; text-decoration:underline;"><b>Clique aqui para fazer login</b></a></p>
+      <p>Preencha os campos abaixo:</p>
+      <form action="/cadastrarloja" method="POST">
+        <div class="formrow">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email">
+        </div>
+        <div class="formrow">
+          <label for="razaosocial">Razão Social:</label>
+          <input type="text" id="razaosocial" name="razaoSocial">
+        </div>
+        <div class="formrow">
+          <label for="nomefantasia">Nome Fantasia:</label>
+          <input type="text" id="nomefantasia" name="nomeFantasia">
+        </div>
+        <div class="formrow">
+          <label for="ie">Inscrição Estadual:</label>
+          <input placeholder="Deve ter entre 9 à 12 números." type="text" id="ie" name="inscEst">
+        </div>
+        <div class="formrow">
+          <label for="cnpj">C.N.P.J.:</label>
+          <input placeholder="Deve ter 14 números." type="text" id="cnpj" name="cnpj">
+        </div>
+        <div class="formrow">
+          <label for="cep">CEP:</label>
+          <input  type="text" id="cep" name="cep">
+        </div>
+        <div class="formrow">
+          <label for="logradouro">Logradouro:</label>
+          <input type="text" id="logradouro" name="logradouro">
+        </div>
+        <div class="formrow">
+          <label for="numero">Número:</label>
+          <input type="number" id="numero" name="numero">
+        </div>
+        <div class="formrow">
+          <label for="complemento">Complemento:</label>
+          <input type="text" id="complemento" name="complemento">
+        </div>
+        <div class="formrow">
+          <label for="cidade">Cidade:</label>
+          <input type="text" id="cidade" name="cidade">
+        </div>
+        <div class="formrow">
+          <label for="estado">Estado:</label>
+          <input type="text" id="estado" name="estado">
+        </div>
+        <div class="formrow">
+          <label for="password">Senha:</label>
+          <input placeholder="A senha deve ter pelo menos 6 caracteres." type="password" id="password" name="senha">
+        </div>
+        <div class="formrow">
+          <label for="confirmapassword">Confirmar Senha:</label>
+          <input type="password" id="confirmapassword" name="confirmapassword">
+        </div>
+        <button type="submit" id="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="/scripts/validateLoja.js"></script>
+  <script src="/api/validaCep.js"></script>
+
+    <footer>
+        <section class="fbutton">
+        <a href="/sobre">
+            SOBRE A <img src="/images/logo-mini.svg" alt="Mini Logo DO$">
+        </a>
+        <a href="/contato">
+            FALE CONOSCO
+        </a>
+        <a href="/trabalheconosco">
+            TRABALHE CONOSCO
+        </a>
+        <a href="/faq">
+            FAQ
+        </a>
+        </section>
+        <section class="mlogo">
+        <a href="/"><img src="/images/logo-mini.svg" alt="Mino Logo DO$"></a>
+        </section>
+
+        <section class="fmobile">
+            <div class="fmenu">
+                <p>Menu</p>
+                <div class="contentfmenu">
+                    <a href="/login">Login</a>
+                    <a id="categoriamobile">Categorias</a>
+                    <a href="/sobre">Sobre</a>
+                    <a href="/contato">Fale Conosco</a>
+                    <a href="/trabalheconosco">Trabalhe Conosco</a>
+                    <a href="/faq">FAQ</a>
+                </div>
+                <div class="categoriasmobile" id="divcategoriasmobile">
+                    <a style="font-weight: 100;" id="fechar">FECHAR</a>
+                    <a href="/resultadobusca?page=1&categoria=1">ROUPAS</a>
+                    <a href="/resultadobusca?page=1&categoria=2">LIVROS</a>
+                    <a href="/resultadobusca?page=1&categoria=3">CALÇADOS</a>
+                    <a href="/resultadobusca?page=1&categoria=4">ACESSÓRIOS</a>
+                    <a href="/resultadobusca?page=1&categoria=5">PARA A CASA</a>
+                    <a href="/resultadobusca?page=1&categoria=6">ESPORTE</a>
+                </div>
+            </div>
+            <a href="#">Voltar ao Topo</a>
+        </section>
+    </footer>
+
+</body>
+
+    <script src="/scripts/busca.js"></script>
+
+</html>

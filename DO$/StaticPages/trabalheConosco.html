@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhe Conosco!</title>
+    <link rel="shortcut icon" href="/icon/favicon.png">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/header.css">
+    <link rel="stylesheet" href="/stylesheets/footer.css">
+</head>
+
+<body>
+  <header>
+    <section class="header-principal">
+      <div class="logo">
+        <a href="/"><img src="/images/logo.png" alt="Logo DO$"></a>
+      </div>
+      <div class="busca">
+        <p>Pesquise sua marca/produto:</p>
+        
+            <input type="text" id="campobusca">
+            
+              <a href="/resultadobusca" id="botaobuscar"><img src="/images/search-icon.png" alt="search"></a>
+      </div>
+      <div class="hbutton">
+
+        <div>
+          
+                      <a href="/login">
+                        <img src='/images/login.svg' alt="login">
+                        <p>LOG IN</p>
+                        
+                      </a>
+        </div>
+
+        <div>
+          
+                      <a href="/cadastroloja">
+                        <img src="/images/lojista.svg" alt="login lojista">
+                        <p>VENDA CONOSCO</p>
+                        
+                      </a>
+        </div>
+
+        <div>
+          <a href="/carrinho">
+            
+                <img src="/images/carrinho.svg" alt="carrinho">
+                <p>SEU CARRINHO</p>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="buscamobile">
+      <p>busca:</p>
+      
+          <input type="text" id="campobuscamobile">
+          
+            <a href="/resultadobusca" id="botaobuscarmobile"><img src="/images/search-icon.png" alt="search"></a>
+    </section>
+
+  </header>
+
+  <section class="header-menu">
+    <a href="/resultadobusca?page=1&categoria=1">ROUPAS</a>
+    <a href="/resultadobusca?page=1&categoria=2">LIVROS</a>
+    <a href="/resultadobusca?page=1&categoria=3">CALÇADOS</a>
+    <a href="/resultadobusca?page=1&categoria=4">ACESSÓRIOS</a>
+    <a href="/resultadobusca?page=1&categoria=5">PARA A CASA</a>
+    <a href="/resultadobusca?page=1&categoria=6">ESPORTE</a>
+  </section>
+
+  <main class="trabalheconosco">
+    <section class="containergeral">
+        <h1>Trabalhe na <img src="/images/logo-mini.svg" alt="mini logo"></h1>
+        
+            <h2 style='text-align:center'></h2>
+        
+        <div class="containersecundario">
+            <div class="form">
+                <p>Cadastre-se a uma de nossas vagas:</p>
+                <form action="/trabalheconosco" method="POST" enctype="multipart/form-data">
+                    <div class="formrow">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="formrow">
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" id="nome" name="nome">
+                    </div>
+                    <div class="formrow">
+                        <label for="departamentos">Departamentos:</label>
+                        <select id="departamentos" name="departamento">
+                            <option selected disabled value="escolha">Escolha</option>
+                            <option value="adm">Administração</option>
+                            <option value="dev">Developer</option>
+                            <option value="mkt">Marketing</option>
+                            <option value="fin">Financeiro</option>
+                        </select>
+                    </div>
+                    <div class="formrow">
+                        <label for="disp">Disponibilidade:</label>
+                        <ul id="disp">
+                            <li><input type="radio" id="4h" name="disp" value="4h"><label for="4h">4 horas</label></li>
+                            <li><input type="radio" id="8h" name="disp" value="8h"><label for="8h">8 horas</label></li>
+                            <li><input type="radio" id="freela" name="disp" value="freela"><label for="freela">Freela</label></li>
+                        </ul>
+                    </div>
+                    <div class="formrow">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem"></textarea>
+                    </div>
+                    <div class="formrow">
+                        <label for="curriculo">Currículo:</label>
+                        <div class="upload">
+                            <button type="button" id="curriculo" onclick="document.getElementById('fileupload').click()">upload</button>
+                            <input type="file" id="fileupload" accept=".pdf" name="curriculo">
+                        </div>
+                    </div>
+                    
+                    <button type="submit" id="submit">Enviar</button>
+                </form>
+            </div>
+            <div class="imagem">
+                <img src="/images/trabalhe-conosco.png" alt="trabalhe conosco">
+                <h2>Faça parte de uma equipe dinâmica que quer sempre estar a frente do mercado digital!</h2>
+            </div>
+        </div>
+    </section>
+  </main>
+
+<script src="/scripts/validateTrabalheConoso.js"></script>
+
+    <footer>
+        <section class="fbutton">
+        <a href="/sobre">
+            SOBRE A <img src="/images/logo-mini.svg" alt="Mini Logo DO$">
+        </a>
+        <a href="/contato">
+            FALE CONOSCO
+        </a>
+        <a href="/trabalheconosco">
+            TRABALHE CONOSCO
+        </a>
+        <a href="/faq">
+            FAQ
+        </a>
+        </section>
+        <section class="mlogo">
+        <a href="/"><img src="/images/logo-mini.svg" alt="Mino Logo DO$"></a>
+        </section>
+
+        <section class="fmobile">
+            <div class="fmenu">
+                <p>Menu</p>
+                <div class="contentfmenu">
+                    <a href="/login">Login</a>
+                    <a id="categoriamobile">Categorias</a>
+                    <a href="/sobre">Sobre</a>
+                    <a href="/contato">Fale Conosco</a>
+                    <a href="/trabalheconosco">Trabalhe Conosco</a>
+                    <a href="/faq">FAQ</a>
+                </div>
+                <div class="categoriasmobile" id="divcategoriasmobile">
+                    <a style="font-weight: 100;" id="fechar">FECHAR</a>
+                    <a href="/resultadobusca?page=1&categoria=1">ROUPAS</a>
+                    <a href="/resultadobusca?page=1&categoria=2">LIVROS</a>
+                    <a href="/resultadobusca?page=1&categoria=3">CALÇADOS</a>
+                    <a href="/resultadobusca?page=1&categoria=4">ACESSÓRIOS</a>
+                    <a href="/resultadobusca?page=1&categoria=5">PARA A CASA</a>
+                    <a href="/resultadobusca?page=1&categoria=6">ESPORTE</a>
+                </div>
+            </div>
+            <a href="#">Voltar ao Topo</a>
+        </section>
+    </footer>
+
+</body>
+
+    <script src="/scripts/busca.js"></script>
+
+</html>

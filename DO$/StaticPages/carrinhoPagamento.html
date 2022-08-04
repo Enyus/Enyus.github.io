@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento</title>
+    <link rel="shortcut icon" href="/icon/favicon.png">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/header.css">
+    <link rel="stylesheet" href="/stylesheets/footer.css">
+<link rel='stylesheet' href='/stylesheets/carrinho-pagamento.css' />
+</head>
+<body>
+  <header>
+    <section class="header-principal">
+      <div class="logo">
+        <a href="/"><img src="/images/logo.png" alt="Logo DO$"></a>
+      </div>
+      <div class="busca">
+        <p>Pesquise sua marca/produto:</p>
+        
+            <input type="text" id="campobusca">
+            
+              <a href="/resultadobusca" id="botaobuscar"><img src="/images/search-icon.png" alt="search"></a>
+      </div>
+      <div class="hbutton">
+
+        <div>
+          
+                      <a href="/login">
+                        <img src='/images/login.svg' alt="login">
+                        <p>LOG IN</p>
+                        
+                      </a>
+        </div>
+
+        <div>
+          
+                      <a href="/cadastroloja">
+                        <img src="/images/lojista.svg" alt="login lojista">
+                        <p>VENDA CONOSCO</p>
+                        
+                      </a>
+        </div>
+
+        <div>
+          <a href="/carrinho">
+            
+              <p class="notificacaocarrinho">
+                
+                  
+                    
+                      
+                    
+                      
+                        2
+              </p>
+              
+                <img src="/images/carrinho.svg" alt="carrinho">
+                <p>SEU CARRINHO</p>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="buscamobile">
+      <p>busca:</p>
+      
+          <input type="text" id="campobuscamobile">
+          
+            <a href="/resultadobusca" id="botaobuscarmobile"><img src="/images/search-icon.png" alt="search"></a>
+    </section>
+
+  </header>
+
+  <section class="header-menu">
+    <a href="/resultadobusca?page=1&categoria=1">ROUPAS</a>
+    <a href="/resultadobusca?page=1&categoria=2">LIVROS</a>
+    <a href="/resultadobusca?page=1&categoria=3">CALÇADOS</a>
+    <a href="/resultadobusca?page=1&categoria=4">ACESSÓRIOS</a>
+    <a href="/resultadobusca?page=1&categoria=5">PARA A CASA</a>
+    <a href="/resultadobusca?page=1&categoria=6">ESPORTE</a>
+  </section>
+
+    <main class="carrinho-pagamento">
+
+        <section class="processo-da-compra">
+            <div class="menu-carrinho">
+                <a class="sacola" href="/carrinho">Sacola</a>
+                <a class="identificacao" href="/identificacaocliente">Identificação</a>
+                <a class="entrega">Entrega</a>
+                <a class="pagamento">Pagamento</a>
+            </div>
+        </section>
+
+        <div class="container-pagamento">
+            <div class="dest-entr-pag">
+
+                <div class="destinatario-entrega">
+                    <section class="dados-destinatario">
+                        <div class="titulo-div">
+                            <div>
+                                <h3>Dados do Destinatário</h3>
+                                <a href="/identificacaocliente"><img src="/icon/carrinho-editar.png"
+                                        alt="edit-destinatario"></a>
+                            </div>
+                            <p>
+                                Cássio
+                                    S Santini
+                            </p>
+                        </div>
+                        <div class="contato">
+                            <p>
+                                cassioss@email.com
+                            </p>
+                        </div>
+                    </section>
+                    <section class="dados-entrega">
+                        <div class="titulo-div">
+                            <div>
+                                <h3>Entrega</h3>
+                                <a><img src="/icon/carrinho-editar.png" alt="edit-destinatario"></a>
+                            </div>
+                        </div>
+                        <div class="endereco-entrega">
+                            <p>
+                                Travessa Marechal Deodoro, 1234
+                            </p>
+                            <p>
+                                Birigüi - SP
+                            </p>
+                            <p>
+                                16200010
+                            </p>
+                            <div>
+                                <p>
+                                    expressa
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="pagamento">
+                    <section>
+                        <form action="/finalizarpedido" method="post" id="form">
+                            <div class="forma-pagamento" id="formapagamento">
+                                <p>Formas de pagamento</p>
+                                <div>
+                                    <input type="radio" name="formapagamento" id="cartaopresente">
+                                    <label for="cartaopresente">CARTÃO PRESENTE</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="formapagamento" id="cartaocredito">
+                                    <label for="cartaocredito">CARTÃO DE CRÉDITO</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="formapagamento" id="pix">
+                                    <label for="pix">PIX</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="formapagamento" id="boleto">
+                                    <label for="boleto">BOLETO</label>
+                                </div>
+                            </div>
+
+                            <div class="dados-pagamento">
+                                <p>Dados do cartão</p>
+                                <div class="numero-cartao">
+                                    <img src="/images/cartões-bandeiras.png" class="img-cartoes"
+                                        alt="bandeiras-cartoes">
+                                    <label for="numerocartao">Número do Cartão</label>
+                                    <input type="text" name="numerocartao" id="numerocartao" required>
+                                </div>
+                                <div class="parcelamento">
+                                    <label for="parcelamento">Parcelamento</label>
+                                    <select name="parcelamento" id="parcelamento">
+                                        <option value="avista">À vista</option>
+                                        <option value="2x">2x s/ juros</option>
+                                        <option value="3x">3x s/ juros</option>
+                                        <option value="4x">4x s/ juros</option>
+                                        <option value="5x">5x s/ juros</option>
+                                        <option value="6x">6x s/ juros</option>
+                                        <option value="7x">7x s/ juros</option>
+                                        <option value="8x">8x s/ juros</option>
+                                        <option value="9x">9x s/ juros</option>
+                                        <option value="10x">10x s/ juros </option>
+                                        <option value="11x">11x s/ juros</option>
+                                        <option value="12x">12x s/ juros</option>
+                                    </select>
+                                </div>
+                                <div class="nome-cartao">
+                                    <label for="nomecartao">Nome impresso no cartão</label>
+                                    <input type="text" name="nomecartao" id="nomecartao">
+                                </div>
+                                <div class="validade-cartao">
+                                    <label for="validadecartao">Validade</label>
+                                    <div>
+                                        <div class="mes-validade">
+                                            <select name="validadecartao" id="validadecartao">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                            </select>
+                                        </div>
+                                        <p>/</p>
+                                        <div class="ano-validade">
+                                            <label for="anovalidade"></label>
+                                            <select name="anovalidade" id="anovalidade">
+                                                <option value="2022">2022</option>
+                                                <option value="2023">2023</option>
+                                                <option value="2024">2024</option>
+                                                <option value="2025">2025</option>
+                                                <option value="2026">2026</option>
+                                                <option value="2027">2027</option>
+                                                <option value="2028">2028</option>
+                                                <option value="2029">2029</option>
+                                                <option value="2030">2030</option>
+                                                <option value="2031">2031</option>
+                                                <option value="2032">2032</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cod-seguranca">
+                                    <label for="codseguranca">Código de segurança</label>
+                                    <input type="text" name="codseguranca" id="codseguranca">
+                                </div>
+                                <div class="cpf-titular-cartao">
+                                    <label for="cpftitularcartao">CPF do titular</label>
+                                    <input type="text" name="cpftitularcartao" id="cpftitularcartao"
+                                        placeholder="999.999.999-99">
+                                </div>
+                            </div>
+                            <button type="submit" id="submitpagamento" hidden></button>
+                        </form>
+
+                    </section>
+                </div>
+
+            </div>
+
+            <section class="resumo">
+                <h3 class="resumo">Resumo</h3>
+                <div>
+                    <table>
+                        
+                            <tr>
+                                <td class="img"><img src="/images/calca-bege.png" alt=""></td>
+                                <td class="produto">
+                                    <h3 class="label">
+                                        Calça Bege
+                                    </h3>
+                                    
+                                        
+                                                <div class="tamanho">
+                                                    <h4 class="label">
+                                                        Cor:
+                                                    </h4>
+                                                    <h4 class="dados">
+                                                        Bege
+                                                    </h4>
+                                                </div>
+                                                
+                                                    
+                                        
+                                                <div class="tamanho">
+                                                    <h4 class="label">
+                                                        Marca:
+                                                    </h4>
+                                                    <h4 class="dados">
+                                                        Calças AÊ
+                                                    </h4>
+                                                </div>
+                                                
+                                                    
+                                        
+                                                <div class="tamanho">
+                                                    <h4 class="label">
+                                                        Tamanho:
+                                                    </h4>
+                                                    <h4 class="dados">
+                                                        G
+                                                    </h4>
+                                                </div>
+                                                
+                                                    
+                                        
+                                                    
+                                        
+                                                    
+                                </td>
+                                <td>
+                                    <h4>R$ 99.00
+                                    </h4>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="img"><img src="/images/20220409193700-tênis-top-1.jpeg" alt=""></td>
+                                <td class="produto">
+                                    <h3 class="label">
+                                        Tênis Top
+                                    </h3>
+                                    
+                                        
+                                                <div class="tamanho">
+                                                    <h4 class="label">
+                                                        Cor:
+                                                    </h4>
+                                                    <h4 class="dados">
+                                                        Preto ou Vermelho
+                                                    </h4>
+                                                </div>
+                                                
+                                                    
+                                        
+                                                <div class="tamanho">
+                                                    <h4 class="label">
+                                                        Estilo:
+                                                    </h4>
+                                                    <h4 class="dados">
+                                                        Topzera
+                                                    </h4>
+                                                </div>
+                                                
+                                                    
+                                        
+                                                <div class="tamanho">
+                                                    <h4 class="label">
+                                                        Corte:
+                                                    </h4>
+                                                    <h4 class="dados">
+                                                        Descolado
+                                                    </h4>
+                                                </div>
+                                                
+                                                    
+                                </td>
+                                <td>
+                                    <h4>R$ 650.00
+                                    </h4>
+                                </td>
+                            </tr>
+                            
+
+                    </table>
+                </div>
+                <div class="total">
+                    <div>
+                        <p>Subtotal</p>
+                        
+                            
+                                
+                                    
+                                
+                                    
+                                        <p>R$ 749.00
+                                        </p>
+                    </div>
+                    <div>
+                        <p>Taxa de entrega</p>
+                        
+                            
+                                
+                                    
+                                
+                                    
+
+                                        
+                                            <p>
+                                                R$ 55.40
+                                            </p>
+                                            
+                    </div>
+                    <div class="total">
+                        <p>Total</p>
+                        
+                            <p>R$ 804.40
+                            </p>
+                            
+                    </div>
+                </div>
+                <div>
+                    <button class="finalizar-compra" type="submit" id="fakesubmit"
+                        onclick="document.getElementById('submitpagamento').click()">FINALIZAR COMPRA</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="/scripts/validatePagamento.js"></script>
+
+        <footer>
+        <section class="fbutton">
+        <a href="/sobre">
+            SOBRE A <img src="/images/logo-mini.svg" alt="Mini Logo DO$">
+        </a>
+        <a href="/contato">
+            FALE CONOSCO
+        </a>
+        <a href="/trabalheconosco">
+            TRABALHE CONOSCO
+        </a>
+        <a href="/faq">
+            FAQ
+        </a>
+        </section>
+        <section class="mlogo">
+        <a href="/"><img src="/images/logo-mini.svg" alt="Mino Logo DO$"></a>
+        </section>
+
+        <section class="fmobile">
+            <div class="fmenu">
+                <p>Menu</p>
+                <div class="contentfmenu">
+                    <a href="/login">Login</a>
+                    <a id="categoriamobile">Categorias</a>
+                    <a href="/sobre">Sobre</a>
+                    <a href="/contato">Fale Conosco</a>
+                    <a href="/trabalheconosco">Trabalhe Conosco</a>
+                    <a href="/faq">FAQ</a>
+                </div>
+                <div class="categoriasmobile" id="divcategoriasmobile">
+                    <a style="font-weight: 100;" id="fechar">FECHAR</a>
+                    <a href="/resultadobusca?page=1&categoria=1">ROUPAS</a>
+                    <a href="/resultadobusca?page=1&categoria=2">LIVROS</a>
+                    <a href="/resultadobusca?page=1&categoria=3">CALÇADOS</a>
+                    <a href="/resultadobusca?page=1&categoria=4">ACESSÓRIOS</a>
+                    <a href="/resultadobusca?page=1&categoria=5">PARA A CASA</a>
+                    <a href="/resultadobusca?page=1&categoria=6">ESPORTE</a>
+                </div>
+            </div>
+            <a href="#">Voltar ao Topo</a>
+        </section>
+    </footer>
+
+</body>
+
+    <script src="/scripts/busca.js"></script>
+
+</html>
