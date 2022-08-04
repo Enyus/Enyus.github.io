@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sacola</title>
+    <link rel="shortcut icon" href="./public/icon/favicon.png">
+    <link rel="stylesheet" href="./public/stylesheets/style.css">
+    <link rel="stylesheet" href="./public/stylesheets/header.css">
+    <link rel="stylesheet" href="./public/stylesheets/footer.css">
+    <link rel='stylesheet' href='./public/stylesheets/carrinho-sacola.css' />
+</head>
+
+<body>
+    <header>
+        <section class="header-principal">
+            <div class="logo">
+                <a href="./index.html"><img src="./public/images/logo.png" alt="Logo DO$"></a>
+            </div>
+            <div class="busca">
+                <p>Pesquise sua marca/produto:</p>
+
+                <input type="text" id="campobusca">
+
+                <a href="./resultadoBusca.html" id="botaobuscar"><img src="./public/images/search-icon.png"
+                        alt="search"></a>
+            </div>
+            <div class="hbutton">
+
+                <div>
+
+                    <a href="./login.html">
+                        <img src='./public/images/login.svg' alt="login">
+                        <p>LOG IN</p>
+
+                    </a>
+                </div>
+
+                <div>
+
+                    <a href="./cadastroLoja.html">
+                        <img src="./public/images/lojista.svg" alt="login lojista">
+                        <p>VENDA CONOSCO</p>
+
+                    </a>
+                </div>
+
+                <div>
+                    <a href="./carrinhoSacola.html">
+
+                        <p class="notificacaocarrinho">
+                            2
+                        </p>
+
+                        <img src="./public/images/carrinho.svg" alt="carrinho">
+                        <p>SEU CARRINHO</p>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="buscamobile">
+            <p>busca:</p>
+
+            <input type="text" id="campobuscamobile">
+
+            <a href="./resultadoBusca.html" id="botaobuscarmobile"><img src="./public/images/search-icon.png"
+                    alt="search"></a>
+        </section>
+
+    </header>
+
+    <section class="header-menu">
+        <a href="./resultadoBusca.html">ROUPAS</a>
+        <a href="./resultadoBusca.html">LIVROS</a>
+        <a href="./resultadoBusca.html">CALÇADOS</a>
+        <a href="./resultadoBusca.html">ACESSÓRIOS</a>
+        <a href="./resultadoBusca.html">PARA A CASA</a>
+        <a href="./resultadoBusca.html">ESPORTE</a>
+    </section>
+
+
+
+    <main class="carrinho-sacola">
+
+        <section class="processo-da-compra">
+            <div class="menu-carrinho">
+                <a class="sacola" href="./carrinhoSacola.html">Sacola</a>
+                <a class="identificacao" href="./carrinhoIdentificacao.html">Identificação</a>
+                <a class="entrega" href="./carrinhoEntrega.html">Entrega</a>
+                <a class="pagamento" href="./carrinhoPagamento.html">Pagamento</a>
+            </div>
+        </section>
+
+        <div class="container-carrinho">
+
+            <div class="container-carrinho">
+                <section class="container-sacola">
+                    <div>
+                        <table>
+                            <tr class="colunas">
+                                <td>Produto(s)</td>
+                                <td>Frete</td>
+                                <td>Valor</td>
+                                <td>Quantidade</td>
+                                <td></td>
+                            </tr>
+
+
+                            <tr class="linhas">
+                                <td class="produto">
+                                    <a href="./produto1.html"><img src="./public/images/calca-bege.png" alt=""></a>
+                                    <div>
+                                        <h3 class="label"><a href="./produto1.html">
+                                                Calça Bege
+                                            </a></h3>
+
+
+                                        <div class="tamanho">
+                                            <h4 class="label">
+                                                Cor:
+                                            </h4>
+                                            <h4 class="dados">
+                                                Bege
+                                            </h4>
+                                        </div>
+
+
+
+                                        <div class="tamanho">
+                                            <h4 class="label">
+                                                Marca:
+                                            </h4>
+                                            <h4 class="dados">
+                                                Calças AÊ
+                                            </h4>
+                                        </div>
+
+
+
+                                        <div class="tamanho">
+                                            <h4 class="label">
+                                                Tamanho:
+                                            </h4>
+                                            <h4 class="dados">
+                                                G
+                                            </h4>
+                                        </div>
+
+
+
+
+
+
+                                    </div>
+                                </td>
+
+
+                                <td>a calcular</td>
+
+                                <td>
+                                    99.00
+                                </td>
+                                <td>
+                                    <div class="quantidade">
+
+                                        <form action="" method="get">
+                                            <input type="number" hidden name="idProduto" value="1">
+                                            <input type="text" hidden name="source" value="/carrinho">
+                                            <button type="submit">-</button>
+                                        </form>
+                                        <p class="qtd">
+                                            1
+                                        </p>
+
+                                        <form action="" method="get">
+                                            <input type="number" hidden name="idProduto" value="1">
+                                            <input type="text" hidden name="source" value="/carrinho">
+                                            <button type="submit">+</button>
+                                        </form>
+                                    </div>
+                                <td class="acoes-produto">
+                                    <div>
+                                        <a href="./produto1.html"><img src="./public/icon/carrinho-editar.png"
+                                                alt=""></a>
+                                        <form action="" method="">
+                                            <input type="number" hidden name="idProduto" value="1">
+                                            <input type="text" hidden name="source" value="/carrinho">
+                                            <button type="submit"><img src="./public/icon/carrinho-lixeira.png"
+                                                    alt="deletar produto"></button>
+                                        </form>
+                                    </div>
+                                </td>
+                                </td>
+                            </tr>
+
+                            <tr class="linhas">
+                                <td class="produto">
+                                    <a href="./produto7.html"><img src="./public/images/20220409193700-tênis-top-1.jpeg"
+                                            alt=""></a>
+                                    <div>
+                                        <h3 class="label"><a href="./produto7.html">
+                                                Tênis Top
+                                            </a></h3>
+
+
+                                        <div class="tamanho">
+                                            <h4 class="label">
+                                                Cor:
+                                            </h4>
+                                            <h4 class="dados">
+                                                Preto ou Vermelho
+                                            </h4>
+                                        </div>
+
+
+
+                                        <div class="tamanho">
+                                            <h4 class="label">
+                                                Estilo:
+                                            </h4>
+                                            <h4 class="dados">
+                                                Topzera
+                                            </h4>
+                                        </div>
+
+
+
+                                        <div class="tamanho">
+                                            <h4 class="label">
+                                                Corte:
+                                            </h4>
+                                            <h4 class="dados">
+                                                Descolado
+                                            </h4>
+                                        </div>
+
+
+                                    </div>
+                                </td>
+
+
+                                <td>a calcular</td>
+
+                                <td>
+                                    R$ 650.00
+                                </td>
+                                <td>
+                                    <div class="quantidade">
+
+                                        <form action="" method="get">
+                                            <input type="number" hidden name="idProduto" value="19">
+                                            <input type="text" hidden name="source" value="/carrinho">
+                                            <button type="submit">-</button>
+                                        </form>
+                                        <p class="qtd">
+                                            1
+                                        </p>
+
+                                        <form action="" method="get">
+                                            <input type="number" hidden name="idProduto" value="19">
+                                            <input type="text" hidden name="source" value="/carrinho">
+                                            <button type="submit">+</button>
+                                        </form>
+                                    </div>
+                                <td class="acoes-produto">
+                                    <div>
+                                        <a href="./produto7.html"><img src="./public/icon/carrinho-editar.png"
+                                                alt=""></a>
+                                        <form action="" method="">
+                                            <input type="number" hidden name="idProduto" value="19">
+                                            <input type="text" hidden name="source" value="/carrinho">
+                                            <button type="submit"><img src="./public/icon/carrinho-lixeira.png"
+                                                    alt="deletar produto"></button>
+                                        </form>
+                                    </div>
+                                </td>
+                                </td>
+                            </tr>
+
+
+                        </table>
+
+
+                        <div class="table-mobile">
+                            <img src="./public/images/calca-bege.png" alt="calça bege">
+                            <div class="dados-produto">
+                                <h3 class="label">
+                                    Calça Bege
+                                </h3>
+
+
+                                <div class="tamanho">
+                                    <h4 class="label">
+                                        Cor:
+                                    </h4>
+                                    <h4 class="dados">
+                                        Bege
+                                    </h4>
+                                </div>
+
+
+
+                                <div class="tamanho">
+                                    <h4 class="label">
+                                        Marca:
+                                    </h4>
+                                    <h4 class="dados">
+                                        Calças AÊ
+                                    </h4>
+                                </div>
+
+
+
+                                <div class="tamanho">
+                                    <h4 class="label">
+                                        Tamanho:
+                                    </h4>
+                                    <h4 class="dados">
+                                        G
+                                    </h4>
+                                </div>
+
+
+
+
+
+
+                            </div>
+                            <div class="quantidade">
+                                <form action="" method="get">
+                                    <input type="number" hidden name="idProduto" value="1">
+                                    <input type="text" hidden name="source" value="/carrinho">
+                                    <button type="submit">+</button>
+                                </form>
+                                <p class="qtd">
+                                    1
+                                </p>
+                                <form action="" method="">
+                                    <input type="number" hidden name="idProduto" value="1">
+                                    <input type="text" hidden name="source" value="/carrinho">
+                                    <button type="submit">-</button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="table-mobile">
+                            <img src="./public/images/20220409193700-tênis-top-1.jpeg" alt="calça bege">
+                            <div class="dados-produto">
+                                <h3 class="label">
+                                    Tênis Top
+                                </h3>
+
+
+                                <div class="tamanho">
+                                    <h4 class="label">
+                                        Cor:
+                                    </h4>
+                                    <h4 class="dados">
+                                        Preto ou Vermelho
+                                    </h4>
+                                </div>
+
+
+
+                                <div class="tamanho">
+                                    <h4 class="label">
+                                        Estilo:
+                                    </h4>
+                                    <h4 class="dados">
+                                        Topzera
+                                    </h4>
+                                </div>
+
+
+
+                                <div class="tamanho">
+                                    <h4 class="label">
+                                        Corte:
+                                    </h4>
+                                    <h4 class="dados">
+                                        Descolado
+                                    </h4>
+                                </div>
+
+
+                            </div>
+                            <div class="quantidade">
+                                <form action="" method="get">
+                                    <input type="number" hidden name="idProduto" value="19">
+                                    <input type="text" hidden name="source" value="/carrinho">
+                                    <button type="submit">+</button>
+                                </form>
+                                <p class="qtd">
+                                    1
+                                </p>
+                                <form action="" method="get">
+                                    <input type="number" hidden name="idProduto" value="19">
+                                    <input type="text" hidden name="source" value="/carrinho">
+                                    <button type="submit">-</button>
+                                </form>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </section>
+                <section class="resumo">
+                    <div>
+                        <p class="resumo">Resumo</p>
+                        <div class="forma-de-recebimento">
+                            <a class="entrega" id="entrega">Entrega</a>
+                            <a class="retirada-loja" id="retirar">Retirar na loja</a>
+                        </div>
+
+                        <div id="containercep">
+                            <form class="cep" method="get" action="">
+                                <input class="input-cep" type="text" name="cep" id="cep" placeholder="Insira seu CEP">
+                                <button class="ok-cep" id="submitcep" type="submit">OK</button>
+                            </form>
+                            <a class="nao-sei-o-cep" href="https://buscacepinter.correios.com.br/app/endereco/index.php"
+                                target="_blank">Não sei o CEP</a>
+                        </div>
+
+                        <div class="total">
+                            <div>
+                                <p>Subtotal</p>
+                                <p>R$ 749.00
+                                </p>
+                            </div>
+                            <div>
+                                <p>Previsão de Taxa de entrega:</p>
+                                <p id="totalfrete">a calcular</p>
+                            </div>
+                            <div class="total">
+                                <p>Total</p>
+                                <p>R$ 749.00</p>
+                            </div>
+                        </div>
+
+                        <div style="text-align: center;">
+                            <form action="./carrinhoIdentificacao.html" method="get">
+                                <button class="finalizar" type="submit">Finalizar Compra</button>
+                            </form>
+                            <a class="continuar-comprando" href="./index.html">CONTINUAR COMPRANDO</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <script src="./public/scripts/validateSacola.js"></script>
+
+
+
+    </main>
+
+    <footer>
+        <section class="fbutton">
+            <a href="./sobre.html">
+                SOBRE A <img src="./public/images/logo-mini.svg" alt="Mini Logo DO$">
+            </a>
+            <a href="./faleConosco.html">
+                FALE CONOSCO
+            </a>
+            <a href="./trabalheConosco.html">
+                TRABALHE CONOSCO
+            </a>
+            <a href="./faq.html">
+                FAQ
+            </a>
+        </section>
+
+        <section class="mlogo">
+            <a href="./index.html"><img src="./public/images/logo-mini.svg" alt="Mino Logo DO$"></a>
+        </section>
+
+        <section class="fmobile">
+            <div class="fmenu">
+                <p>Menu</p>
+                <div class="contentfmenu">
+                    <a href="./login.html">Login</a>
+                    <a id="categoriamobile" href="./resultadoBusca.html">Categorias</a>
+                    <a href="./sobre.html">Sobre</a>
+                    <a href="./faleConosco.html">Fale Conosco</a>
+                    <a href="./trabalheConosco.html">Trabalhe Conosco</a>
+                    <a href="./faq.html">FAQ</a>
+                </div>
+                <div class="categoriasmobile" id="divcategoriasmobile">
+                    <a style="font-weight: 100;" id="fechar">FECHAR</a>
+                    <a href="./resultadoBusca.html">ROUPAS</a>
+                    <a href="./resultadoBusca.html">LIVROS</a>
+                    <a href="./resultadoBusca.html">CALÇADOS</a>
+                    <a href="./resultadoBusca.html">ACESSÓRIOS</a>
+                    <a href="./resultadoBusca.html">PARA A CASA</a>
+                    <a href="./resultadoBusca.html">ESPORTE</a>
+                </div>
+            </div>
+            <a href="#">Voltar ao Topo</a>
+        </section>
+    </footer>
+
+</body>
+
+</html>

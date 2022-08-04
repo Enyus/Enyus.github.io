@@ -1,225 +1,237 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="pt-br">
+
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resultados da Busca</title>
-    <link rel='stylesheet' href='./public/stylesheets/style.css' />
-  </head>
+    <title>Contato</title>
+    <link rel="shortcut icon" href="./public/icon/favicon.png">
+    <link rel="stylesheet" href="./public/stylesheets/header.css">
+    <link rel="stylesheet" href="./public/stylesheets/style.css">
+    <link rel="stylesheet" href="./public/stylesheets/footer.css">
+</head>
 
 <body>
+    <header>
+        <section class="header-principal">
+            <div class="logo">
+                <a href="./index.html"><img src="./public/images/logo.png" alt="Logo DO$"></a>
+            </div>
+            <div class="busca">
+                <p>Pesquise sua marca/produto:</p>
 
-  <header>
-    <section class="header-principal">
-      <div class="logo">
-        <a href="./home.html"><img src="./public/images/logo.png" alt="Logo DO$"></a>
-      </div>
-      <div class="busca">
-        <p>Pesquise sua marca/produto:</p>
-        <input type="text">
-        <a href="./resultadobusca.html"><img src="./public/images/search-icon.png" alt="search"></a>
-      </div>
-      <div class="hbutton">
-        <div>
-          <a href="./login.html">
-          <img src='./public/images/login.svg' alt="login">
-          <p>LOG IN</p>
-          </a>
-        </div>
-        <div>
-          <a href="./cadastroloja.html">
-          <img src="./public/images/lojista.svg" alt="login lojista">
-          <p>VENDA CONOSCO</p>
-          </a>
-        </div>
-        <div>
-          <a href="./carrinho-sacola.html">
-          <img src="./public/images/carrinho.svg" alt="carrinho">
-          <p>SEU CARRINHO</p>
-          </a>
-        </div>
-      </div>
-    </section>
+                <input type="text" id="campobusca">
 
-    <section class="buscamobile">
-      <p>busca:</p>
-      <input type="text">
-      <a href="./resultadobusca.html"><img src="./public/images/search-icon.png" alt="search"></a>
-    </section>
+                <a href="./resultadoBusca.html" id="botaobuscar"><img src="./public/images/search-icon.png"
+                        alt="search"></a>
+            </div>
+            <div class="hbutton">
 
-  </header>
-    
+                <div>
+
+                    <a href="./login.html">
+                        <img src='./public/images/login.svg' alt="login">
+                        <p>LOG IN</p>
+
+                    </a>
+                </div>
+
+                <div>
+
+                    <a href="./cadastroLoja.html">
+                        <img src="./public/images/lojista.svg" alt="login lojista">
+                        <p>VENDA CONOSCO</p>
+
+                    </a>
+                </div>
+
+                <div>
+                    <a href="./carrinhoSacola.html">
+
+                        <img src="./public/images/carrinho.svg" alt="carrinho">
+                        <p>SEU CARRINHO</p>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="buscamobile">
+            <p>busca:</p>
+
+            <input type="text" id="campobuscamobile">
+
+            <a href="./resultadoBusca.html" id="botaobuscarmobile"><img src="./public/images/search-icon.png"
+                    alt="search"></a>
+        </section>
+
+    </header>
+
     <section class="header-menu">
-        <a href="">
-          ROUPAS
-        </a>
-        <a href="">
-          LIVROS
-        </a>
-        <a href="">
-          CALÇADOS
-        </a>
-        <a href="">
-          ACESSÓRIOS
-        </a>
-        <a href="">
-          PARA A CASA
-        </a>
-        <a href="">
-          ESPORTE
-        </a>
+        <a href="./resultadoBusca.html">ROUPAS</a>
+        <a href="./resultadoBusca.html">LIVROS</a>
+        <a href="./resultadoBusca.html">CALÇADOS</a>
+        <a href="./resultadoBusca.html">ACESSÓRIOS</a>
+        <a href="./resultadoBusca.html">PARA A CASA</a>
+        <a href="./resultadoBusca.html">ESPORTE</a>
     </section>
+
 
     <main class="resultadobusca">
+
         <aside>
-            <div>
-                <label for="buscaside">Busca</label>
-                <input type="text" id="buscaside" value="o que você pesquisou">
-            </div>
             <h2>Filtre sua pesquisa:</h2>
-            <form class="filtros">
+            <form class="filtros" method="" action="">
+                <div class="buscainput">
+                    <input type="text" name="page" style='display: none;' value=1>
+
+                    <label for="buscaside">Busca:</label>
+
+                    <input type="text" id="buscaside" name="busca" value="calça">
+
+                </div>
                 <div>
                     <label>Por Preço:</label>
                     <ul>
-                        <li><input type="radio" name="filtropreco" id="filtromenorpreco" value="menorpreco"><label for="filtromenorpreco">Menor Preço</label></li>
-                        <li><input type="radio" name="filtropreco" id="filtromaiorpreco" value="maiorpreco"><label for="filtromaiorpreco">Maior Preço</label></li>
-                        <li><input type="radio" name="filtropreco" id="filtropromocao" value="promocao"><label for="filtropromocao">Em Promoção</label></li>
+
+                        <li><input type="radio" name="filtropreco" id="filtromenorpreco" value="menorpreco"><label
+                                for="filtromenorpreco">Menor Preço</label></li>
+                        <li><input type="radio" name="filtropreco" id="filtromaiorpreco" value="maiorpreco"><label
+                                for="filtromaiorpreco">Maior Preço</label></li>
+                        <li><input type="radio" name="filtropreco" id="filtropromocao" value="promocao"><label
+                                for="filtropromocao">Em Promoção</label></li>
+
                     </ul>
                 </div>
-                <div>
-                    <label>Por Marca:</label>
-                    <ul>
-                        <li><input type="radio" name="filtromarca" id="filtromarcalouis" value="louisvitton"><label for="filtromarcalouis">Louis Vitton</label></li>
-                        <li><input type="radio" name="filtromarca" id="filtromarcagucci" value="gucci"><label for="filtromarcagucci">Gucci</label></li>
-                        <li><input type="radio" name="filtromarca" id="filtromarcaae" value="calcasae"><label for="filtromarcaae">Calças AÊ</label></li>
-                    </ul>
-                </div>
+                <button id="filtrar">Filtrar</button>
             </form>
         </aside>
-    
+
         <section class="containergeral">
-           <h1>Resultado da Pesquisa:</h1>
-           <div class="resultados">
-            <div class="ofertasrow">
-                <a href="produto.html"><div class="container">
-                <img src="./public/images/calca-bege.png" alt="Calça Bege">
-                <h1>Calça Bege</h1>
-                <div class="precos">
-                  <ul>
-                    <li class="preco-antes">R$ 111,00</li>
-                    <li class="preco-agora">R$ 100,00</li>
-                    <li class="off">10% OFF</li>
-                  </ul>
+            <h1>Resultado da Pesquisa:</h1>
+            <div class="resultados">
+                <div class="ofertasrow">
+
+                    <a href="./produto1.html">
+                        <div class="container">
+                            <img src="./public/images/calca-bege.png" alt="Calça Bege">
+                            <h1>Calça Bege</h1>
+                            <div class="precos">
+                                <ul>
+
+                                    <li class="preco-antes">110.00</li>
+                                    <li class="preco-agora">R$ 99.00 </li>
+                                    <li class="off">10% OFF</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="./produto2.html">
+                        <div class="container">
+                            <img src="./public/images/202203021255-calca-jeans-1.jpeg" alt="Calça Jeans Feminina">
+                            <h1>Calça Jeans Feminina</h1>
+                            <div class="precos">
+                                <ul>
+
+                                    <li class="preco-agora">R$ 80.00 </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="./produto3.html">
+                        <div class="container">
+                            <img src="./public/images/202203031006-calçalegging1.jpg" alt="CALÇA CAPRI ESPORTIVA RECORTE
+                                ASSIMÉTRICO CONTRASTANTE AZUL">
+                            <h1>CALÇA CAPRI ESPORTIVA RECORTE ASSIMÉTRICO CONTRASTANTE AZUL</h1>
+                            <div class="precos">
+                                <ul>
+
+                                    <li class="preco-agora">R$ 80.00 </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+
                 </div>
-                </div></a>
-                <a href="produto.html"><div class="container">
-                <img src="./public/images/calca-bege.png" alt="Calça Bege">
-                <h1>Calça Bege</h1>
-                <div class="precos">
-                  <ul>
-                    <li class="preco-antes">R$ 111,00</li>
-                    <li class="preco-agora">R$ 100,00</li>
-                    <li class="off">10% OFF</li>
-                  </ul>
-                </div>
-                </div></a>
-                <a href="produto.html"><div class="container">
-                  <img src="./public/images/calca-bege.png" alt="Calça Bege">
-                  <h1>Calça Bege</h1>
-                  <div class="precos">
-                    <ul>
-                      <li class="preco-antes">R$ 111,00</li>
-                      <li class="preco-agora">R$ 100,00</li>
-                      <li class="off">10% OFF</li>
-                    </ul>
-                  </div>
-                </div></a>
-              </div>
-              <div class="ofertasrow">
-                <a href="produto.html"><div class="container">
-                  <img src="./public/images/calca-bege.png" alt="Calça Bege">
-                  <h1>Calça Bege</h1>
-                  <div class="precos">
-                    <ul>
-                      <li class="preco-antes">R$ 111,00</li>
-                      <li class="preco-agora">R$ 100,00</li>
-                      <li class="off">10% OFF</li>
-                    </ul>
-                  </div>
-                </div></a>
-                <a href="produto.html"><div class="container">
-                  <img src="./public/images/calca-bege.png" alt="Calça Bege">
-                  <h1>Calça Bege</h1>
-                  <div class="precos">
-                    <ul>
-                      <li class="preco-antes">R$ 111,00</li>
-                      <li class="preco-agora">R$ 100,00</li>
-                      <li class="off">10% OFF</li>
-                    </ul>
-                  </div>
-                </div></a>
-                <a href="produto.html"><div class="container">
-                  <img src="./public/images/calca-bege.png" alt="Calça Bege">
-                  <h1>Calça Bege</h1>
-                  <div class="precos">
-                    <ul>
-                      <li class="preco-antes">R$ 111,00</li>
-                      <li class="preco-agora">R$ 100,00</li>
-                      <li class="off">10% OFF</li>
-                    </ul>
-                  </div>
-                </div></a>
-              </div>
-           </div>
-           <nav class="navpages">
-               <button>|< Primeira</button>
-               <button>< Anterior</button>
-               <button>1</button>
-               <button>2</button>
-               <button>3</button>
-               <button>4</button>
-               <button>5</button>
-               <button>Próxima ></button>
-               <button>Última >|</button>
-           </nav>
+            </div>
+            
+            <form method="">
+                <nav class="navpages">
+
+                    <button type="submit" name="page" value="1" disabled>|< Primeira</button>
+                            <button type="submit" name="page" disabled value="0">
+                                < Anterior</button>
+
+
+
+                                    <button disabled type="submit" name="page" value="1"><u>1</u></button>
+
+
+
+                                    <button disabled type="submit" name="page" value="2">Próxima ></button>
+                                    <button disabled type="submit" name="page" value="5">Última >|</button>
+
+                </nav>
+
+
+                <input type="text" id="buscaside" name="busca" style='display: none;' value="calça">
+
+                <input type="text" name="filtropreco" style='display: none;' value="">
+            </form>
         </section>
 
     </main>
 
-  <footer>
-      <section class="fbutton">
-      <a href="./sobre.html">
-          SOBRE A <img src="./public/images/logo-mini.svg" alt="Mini Logo DO$">
-      </a>
-      <a href="./contato.html">
-          FALE CONOSCO
-      </a>
-      <a href="./trabalheconosco.html">
-          TRABALHE CONOSCO
-      </a>
-      <a href="./faq.html">
-          FAQ
-      </a>
-      </section>
-      <section class="mlogo">
-      <a href="/home.html"><img src="./public/images/logo-mini.svg" alt="Mini Logo DO$"></a>
-      </section>
+    <footer>
+        <section class="fbutton">
+            <a href="./sobre.html">
+                SOBRE A <img src="./public/images/logo-mini.svg" alt="Mini Logo DO$">
+            </a>
+            <a href="./faleConosco.html">
+                FALE CONOSCO
+            </a>
+            <a href="./trabalheConosco.html">
+                TRABALHE CONOSCO
+            </a>
+            <a href="./faq.html">
+                FAQ
+            </a>
+        </section>
+        <section class="mlogo">
+            <a href="./index.html"><img src="./public/images/logo-mini.svg" alt="Mino Logo DO$"></a>
+        </section>
 
-      <section class="fmobile">
-        <div class="fmenu">
-            <p>Menu</p>
-            <div class="contentfmenu">
-                <a href="./login.html">Login</a>
-                <a href="">Categorias</a>
-                <a href="./sobre.html">Sobre</a>
-                <a href="./contato.html">Fale Conosco</a>
-                <a href="./trabalheconosco.html">Trabalhe Conosco</a>
-                <a href="./faq.html">FAQ</a>
+        <section class="fmobile">
+            <div class="fmenu">
+                <p>Menu</p>
+                <div class="contentfmenu">
+                    <a href="./login.html">Login</a>
+                    <a id="categoriamobile" href="./resultadoBusca.html">Categorias</a>
+                    <a href="./sobre.html">Sobre</a>
+                    <a href="./faleConosco.html">Fale Conosco</a>
+                    <a href="./trabalheConosco.html">Trabalhe Conosco</a>
+                    <a href="./faq.html">FAQ</a>
+                </div>
+
+                <div class="categoriasmobile" id="divcategoriasmobile">
+                    <a style="font-weight: 100;" id="fechar">FECHAR</a>
+                    <a href="./resultadoBusca.html">ROUPAS</a>
+                    <a href="./resultadoBusca.html">LIVROS</a>
+                    <a href="./resultadoBusca.html">CALÇADOS</a>
+                    <a href="./resultadoBusca.html">ACESSÓRIOS</a>
+                    <a href="./resultadoBusca.html">PARA A CASA</a>
+                    <a href="./resultadoBusca.html">ESPORTE</a>
+                </div>
             </div>
-        </div>
-        <a href="#">Voltar ao Topo</a>
-  </footer>
+            <a href="#">Voltar ao Topo</a>
+        </section>
+    </footer>
 
 </body>
 

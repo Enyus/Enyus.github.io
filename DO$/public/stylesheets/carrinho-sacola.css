@@ -1,151 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap');
-
-* {
-    box-sizing: border-box;
-    font-family: 'Rajdhani', sans-serif;
-    text-decoration: none;
-    color: black;
-}
-
-body {
-    margin: 0;
-    background-color: #DCDDE1;
-}
-
-header, .header-menu {
-background-color: #FFFFFF;
-width: 100%;
-padding: 0 3%;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-header {
-min-height: 15vh;
-}
-
-header section {
-display: flex;
-padding: 10px 0;
-align-items: center;
-}
-
-header .header-principal .logo {
-width: 20%;
-}
-
-header .header-principal .logo img {
-max-width: 100%;
-height: auto;
-}
-
-header .header-principal .busca {
-width: 50%;
-display: flex;
-align-items: center;
-}
-
-header .header-principal .busca p {
-width: 20%;
-text-align: right;
-padding-right: 10px;
-font-size: 12px;
-line-height: 14px;
-}
-
-header .header-principal .busca input {
-width: 70%;
-height: 10%;
-font-size: 18px;
-line-height: 23px;
-}
-
-header .header-principal .busca a {
-background: none;
-border: none;
-position: relative;
-left: -35px;
-}
-
-header .header-principal .hbutton {
-width: 30%;
-display: flex;
-justify-content: space-evenly;
-text-align: center;
-}
-
-header .header-principal .hbutton img {
-height: 50%;
-}
-
-header .header-principal .hbutton div {
-width: 25%;
-margin: auto;
-}
-
-.header-menu {
-display: flex;
-justify-content: space-around;
-position: sticky;
-top: 0;
-padding: 10px 3%;
-height: 5vh;
-align-items: center;
-}
-
-header a, footer a, .header-menu a {
-font-weight: bold;
-font-size: 14px;
-line-height: 16px;
-color: #000;
-text-decoration: none;
-}
-
-header section.buscamobile {
-justify-content: space-around;
-padding: 0;
-width: 100%;
-display: none;
-}
-
-header section.buscamobile p {
-margin: 0;
-}
-
-header section.buscamobile input {
-width: 80vw;
-margin-left: 10px;
-}
-
-header section.buscamobile a {
-position: relative;
-left: -29px;
-}
-
 .carrinho-sacola {
     margin: 0 25px 80px 25px;
-}
-
-.carrinho-sacola .processo-da-compra div {
-height: 45px;
-margin: 25px 0;
-display: flex;
-align-items: center;
-justify-content: space-evenly;
-padding: 0 280px;
-background-color: #C4C4C4;
-}
-
-.carrinho-sacola .processo-da-compra div a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    font-weight: 800;
-    transition: background-color 0.1s;
-} .carrinho-sacola .processo-da-compra div a:hover {
-    background-color: #aaaaaa;
 }
 
 .carrinho-sacola .processo-da-compra .sacola {
@@ -155,7 +9,8 @@ background-color: #C4C4C4;
 .carrinho-sacola .container-carrinho {
 display: flex;
 justify-content: space-between;
-margin: 0
+margin: 0;
+width: 100%;
 }
 
 .carrinho-sacola .container-carrinho .container-sacola {
@@ -184,8 +39,10 @@ align-items: center;
 }
 
 .carrinho-sacola .container-carrinho .container-sacola img {
-height: 80px;
-margin: 20px;
+    height: 72px;
+    width: 60px;
+    object-fit: cover;
+    margin: 20px;
 }
 
 .carrinho-sacola .container-carrinho .container-sacola .tamanho,
@@ -257,13 +114,16 @@ height: 20px;
     font-size: 18px;
     font-weight: 800;
     border-bottom: 1px solid #D6D6D6;
+    margin-bottom: 10px;
     text-align: center;
 }
 
 .carrinho-sacola .resumo .forma-de-recebimento a {
     width: 50%;
     transition: background-color 0.1s;
-}.carrinho-sacola .resumo .forma-de-recebimento a:hover {
+}
+
+.carrinho-sacola .resumo .forma-de-recebimento a:hover {
     background-color: #e2e2e2;
     width: 50%;
 }
@@ -272,11 +132,6 @@ height: 20px;
 .carrinho-sacola .resumo .forma-de-recebimento .entrega {
     /* width: 50%; */
     border-bottom: 4px solid #e84218
-}
-
-.carrinho-sacola .resumo .teste-espacoBranco {
-    width: 100%;
-    height: 169px;
 }
 
 .carrinho-sacola .resumo .cep {
@@ -351,7 +206,6 @@ height: 20px;
     border: none;
     font-size: 18px;
     font-weight: 800;
-    background-color: white;
     cursor: pointer;
     transition: color 0.1s;
 }.carrinho-sacola .resumo .continuar-comprando:hover {
@@ -439,6 +293,30 @@ font-size: 20px;
     display: none;
 }
 
+td.acoes-produto div {
+    display: flex;
+}
+
+td.acoes-produto div button {
+    border: none;
+    cursor: pointer;
+    background-color: #FFFFFF;
+}
+
+.menu-carrinho {
+    height: 45px;
+    margin: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 280px;
+    background-color: #C4C4C4;
+}
+
+.menu-carrinho a {
+    margin: 0 10px;
+}
+
 /* Fazendo as alterações para mobile: */
 @media screen and (max-width: 720px) {
     header .logo, header .header-principal .hbutton {
@@ -474,11 +352,6 @@ font-size: 20px;
     .carrinho-sacola .container-carrinho .container-sacola .table-mobile {
         display: flex;
         background-color: white;
-    }
-
-    .carrinho-sacola .container-carrinho .container-sacola img {
-        width: 130px;
-        height: unset;
     }
 
     .carrinho-sacola .container-carrinho .container-sacola .quantidade {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
@@ -75,34 +75,53 @@
     <a href="./resultadoBusca.html">ESPORTE</a>
   </section>
 
-  <main>
+  <main class="contato">
     <section class="containergeral">
-      <h1>Dúvidas Comuns</h1>
-      <strong>1) Esta loja é Confiável?</strong>
-      <p>Tanto a Digital Outlet quanto seus parceiros seguem rigorosos padrões de segurança e confiabilidade, sempre
-        buscando atender nossos clientes da melhor maneira possível</p>
-      <strong>2) Por que comprar na Digital Outlet?</strong>
-      <p>Na Digital Outlet você encontra as melhores marcas e produtos, sob uma plataforma digital pela qual
-        proporcionamos aos nossos clientes o que há de melhor em qualidade, praticidade e preço!</p>
-      <strong>3) Por que devo colocar meu produto na Digital Outlet?</strong>
-      <p>Sendo uma plataforma onde se encontra diversas marcas de qualidade, além de aliar o seu produto a uma
-        plataforma confiável, você conseguirá um aumento no número de vendas com o marketing interno automático da
-        Digital Outlet, além de economizar na criação de website próprio e outros meios digitais necessários para o
-        comércio virtual.</p>
-      <strong>4) Qual é a política de troca da Digital Outlet?</strong>
-      <p>Nós pregamos o bom atendimento e seguimos à risca os direitos do consumidor, com foco na comodidade
-        proporcionada por um marketplace online.</p>
-      <strong>5) Posso trabalhar na Digital Outlet?</strong>
-      <p>Certamente! Nossa equipe de Head Hunters está sempre atenta para todos os talentos que possam fazer parte da
-        nosso time. Para trabalhar conosco, <a href="">clique aqui</a>.</p>
-      <strong>6) Como surgiu a Digital Outlet?</strong>
-      <p>A idéia para a criação de um marketplace surgiu do curso Web Full Stack da Digital House.</p>
-      <strong>7) Como foi criada a plataforma da Digital Outlet?</strong>
-      <p>Nossa plataforma foi criada usando React, SQL e Node.js.</p>
-      <strong>8) Foi uma experiência boa criar a plataforma da Digital Outlet?</strong>
-      <p>Por todos os deuses, esperamos que sim!</p>
+      <h1>Categorias</h1>
+      <div class="buttonscontato">
+        <div>
+          <button>
+            <p>Lojas parceiras</p>
+          </button>
+          <button>
+            <p>Vale Troca</p>
+          </button>
+          <button>
+            <p>Cupom e Promoção</p>
+          </button>
+          <button>
+            <p>Formas de Pagamento</p>
+          </button>
+        </div>
+        <div>
+          <button>
+            <p>Dividas e Emprestimo</p>
+          </button>
+          <button>
+            <p>Trocas e Cancelamento</p>
+          </button>
+          <button>
+            <p>Pedidos</p>
+          </button>
+          <button>
+            <p>Cadastro</p>
+          </button>
+        </div>
+      </div>
+      <p class="pcontato">Não encontrou a sua dúvida? Nos conte aqui:</p>
+      <form id="contato" class="contato" action="" method="get">
+        <div>
+          <input type="text" id="nome" value="Nome Completo" name="nome">
+          <input type="email" id="email" value="E-mail" name="email">
+          <input type="tel" id="telefone" value="Telefone para contato (xx) xxxxx-xxxx" name="telefone">
+        </div>
+        <div><textarea id="mensagem" name="mensagem">Digite aqui sua dúvida</textarea></div>
+        <button type="submit" id="submit">Enviar</button>
+      </form>
     </section>
   </main>
+
+  <script src="./public/scripts/validateContato.js"></script>
 
   <footer>
     <section class="fbutton">

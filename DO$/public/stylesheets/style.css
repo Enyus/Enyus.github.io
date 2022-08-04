@@ -1,13 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap');
-
-* {
-  box-sizing: border-box;
-  font-family: 'Rajdhani', sans-serif;
-}
-
 body {
   margin: 0;
   background-color: #DCDDE1;
+}
+
+a {
+  color: unset;
+  cursor: pointer;
 }
 
 header, .header-menu {
@@ -27,11 +25,11 @@ header section {
   align-items: center;
 }
 
-header section.header-principal .logo {
+header .header-principal .logo {
   width: 20%;
 }
 
-header section.header-principal .logo img {
+header .header-principal .logo img {
   max-width: 100%;
   height: auto;
 }
@@ -112,6 +110,7 @@ header section.buscamobile p {
 header section.buscamobile input {
   width: 80vw;
   margin-left: 10px;
+  height: 30px;
 }
 
 header section.buscamobile a {
@@ -215,7 +214,8 @@ body section.ofertas {
 
 div.ofertasrow {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 div.container {
@@ -224,23 +224,18 @@ div.container {
   border-radius: 10px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   width: 280px;
-  height: fit-content;
+  height: 360px;
   text-align: center;
 }
 
-body main a {
-  color: unset;
-  text-decoration: unset;
-  max-width: 25%;
-}
-
 main div.container img {
-  width: auto;
   margin-top: 10px;
+  max-width: 270px;
+  max-height: 200px;
 }
 
 h1 {
-  margin: 10px 0;
+  margin: 10px;
 }
 
 main div.container div.precos ul {
@@ -260,8 +255,8 @@ main div.container div.precos ul {
 
 .preco-agora {
   font-weight: bolder;
-  font-size: 18px;
-  width: 30%;
+  font-size: 25px;
+  width: 50%;
 }
 
 .off {
@@ -271,7 +266,7 @@ main div.container div.precos ul {
   color: #4CD137;
 }
 
-main section.containergeral {
+section.containergeral {
   margin: 1% 3% 60px 3%;
   background-color: #FFFFFF;
   border-radius: 10px;
@@ -281,15 +276,19 @@ main section.containergeral {
   min-height: 70vh;
 }
 
-main section.containergeral h1 {
+section.containergeral h1 {
   text-align: center;
   margin-top: 20px;
-  font-size: 36px;
   line-height: 46px;
 }
 
-main section.containergeral strong, 
-main section.containergeral p {
+main section.containergeral div.container h1 {
+  line-height: 22px;
+  margin: 10px;
+}
+
+section.containergeral strong, 
+section.containergeral p {
   margin: 0 3% 10px 3%;
   font-size: 18px;
   line-height: 23px;
@@ -386,7 +385,7 @@ main section.containergeral form.contato textarea {
   border: none;
 }
 
-main section.containergeral form.contato input[type="submit"] {
+main section.containergeral form.contato button {
   margin: auto;
   background: #c1c1c1;
   border: none;
@@ -398,6 +397,12 @@ main section.containergeral form.contato input[type="submit"] {
 
 main.resultadobusca {
   display: flex;
+}
+
+div.containerterciario {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
 }
 
 aside {
@@ -454,10 +459,17 @@ main.resultadobusca nav.navpages button {
   cursor: pointer;
 }
 
+main.resultadobusca nav.navpages button:disabled {
+  color: gray;
+  opacity: unset;
+  cursor: default;
+}
+
 main.paginaproduto div.produto {
   display: flex;
   justify-content: space-evenly;
   align-items: top;
+  margin-bottom: 10px;
 }
 
 main.paginaproduto div.fotosproduto {
@@ -475,17 +487,26 @@ main.paginaproduto div.fotosproduto div.miniimg {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+  margin-right: 2px;
+}
+
+main.paginaproduto div.fotosproduto div.miniimg button {
+  border: unset;
+  cursor: pointer;
+  padding: 0;
 }
 
 main.paginaproduto div.fotosproduto div.miniimg img {
-  max-height: 150px;
+  height: 180px;
+  width: 150px;
+  object-fit: cover;
 }
 
-main.paginaproduto div.fotosproduto div.miniimg img:first-child{
+main.paginaproduto div.fotosproduto div.miniimg button:first-child img{
   border-top-left-radius: 10px;
 }
 
-main.paginaproduto div.fotosproduto div.miniimg img:last-child {
+main.paginaproduto div.fotosproduto div.miniimg button:last-child img {
   border-bottom-left-radius: 10px;
 }
 
@@ -497,9 +518,9 @@ main.paginaproduto div.fotosproduto div.focoimg {
 }
 
 main.paginaproduto div.fotosproduto div.focoimg img {
-  height: 100%;
-  position: relative;
-  right: -3px;
+  max-height: 560px;
+  max-width: 100%;
+  object-fit: cover;
   border-radius: 0 10px 10px 0;
 }
 
@@ -575,7 +596,7 @@ main.paginaproduto div.descgeral div.subcontainer div.compra {
   flex-direction: column;
 }
 
-main.paginaproduto div.descgeral div.subcontainer div.compra button {
+main.paginaproduto div.descgeral div.subcontainer div.compra form button {
   border-radius: 20px;
   border-style: none;
   background-color: #E84118;
@@ -599,7 +620,8 @@ main.cadastroloja section.containergeral p {
 main.login section.containergeral form,
 main.cadastrousuario section.containergeral form,
 main.trabalheconosco section.containergeral form,
-main.cadastroloja section.containergeral form {
+main.cadastroloja section.containergeral form, form.cadastrousuario,
+main.paginaloja form.alteradadosloja {
   width: 100%;
   text-align: center;
 }
@@ -608,7 +630,7 @@ main.login section.containergeral form div.formrow,
 main.cadastrousuario section.containergeral form div.formrow,
 main.trabalheconosco section.containergeral form div.formrow,
 main.cadastroloja section.containergeral form div.formrow,
-main.cadastroproduto section.containergeral form div.formrow {
+form.cadastrousuario div.formrow, form.alteradadosloja div.formrow {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -620,7 +642,7 @@ main.login section.containergeral form div.formrow label,
 main.cadastrousuario section.containergeral form div.formrow label,
 main.trabalheconosco section.containergeral form div.formrow label,
 main.cadastroloja section.containergeral form div.formrow label,
-main.cadastroproduto section.containergeral div form div.formrow label {
+form.cadastrousuario label, form.alteradadosloja label {
   margin-right: 10px;
   width: 150px;
   text-align: end;
@@ -632,8 +654,7 @@ main.trabalheconosco section.containergeral form div.formrow input,
 main.trabalheconosco section.containergeral form div.formrow select,
 main.trabalheconosco section.containergeral form div.formrow textarea,
 main.cadastroloja section.containergeral form div.formrow input,
-main.cadastroproduto section.containergeral div form div.formrow input,
-main.cadastroproduto section.containergeral div form div.formrow textarea {
+form.cadastrousuario input, form.alteradadosloja input {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   width: 350px;
   max-width: 50%;
@@ -645,7 +666,8 @@ main.login section.containergeral form button,
 main.cadastrousuario section.containergeral form button,
 main.trabalheconosco section.containergeral form button,
 main.cadastroloja section.containergeral form button,
-main.cadastroproduto section.containergeral button {
+form.cadastrousuario button, form.alteradadosloja button,
+form.fotoPerfil button[type='submit'] {
   font-size: 36px;
   width: 300px;
   border-style: none;
@@ -657,6 +679,10 @@ main.cadastroproduto section.containergeral button {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
   margin-bottom: 20px;
+}
+
+button:disabled {
+  opacity: 0.3;
 }
 
 main.login section.containergeral p:nth-last-child(2),
@@ -674,18 +700,19 @@ main.login section.containergeral p:last-child a {
   text-decoration: underline;
 }
 
-main.trabalheconosco div.containersecundario,
-main.cadastroproduto div.containersecundario,
-main.paginacliente div.containersecundario,
-main.paginaloja div.containersecundario  {
+main.trabalheconosco div.containersecundario{
   display: flex;
   justify-content: space-around;
   margin: 20px 0;
 }
 
+main.paginaloja div.containersecundario, main.paginacliente div.containersecundario {
+  display: flex;
+  margin: 20px 0;
+}
+
 main.trabalheconosco div.containersecundario div.form,
-main.trabalheconosco div.containersecundario div.imagem,
-main.cadastroproduto div.containersecundario div {
+main.trabalheconosco div.containersecundario div.imagem {
   width: 45%;
 }
 
@@ -731,53 +758,6 @@ main.trabalheconosco div.upload button {
   line-height: 23px;
 }
 
-main.cadastroproduto section.containergeral p.lembrete {
-  text-align: center;
-  width: 50%;
-  margin:auto;
-}
-
-main.cadastroproduto section.containergeral form div.formrow div.fotoproduto,
-main.cadastroproduto section.containergeral form div.formrow div.desctec {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: 100%;
-  align-content: space-around;
-  height: fit-content;
-  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
-  padding: 5px;
-}
-
-main.cadastroproduto section.containergeral form div.formrow div.fotoproduto button img {
-  width: 100px;
-  height: 100px;
-}
-
-main.cadastroproduto section.containergeral form div.formrow div.fotoproduto button input[type="image"] {
-  display: none;
-}
-
-main.cadastroproduto section.containergeral button.img {
-  width: 110px !important;
-  height: 110px !important;
-  padding: 1px;
-  background: none;
-  box-shadow: none;
-  border: black solid 1px;
-  border-radius: 0;
-  margin: 10px;
-}
-
-main.cadastroproduto section.containergeral form div.formrow div.desctec input[type="checkbox"] {
-  width: fit-content;
-  margin-right: 10px;
-}
-
-main.cadastroproduto section.containergeral form div.formrow div.desctec input[type="text"] {
-  width: 40%;
-}
-
 main.paginacliente section.containergeral h1.bemvindo,
 main.paginaloja section.containergeral h1.bemvindo {
   text-align: left;
@@ -796,7 +776,6 @@ main.paginacliente section.containergeral div.pedidosrecentes,
 main.paginacliente section.containergeral div.buscasrecentes,
 main.paginaloja section.containergeral div.faturadorecentemente,
 main.paginaloja section.containergeral div.resumopedidos {
-  width: 40%;
   margin: 10px;
   display: flex;
   flex-direction: column;
@@ -874,6 +853,354 @@ main.paginaloja div.resumopedidos div.containerinfo p {
 }
 
 
+.carrinho {
+  margin: 0 25px;
+}
+
+.carrinho .processo-da-compra div {
+  height: 45px;
+  margin: 25px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 280px;
+  background-color: #C4C4C4;
+}
+
+.carrinho .processo-da-compra div a {
+  width: 100%;
+  text-align: center;
+  font-weight: 800;
+}
+.carrinho .container-carrinho {
+  display: flex;
+  justify-content: space-between;
+  margin: 0
+}
+
+.carrinho .container-carrinho .container-sacola {
+  /* background-color: white; */
+  height: 260px;
+  width: 68%;
+}
+
+.carrinho .container-carrinho .resumo {
+  background-color: white;
+  width: 30%;
+  padding: 3%;
+}
+
+.carrinho .container-carrinho .container-sacola table{
+  width: 100%;
+  background-color: white;
+  padding: 25px;
+}
+
+.carrinho .container-carrinho .container-sacola table .colunas tr, td {
+  border-bottom: 1.5px solid #d3cece;
+}
+
+.carrinho .container-carrinho .container-sacola table .linhas tr, td {
+  border-bottom: 1.5px solid #d3cece;
+}
+
+.carrinho .container-carrinho .container-sacola .produto {
+  display: flex;
+  align-items: center;
+}
+
+.carrinho .container-carrinho .container-sacola img {
+  height: 80px;
+  margin: 20px;
+}
+
+.carrinho .container-carrinho .container-sacola .tamanho,
+.carrinho .container-carrinho .container-sacola .cor {
+  display: flex;
+}
+
+.carrinho .container-carrinho .container-sacola .label {
+  margin: 0
+}
+
+.carrinho .container-carrinho .container-sacola .dados {
+  color: #837F7F;
+  margin: 0 10px;
+}
+
+.carrinho .container-carrinho .container-sacola .quantidade {
+  display: flex;
+  align-items: center;
+}
+
+.carrinho .container-carrinho .container-sacola .quantidade button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 60%;
+  margin: 0 10px;
+  height: 25px;
+  width: 25px;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  font-weight: 800;
+  border-radius: 100%;
+  border-style: none;
+  transition: opacity 0.1s;
+} .carrinho .container-carrinho .container-sacola .quantidade button:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.carrinho .container-carrinho .container-sacola .acoes-produto {
+  width: 70px;
+}
+
+.carrinho .container-carrinho .container-sacola .acoes-produto img {
+  margin: 0 5px;
+  opacity: 60%;
+  width: 20px;
+  height: 20px;
+  transition: opacity 0.1s;
+} .carrinho .container-carrinho .container-sacola .acoes-produto img:hover {
+  opacity: 1;
+}
+
+.carrinho .container-carrinho .resumo {
+  background-color: white;
+  width: 30%;
+  padding: 3%;
+  background-color: #F1F1F1
+}
+
+.carrinho .container-carrinho .resumo div p.resumo {
+  padding: 0;
+  margin: 0;
+  font-weight: 800;
+}
+
+.carrinho .resumo .forma-de-recebimento {
+  display: flex;
+  justify-content: center;
+}
+
+#pedidos, #desejos, #dados, #enderecos, #vale, #listaprodutos  {
+  display: none;
+}
+
+img.fotoPerfil {
+  height: 50px !important;
+  border-radius: 50%;
+}
+
+main.paginaloja table {
+  width: -webkit-fill-available;
+  text-align: center;
+}
+
+main.paginaloja table .col-nomeProduto {
+  width: 44%;
+}
+
+main.paginaloja table tr {
+  transition: background-color .15s ;
+}
+main.paginaloja table tr:hover {
+  background-color: rgb(231, 231, 231);
+}
+
+main.paginaloja #listaprodutos .modal button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+main.paginaloja #listaprodutos .modal button:hover {
+  opacity:1;
+}
+main.paginaloja #listaprodutos .modal .cancelbtn,
+main.paginaloja #listaprodutos .modal .deletebtn {
+  width: 50%;
+  font-weight: bold;
+}
+
+main.paginaloja #listaprodutos .modal .cancelbtn {
+  height: 10%;
+  font-size: 16px;
+  background-color: #ccc;
+  color: black;
+}
+main.paginaloja #listaprodutos .modal .deletebtn {
+  font-size: 26px;
+  background-color: #f44336;
+}
+
+main.paginaloja #listaprodutos .modal .modal-container {
+  position: relative;
+  padding: 16px;
+  text-align: center;
+}
+
+main.paginaloja #listaprodutos .modal .modal-container p {
+  font-size: 16px;
+  text-align: center;
+}
+
+main.paginaloja #listaprodutos .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #00000065;
+  /* padding-top: 50px; */
+}
+
+main.paginaloja #listaprodutos .modal-content {
+  background-color: #fefefe;
+  /* margin: 15% auto 15% auto; */
+  margin: 3% auto 15% auto;
+  border: 1px solid #888;
+  width: 50%;
+  opacity: 1;
+  transition: margin .8s;
+}
+main.paginaloja #listaprodutos a.deletarProduto:hover + div.modal > form.modal-content {
+  margin: 0% auto 15%;
+  opacity: 0;
+}
+
+main.paginaloja #listaprodutos h1.atencao {
+  font-size: 24px;
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+main.paginaloja #listaprodutos .close {
+  position: absolute;
+  right: 5px;
+  top: -5px;
+  font-size: 40px;
+  font-weight: bold;
+  /* color: #f1f1f1; */
+  color: black;
+}
+
+main.paginaloja #listaprodutos .close:hover,
+main.paginaloja #listaprodutos .close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+main.paginaloja #listaprodutos .clearfix {
+  display: flex;
+  justify-content: space-between;
+}
+main.paginaloja #listaprodutos .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+div.colaboradores {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+}
+
+.filtros button {
+  border-radius: 20px;
+  border-style: none;
+  background-color: #E84118;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+  color: #fff;
+  font-size: 18px;
+  width: 70%;
+  height: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 0 15% 25px 15%;
+}
+
+.filtros input[type=text] {
+  width: 90%;
+  margin-left: 5%;
+}
+
+div.categoriasmobile {
+  position: fixed;
+  width: 50vw;
+  height: 50vh;
+  bottom: 50px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: white;
+  left: 50vw;
+}
+
+form.fotoPerfil {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+form.fotoPerfil button {
+  align-self: center;
+}
+
+form.fotoPerfil button[type='button'] {
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+form.fotoPerfil img {
+  width: 200px;
+  height: 200px !important;
+}
+
+form.fotoPerfil div {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+div#enderecos li {
+  display: flex;
+  margin-bottom: 10px;
+  border-bottom: solid gray 1px;
+  width: fit-content;
+}
+
+div#enderecos li form {
+  margin-left: 10px;
+}
+
+div#enderecos li form button {
+  padding: 0;
+  cursor: pointer;
+}
+
+div#enderecos li form button img {
+  width: 15px;
+  height: 15px;
+}
+
+main.paginacliente section.containergeral div.pedidosrecentes, 
+main.paginacliente section.containergeral div.pedidosrecentes table {
+  width: 100%;
+  text-align: center;
+}
+
 /* Fazendo as alterações para mobile: */
 @media screen and (max-width: 720px) {
   header .logo, header .header-principal .hbutton {
@@ -883,17 +1210,18 @@ main.paginaloja div.resumopedidos div.containerinfo p {
   header section.buscamobile, footer section.fmobile {
     display: flex;
   }
-
-  main.cadastroproduto section.containergeral form div.formrow div.desctec div.formrow {
-    display: flex !important;
-  }
   
-  main.trabalheconosco div.containersecundario, main section.containergeral div.buttonscontato div, div.ofertasrow, main section.containergeral form.contato, main.paginaproduto div.produto, main.resultadobusca, main.trabalheconosco div.containersecundario, main.cadastroproduto div.containersecundario, main.paginacliente div.containersecundario, main.paginaloja div.containersecundario, main.cadastroproduto section.containergeral form div.formrow {
+  main.paginacliente div.containerterciario, main.trabalheconosco div.containersecundario, main section.containergeral div.buttonscontato div, div.ofertasrow, main section.containergeral form.contato, main.paginaproduto div.produto, main.resultadobusca, main.trabalheconosco div.containersecundario, main.paginacliente div.containersecundario, main.paginaloja div.containersecundario {
     display: block;
   }
 
-  section.fbutton, section.mlogo, div.hbutton p, section.header-menu, header .header-principal .busca, main.paginaproduto div.fotosproduto div.miniimg, aside div, aside form {
+  section.fbutton, section.mlogo, div.hbutton p, section.header-menu, header .header-principal .busca, aside div, aside form {
     display: none;
+  }
+
+  main.paginaproduto div.fotosproduto div.miniimg img {
+    height: 90px;
+    width: 75px;
   }
 
   footer {
@@ -904,7 +1232,7 @@ main.paginaloja div.resumopedidos div.containerinfo p {
     width: 200px;
   }
 
-  main.trabalheconosco div.containersecundario div.imagem, main.trabalheconosco div.containersecundario div.form, main section.containergeral form.contato div, main section.containergeral form.contato input[type="submit"], main.paginaproduto div.descgeral, main.paginaproduto div.descgeral div.subcontainer div.desc, main.paginaproduto div.descgeral div.subcontainer div.comprar, main.paginaproduto div.descgeral div.subcontainer div.comprar form, aside, main.paginacliente section.containergeral div.menu-cliente, main.paginaloja section.containergeral div.menu-loja, main.paginacliente section.containergeral div.pedidosrecentes, main.paginacliente section.containergeral div.buscasrecentes, main.paginaloja section.containergeral div.faturadorecentemente, main.paginaloja section.containergeral div.resumopedidos, main.paginacliente section.containergeral div.pedidosrecentes, main.paginacliente section.containergeral div.buscasrecentes, main.paginaloja section.containergeral div.faturadorecentemente, main.paginaloja section.containergeral div.resumopedidos, main.trabalheconosco div.containersecundario div.form, main.trabalheconosco div.containersecundario div.imagem, main.cadastroproduto div.containersecundario div {
+  main.trabalheconosco div.containersecundario div.imagem, main.trabalheconosco div.containersecundario div.form, main section.containergeral form.contato div, main section.containergeral form.contato input[type="submit"], main.paginaproduto div.descgeral, main.paginaproduto div.descgeral div.subcontainer div.desc, main.paginaproduto div.descgeral div.subcontainer div.comprar, main.paginaproduto div.descgeral div.subcontainer div.comprar form, aside, main.paginacliente section.containergeral div.menu-cliente, main.paginaloja section.containergeral div.menu-loja, main.paginacliente section.containergeral div.pedidosrecentes, main.paginacliente section.containergeral div.buscasrecentes, main.paginaloja section.containergeral div.faturadorecentemente, main.paginaloja section.containergeral div.resumopedidos, main.paginacliente section.containergeral div.pedidosrecentes, main.paginacliente section.containergeral div.buscasrecentes, main.paginaloja section.containergeral div.faturadorecentemente, main.paginaloja section.containergeral div.resumopedidos, main.trabalheconosco div.containersecundario div.form, main.trabalheconosco div.containersecundario div.imagem {
     width: 100%;
     margin: 0;
   }
@@ -928,53 +1256,11 @@ main.paginaloja div.resumopedidos div.containerinfo p {
     max-width: 100%;
   }
 
-  main.cadastroproduto section.containergeral button {
-    margin-left: 5%;
+  div.missao:last-child {
+    display: block !important;
   }
 
-  /* Os itens abaixo são apenas relativos à página home estática, não devendo aparecer nos conteúdos .ejs do projeto principal */
-  aside.estatica {
-    top: 45% !important;
-    bottom: 45% !important;
-    height: unset !important;
+  div.buscainput {
+    display: none;
   }
-  /* Os itens acima são apenas relativos à página home estática, não devendo aparecer nos conteúdos .ejs do projeto principal */ 
 }
-
-/* Os itens abaixo são apenas relativos à página home estática, não devendo aparecer nos conteúdos .ejs do projeto principal */
-
-aside.estatica {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  height: 100%;
-  width: 50px;
-  display: flex;
-  align-items: center;
-  justify-items: center;
-  cursor: pointer;
-}
-
-aside.estatica p {
-  width: 100%;
-  text-align: center;
-  font-size: larger;
-  font-weight: bolder;
-}
-
-aside.estatica div.content {
-  display: none;
-  flex-direction: column;
-  justify-content: space-evenly;
-  position: fixed;
-  left: 50px;
-  height: 100%;
-  background-color: #fff;
-  padding: 60px 10px;
-}
-
-aside.estatica:hover  div.content {
-  display: flex;
-}
-
-/* Os itens acima são apenas relativos à página home estática, não devendo aparecer nos conteúdos .ejs do projeto principal */ 

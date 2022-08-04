@@ -1,152 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap');
-
-* {
-    box-sizing: border-box;
-    font-family: 'Rajdhani', sans-serif;
-    text-decoration: none;
-    color: black;
-}
-
-body {
-    margin: 0;
-    background-color: #DCDDE1;
-}
-
-header, .header-menu {
-background-color: #FFFFFF;
-width: 100%;
-padding: 0 3%;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-header {
-min-height: 15vh;
-}
-
-header section {
-display: flex;
-padding: 10px 0;
-align-items: center;
-}
-
-header .header-principal .logo {
-width: 20%;
-}
-
-header .header-principal .logo img {
-max-width: 100%;
-height: auto;
-}
-
-header .header-principal .busca {
-width: 50%;
-display: flex;
-align-items: center;
-}
-
-header .header-principal .busca p {
-width: 20%;
-text-align: right;
-padding-right: 10px;
-font-size: 12px;
-line-height: 14px;
-}
-
-header .header-principal .busca input {
-width: 70%;
-height: 10%;
-font-size: 18px;
-line-height: 23px;
-}
-
-header .header-principal .busca a {
-background: none;
-border: none;
-position: relative;
-left: -35px;
-}
-
-header .header-principal .hbutton {
-width: 30%;
-display: flex;
-justify-content: space-evenly;
-text-align: center;
-}
-
-header .header-principal .hbutton img {
-height: 50%;
-}
-
-header .header-principal .hbutton div {
-width: 25%;
-margin: auto;
-}
-
-.header-menu {
-display: flex;
-justify-content: space-around;
-position: sticky;
-top: 0;
-padding: 10px 3%;
-height: 5vh;
-align-items: center;
-}
-
-header a, footer a, .header-menu a {
-font-weight: bold;
-font-size: 14px;
-line-height: 16px;
-color: #000;
-text-decoration: none;
-}
-
-header section.buscamobile {
-justify-content: space-around;
-padding: 0;
-width: 100%;
-display: none;
-}
-
-header section.buscamobile p {
-margin: 0;
-}
-
-header section.buscamobile input {
-width: 80vw;
-margin-left: 10px;
-}
-
-header section.buscamobile a {
-position: relative;
-left: -29px;
-}
-
-
 .carrinho-entrega {
     margin: 0 25px 80px 25px;
-}
-
-.carrinho-entrega .processo-da-compra div {
-    height: 45px;
-    margin: 25px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 0 280px;
-    background-color: #C4C4C4;
-}
-    
-.carrinho-entrega .processo-da-compra div a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    font-weight: 800;
-    transition: background-color 0.1s;
-} .carrinho-entrega .processo-da-compra div a:hover {
-    background-color: #aaaaaa;
 }
 .carrinho-entrega .processo-da-compra .entrega {
     border-bottom: 4px solid #e84218
@@ -161,7 +14,8 @@ left: -29px;
 .carrinho-entrega .container-entrega section {
     display: flex;
     background-color: #FFFFFF;
-    padding: 35px;
+    padding: 20px;
+    height: fit-content;
 }
 
 .carrinho-entrega .dados-destinatario {
@@ -194,25 +48,24 @@ left: -29px;
 
 .carrinho-entrega .entrega {
     flex-direction: column;
-    margin: 0 34px;
-    height: 657px;
+    margin: 0 30px;
     width: 31%;
 }
 .carrinho-entrega .entrega div {
     margin-bottom: 5px;
 }
 .carrinho-entrega .entrega h3 {
-    margin: 0 0 30px 0;
+    margin: 0;
 }
 .carrinho-entrega .entrega label {
     padding-left: 5px;
     font-size: 14px;
     color: #999999;
 }
-.carrinho-entrega .entrega input {
+.carrinho-entrega .entrega input[type='text'] {
     padding-left: 10px;
     height: 42px;
-    width: 70%;
+    width: 100%;
     font-size: 16px;
 }
 .carrinho-entrega .entrega .cep {
@@ -227,6 +80,7 @@ left: -29px;
 .carrinho-entrega .entrega .cep .nao-sei-cep {
     font-weight: 800;
     font-size: 14px;
+    text-align: center;
 } 
 .carrinho-entrega .entrega .endereco-entrega {
     border: 1px solid rgb(120, 120, 120);
@@ -240,16 +94,11 @@ left: -29px;
     display: flex;
 }
 .carrinho-entrega .entrega .numero-compl div div{
-    margin: 0;
+    margin: 2px;
     display: flex;
     flex-direction: column;
 }
-.carrinho-entrega .entrega #numero-endereco {
-    width: 90%;
-}
-.carrinho-entrega .entrega #compl-endereco {
-    width: 100%;
-}
+
 .carrinho-entrega .entrega .numero-compl a{
     color: rgb(85, 85, 85);
     font-size: 10px;
@@ -275,6 +124,8 @@ left: -29px;
     justify-content: center;
     padding: 0 10px;
     border: 1px solid rgb(120, 120, 120);
+    height: fit-content;
+    width: 100%;
 }
 .carrinho-entrega .entrega .modalidade-entrega .container label {
     color: black;
@@ -282,12 +133,12 @@ left: -29px;
 .carrinho-entrega .entrega .modalidade-entrega .container div {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin: 0;
+    margin: 5px 0;
 }
 .carrinho-entrega .entrega .modalidade-entrega input {
     height: 20px;
     width: 20px;
+    margin: 5px;
 }
 
 
@@ -301,7 +152,6 @@ left: -29px;
     margin: 0
 }
 .carrinho-entrega section.resumo table {
-    margin: 20px 0 60px 0;
     width: 100%;
     border: 1px solid black;
 }
@@ -354,9 +204,31 @@ left: -29px;
     background-color: #fff2ef ;
 }
 
+section.entrega ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: justify;
+}
 
+section.entrega ul li {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
 
+.menu-carrinho {
+    height: 45px;
+    margin: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 280px;
+    background-color: #C4C4C4;
+}
 
+.menu-carrinho a {
+    margin: 0 10px;
+}
 
 footer {
     background-color: #FFFFFF;

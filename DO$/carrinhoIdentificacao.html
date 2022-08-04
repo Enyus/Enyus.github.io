@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identificação</title>
+    <link rel="shortcut icon" href="./public/icon/favicon.png">
+    <link rel="stylesheet" href="./public/stylesheets/style.css">
+    <link rel="stylesheet" href="./public/stylesheets/header.css">
+    <link rel="stylesheet" href="./public/stylesheets/footer.css">
+    <link rel='stylesheet' href='./public/stylesheets/carrinho-identificacao.css' />
+    <link rel='stylesheet' href='./public/stylesheets/processoscarrinho.css' />
+    <title>Carrinho - Identificação</title>
+</head>
+
+<body>
+    <header>
+        <section class="header-principal">
+            <div class="logo">
+                <a href="./index.html"><img src="./public/images/logo.png" alt="Logo DO$"></a>
+            </div>
+            <div class="busca">
+                <p>Pesquise sua marca/produto:</p>
+
+                <input type="text" id="campobusca">
+
+                <a href="./resultadoBusca.html" id="botaobuscar"><img src="./public/images/search-icon.png"
+                        alt="search"></a>
+            </div>
+            <div class="hbutton">
+
+                <div>
+
+                    <a href="./login.html">
+                        <img src='./public/images/login.svg' alt="login">
+                        <p>LOG IN</p>
+
+                    </a>
+                </div>
+
+                <div>
+
+                    <a href="./cadastroLoja.html">
+                        <img src="./public/images/lojista.svg" alt="login lojista">
+                        <p>VENDA CONOSCO</p>
+
+                    </a>
+                </div>
+
+                <div>
+                    <a href="./carrinhoSacola.html">
+
+                        <p class="notificacaocarrinho">
+                            2
+                        </p>
+
+                        <img src="./public/images/carrinho.svg" alt="carrinho">
+                        <p>SEU CARRINHO</p>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="buscamobile">
+            <p>busca:</p>
+
+            <input type="text" id="campobuscamobile">
+
+            <a href="./resultadoBusca.html" id="botaobuscarmobile"><img src="./public/images/search-icon.png"
+                    alt="search"></a>
+        </section>
+
+    </header>
+
+    <section class="header-menu">
+        <a href="./resultadoBusca.html">ROUPAS</a>
+        <a href="./resultadoBusca.html">LIVROS</a>
+        <a href="./resultadoBusca.html">CALÇADOS</a>
+        <a href="./resultadoBusca.html">ACESSÓRIOS</a>
+        <a href="./resultadoBusca.html">PARA A CASA</a>
+        <a href="./resultadoBusca.html">ESPORTE</a>
+    </section>
+
+
+    <main class="carrinho-identificacao">
+
+        <section class="processo-da-compra">
+            <div class="menu-carrinho">
+                <a class="sacola" href="./carrinhoSacola.html">Sacola</a>
+                <a class="identificacao" href="./carrinhoIdentificacao.html">Identificação</a>
+                <a class="entrega" href="./carrinhoEntrega.html">Entrega</a>
+                <a class="pagamento" href="./carrinhoPagamento.html">Pagamento</a>
+            </div>
+        </section>
+
+        <div class="container-identificacao">
+            <section class="dados-pessoais">
+                <div>
+                    <h3>Dados Pessoais</h3>
+                    <form class="formulario-dados-pessoais" action="./carrinhoEntrega.html" method="get" id="form">
+                        <div>
+                            <label for="email">Email:</label>
+
+                            <input type="text" id="email" name="email" />
+
+                        </div>
+
+                        <div class="form-nome-sobrenome">
+                            <div>
+                                <label for="nome">Nome</label>
+
+                                <input type="text" name="nome" id="nome" />
+
+                            </div>
+                            <div>
+                                <label for="sobrenome">Sobrenome:</label>
+
+                                <input type="text" id="sobrenome" name="sobrenome" />
+
+                            </div>
+                        </div>
+
+                        <div class="form-cpf-telefone">
+                            <div>
+                                <label for="cpf">CPF:</label>
+
+                                <input type="text" id="cpf" name="cpf" />
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <button class="ir-entrega" type="submit" id="submit">Ir para entrega</button>
+                        </div>
+
+                    </form>
+
+                </div>
+            </section>
+
+            <section class="resumo-compra">
+                <div>
+                    <h3>Resumo da Compra</h3>
+                    <table>
+
+
+                        <tr>
+                            <td class="img"><img src="./public/images/calca-bege.png" alt=""></td>
+                            <td class="produto">
+                                <h3 class="label">
+                                    Calça Bege
+                                </h3>
+
+
+                                <div class="tamanho">
+                                    <h4 class="label">
+                                        Cor:
+                                    </h4>
+                                    <h4 class="dados">
+                                        Bege
+                                    </h4>
+                                </div>
+
+
+
+                                <div class="tamanho">
+                                    <h4 class="label">
+                                        Marca:
+                                    </h4>
+                                    <h4 class="dados">
+                                        Calças AÊ
+                                    </h4>
+                                </div>
+
+
+
+                                <div class="tamanho">
+                                    <h4 class="label">
+                                        Tamanho:
+                                    </h4>
+                                    <h4 class="dados">
+                                        G
+                                    </h4>
+                                </div>
+
+
+
+
+
+
+                            </td>
+                            <td>
+                                <h4>R$ 99.00
+                                </h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="img"><img src="./public/images/20220409193700-tênis-top-1.jpeg" alt=""></td>
+                            <td class="produto">
+                                <h3 class="label">
+                                    Tênis Top
+                                </h3>
+
+
+                                <div class="tamanho">
+                                    <h4 class="label">
+                                        Cor:
+                                    </h4>
+                                    <h4 class="dados">
+                                        Preto ou Vermelho
+                                    </h4>
+                                </div>
+
+
+
+                                <div class="tamanho">
+                                    <h4 class="label">
+                                        Estilo:
+                                    </h4>
+                                    <h4 class="dados">
+                                        Topzera
+                                    </h4>
+                                </div>
+
+
+
+                                <div class="tamanho">
+                                    <h4 class="label">
+                                        Corte:
+                                    </h4>
+                                    <h4 class="dados">
+                                        Descolado
+                                    </h4>
+                                </div>
+
+
+                            </td>
+                            <td>
+                                <h4>R$ 650.00
+                                </h4>
+                            </td>
+                        </tr>
+
+
+                    </table>
+                    <div class="total">
+                        <div>
+                            <p>Subtotal</p>
+                            <p>R$ 749.00</p>
+                        </div>
+                        <div>
+                            <p>Taxa de entrega</p>
+                            <p>à calcular</p>
+                        </div>
+                        <div class="total">
+                            <p>Total</p>
+
+                            <p>R$ 749.00</p>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="./public/scripts/validateIdentificarUsuario.js"></script>
+
+    <footer>
+        <section class="fbutton">
+            <a href="./sobre.html">
+                SOBRE A <img src="./public/images/logo-mini.svg" alt="Mini Logo DO$">
+            </a>
+            <a href="./faleConosco.html">
+                FALE CONOSCO
+            </a>
+            <a href="./trabalheConosco.html">
+                TRABALHE CONOSCO
+            </a>
+            <a href="./faq.html">
+                FAQ
+            </a>
+        </section>
+        <section class="mlogo">
+            <a href="./index.html"><img src="./public/images/logo-mini.svg" alt="Mino Logo DO$"></a>
+        </section>
+
+        <section class="fmobile">
+            <div class="fmenu">
+                <p>Menu</p>
+                <div class="contentfmenu">
+                    <a href="./login.html">Login</a>
+                    <a id="categoriamobile" href="./resultadoBusca.html">Categorias</a>
+                    <a href="./sobre.html">Sobre</a>
+                    <a href="./faleConosco.html">Fale Conosco</a>
+                    <a href="./trabalheConosco.html">Trabalhe Conosco</a>
+                    <a href="./faq.html">FAQ</a>
+                </div>
+                <div class="categoriasmobile" id="divcategoriasmobile">
+                    <a style="font-weight: 100;" id="fechar">FECHAR</a>
+                    <a href="./resultadoBusca.html">ROUPAS</a>
+                    <a href="./resultadoBusca.html">LIVROS</a>
+                    <a href="./resultadoBusca.html">CALÇADOS</a>
+                    <a href="./resultadoBusca.html">ACESSÓRIOS</a>
+                    <a href="./resultadoBusca.html">PARA A CASA</a>
+                    <a href="./resultadoBusca.html">ESPORTE</a>
+                </div>
+            </div>
+            <a href="#">Voltar ao Topo</a>
+        </section>
+    </footer>
+
+</body>
+
+</html>

@@ -1,179 +1,584 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Outlet $</title>
-    <link rel='stylesheet' href='./public/stylesheets/style.css' />
-  </head>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato</title>
+  <link rel="shortcut icon" href="./public/icon/favicon.png">
+  <link rel="stylesheet" href="./public/stylesheets/header.css">
+  <link rel="stylesheet" href="./public/stylesheets/style.css">
+  <link rel="stylesheet" href="./public/stylesheets/footer.css">
+</head>
 
 <body>
-
   <header>
     <section class="header-principal">
       <div class="logo">
-        <a href="./home.html"><img src="./public/images/logo.png" alt="Logo DO$"></a>
+        <a href="./index.html"><img src="./public/images/logo.png" alt="Logo DO$"></a>
       </div>
       <div class="busca">
         <p>Pesquise sua marca/produto:</p>
-        <input type="text">
-        <a href="./resultadobusca.html"><img src="./public/images/search-icon.png" alt="search"></a>
+
+        <input type="text" id="campobusca">
+
+        <a href="./resultadoBusca.html" id="botaobuscar"><img src="./public/images/search-icon.png" alt="search"></a>
       </div>
       <div class="hbutton">
+
         <div>
+
           <a href="./login.html">
-          <img src='./public/images/login.svg' alt="login">
-          <p>LOG IN</p>
+            <img src='./public/images/login.svg' alt="login">
+            <p>LOG IN</p>
+
           </a>
         </div>
+
         <div>
-          <a href="./cadastroloja.html">
-          <img src="./public/images/lojista.svg" alt="login lojista">
-          <p>VENDA CONOSCO</p>
+
+          <a href="./cadastroLoja.html">
+            <img src="./public/images/lojista.svg" alt="login lojista">
+            <p>VENDA CONOSCO</p>
+
           </a>
         </div>
+
         <div>
-          <a href="./carrinho-sacola.html">
-          <img src="./public/images/carrinho.svg" alt="carrinho">
-          <p>SEU CARRINHO</p>
+          <a href="./carrinhoSacola.html">
+
+            <img src="./public/images/carrinho.svg" alt="carrinho">
+            <p>SEU CARRINHO</p>
           </a>
         </div>
+
       </div>
     </section>
 
     <section class="buscamobile">
       <p>busca:</p>
-      <input type="text">
-      <a href="./resultadobusca.html"><img src="./public/images/search-icon.png" alt="search"></a>
+
+      <input type="text" id="campobuscamobile">
+
+      <a href="./resultadoBusca.html" id="botaobuscarmobile"><img src="./public/images/search-icon.png"
+          alt="search"></a>
     </section>
 
   </header>
-    
-    <section class="header-menu">
-        <a href="">
-          ROUPAS
-        </a>
-        <a href="">
-          LIVROS
-        </a>
-        <a href="">
-          CALÇADOS
-        </a>
-        <a href="">
-          ACESSÓRIOS
-        </a>
-        <a href="">
-          PARA A CASA
-        </a>
-        <a href="">
-          ESPORTE
-        </a>
+
+  <section class="header-menu">
+    <a href="./resultadoBusca.html">ROUPAS</a>
+    <a href="./resultadoBusca.html">LIVROS</a>
+    <a href="./resultadoBusca.html">CALÇADOS</a>
+    <a href="./resultadoBusca.html">ACESSÓRIOS</a>
+    <a href="./resultadoBusca.html">PARA A CASA</a>
+    <a href="./resultadoBusca.html">ESPORTE</a>
+  </section>
+
+  <main class="paginacliente">
+    <section class="containergeral">
+      <h1 class="bemvindo">Seja Bem-Vindo, Cássio!</h1>
+      <div class="containersecundario">
+        <div class="menu-cliente">
+          <a id="irparainicio">Início</a>
+          <a id="irparapedidos">Meus Pedidos</a>
+          <a id="irparadesejos">Lista de Desejos</a>
+          <a id="irparadados">Alterar Dados Cadastrais</a>
+          <a id="irparaenderecos">Endereços</a>
+          <a id="irparavale">Vale Compras</a>
+          <a href="./login.html">Sair</a>
+        </div>
+
+        <div class="containerterciario" id="inicio">
+
+          <div class="pedidosrecentes">
+            <p><b>Seus Pedidos Recentes:</b></p>
+
+
+            <a href="./produto1.html">
+              <div class="container">
+                <img src="./public/images/calca-bege.png" alt="Calça Bege">
+                <h1>
+                  Calça Bege
+                </h1>
+                <div class="precos">
+                  <ul>
+
+                    <li class="preco-antes">
+                      R$ 110.00
+                    </li>
+                    <li class="preco-agora">R$ 99.00
+                    </li>
+                    <li class="off">
+                      10% OFF
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+            </a>
+
+            <a href="./produto7.html">
+              <div class="container">
+                <img src="./public/images/20220409193700-tênis-top-1.jpeg" alt="Tênis Top">
+                <h1>
+                  Tênis Top
+                </h1>
+                <div class="precos">
+                  <ul>
+
+                    <li class="preco-agora">R$ 650.00
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+            </a>
+
+
+          </div>
+
+          <div class="buscasrecentes">
+            <p><b>Suas Buscas Recentes:</b></p>
+
+
+            <p>Você ainda não visitou nenhum produto enquanto logado.</p>
+
+
+
+
+
+
+
+          </div>
+
+        </div>
+
+        <div class="containerterciario" id="pedidos">
+          <div class="pedidosrecentes">
+            <p><b>Seus Pedidos Recentes:</b></p>
+            <table>
+              <tr>
+                <th>Número</th>
+                <th>Loja</th>
+                <th>Quantidade</th>
+                <th>Produto</th>
+                <th>Valor Unitário</th>
+                <th>Frete</th>
+                <th>Total Produto (R$)</th>
+                <th>Total Pedido (R$)</th>
+                <th>Data Pedido</th>
+                <th>Data Processamento</th>
+                <th>Data Transporte</th>
+                <th>Data Entrega</th>
+              </tr>
+
+
+              <tr>
+
+
+                <td rowspan="2">
+                  1
+                </td>
+
+
+
+
+                <td rowspan="2">
+                  DO$
+                </td>
+
+
+                <td>
+                  1
+                </td>
+                <td>
+                  Calça Bege
+                </td>
+                <td>
+                  99.00
+                </td>
+                <td>
+                  20
+                </td>
+                <td>
+                  99.00
+                </td>
+                <td>
+                  299.00
+                </td>
+
+
+                <td rowspan="2">
+                  01/12/2021
+                </td>
+
+
+
+
+
+
+                <td rowspan="2">
+                  2/12/2021
+                </td>
+
+
+
+
+
+
+
+                <td rowspan="2">
+                  5/12/2021
+                </td>
+
+
+
+
+
+
+
+                <td rowspan="2">
+                  23/12/2021
+                </td>
+
+
+
+              </tr>
+
+              <tr>
+
+
+
+
+
+
+                <td>
+                  2
+                </td>
+                <td>
+                  Colete masculino moletom
+                </td>
+                <td>
+                  160.00
+                </td>
+                <td>
+                  20
+                </td>
+                <td>
+                  320.00
+                </td>
+                <td>
+                  299.00
+                </td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              </tr>
+
+
+
+              <tr>
+
+                <td>
+                  2
+                </td>
+
+
+                <td>
+                  DO$
+                </td>
+
+                <td>
+                  1
+                </td>
+                <td>
+                  Anel Solitário de Prata Diamond
+                </td>
+                <td>
+                  484.50
+                </td>
+                <td>
+                  12
+                </td>
+                <td>
+                  484.50
+                </td>
+                <td>
+                  80.00
+                </td>
+
+                <td>
+                  28/01/2022
+                </td>
+
+
+
+
+                <td>
+                  28/1/2022
+                </td>
+
+
+
+
+
+                <td>
+                  31/1/2022
+                </td>
+
+
+
+
+
+                <td>-</td>
+
+
+              </tr>
+
+
+
+              <tr>
+
+                <td>
+                  5
+                </td>
+
+
+                <td>
+                  DO$
+                </td>
+
+                <td>
+                  4
+                </td>
+                <td>
+                  Calça Bege
+                </td>
+                <td>
+                  99.00
+                </td>
+                <td>
+                  27.7
+                </td>
+                <td>
+                  396.00
+                </td>
+                <td>
+                  126.70
+                </td>
+
+                <td>
+                  27/04/2022
+                </td>
+
+
+
+
+                <td>
+                  27/4/2022
+                </td>
+
+
+
+
+
+                <td>-</td>
+
+
+
+
+
+                <td>-</td>
+
+
+              </tr>
+
+
+            </table>
+          </div>
+        </div>
+
+        <div class="containerterciario" id="desejos">
+          <p><b>Lista de Desejos Aqui</b></p>
+
+        </div>
+
+        <div class="containerterciario" id="dados">
+
+          <p><b>Altere seus dados Cadastrais:</b></p>
+          <form action="" method="get" class="cadastrousuario">
+            <input type="number" name="idUsuario" hidden value=1>
+            <div class="formrow">
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" name="email" value=cassio@email.com>
+            </div>
+            <div class="formrow">
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome" name="nome" value=Cássio>
+            </div>
+            <div class="formrow">
+              <label for="sobrenome">Sobrenome:</label>
+              <input type="text" id="sobrenome" name="sobrenome" value=Santini>
+            </div>
+            <div class="formrow">
+              <label for="dataNasc">Data de Nascimento:</label>
+              <input type="date" id="dataNasc" name="dataNasc" value=2022-04-27>
+            </div>
+            <div class="formrow">
+              <label for="cpf">CPF:</label>
+              <input type="text" id="cpf" name="cpf" disabled value=12312312310>
+            </div>
+            <div class="formrow">
+              <label for="password">Alterar Senha:</label>
+              <input type="password" id="password" name="senha">
+            </div>
+            <div class="formrow">
+              <label for="password">Confirma Nova Senha:</label>
+              <input type="password" id="confirmapassword" name="confirmasenha">
+            </div>
+            <button type="submit" id="submit">Alterar Dados</button>
+          </form>
+
+          <p><b>Adicione/Altere sua Foto de Perfil:</b></p>
+          <form action="" method="get" class="fotoPerfil"
+            enctype="multipart/form-data">
+            <input type="number" name="idUsuario" hidden value=1>
+            <button type="button" onclick="document.getElementById('fotoPerfil').click()">
+
+              <img src="./public/profilepics/cassio.jpg" class="fotoPerfil" id="perfilUsuario">
+
+            </button>
+            <input type="file" id="fotoPerfil" accept=".png, .jpg" name="perfil" style="display: none;">
+            <button type="submit" id="submitPerfil">Alterar Dados</button>
+          </form>
+
+          <p><b>Deletar conta</b></p>
+          <form action="/deletarCliente/1?_method=DELETE" method="POST" class="fotoPerfil">
+            <div>
+              <input type="checkbox" name="confirmadeletausuario" value="confirma" id="confirmadeletausuario">
+              <label for="confirmadeletausuario">Ao clicar aqui, você confirma que está ciente que a deleção de seu
+                usuário é irreversível</label>
+            </div>
+            <button type="submit" id="botaoDeletaUsuario">Deletar Conta</button>
+          </form>
+
+        </div>
+
+        <div class="containerterciario" id="enderecos">
+          <p><b>Seus Endereços:</b></p>
+          <ul>
+
+            <li>
+              Rua João das Neves, 123, apt 01, Birigui/
+              São Paulo - CEP: 16200001
+              <form action="" method="get">
+                <button type="submit"><img src="./public/icon/carrinho-lixeira.png" alt="excluir"></button>
+              </form>
+            </li>
+
+          </ul>
+          <p><b>Adicione Aqui um Endereço:</b></p>
+          <form action="" method="get" class="cadastrousuario">
+            <input type="number" name="idUsuario" hidden value=1>
+            <div class="formrow">
+              <label for="cep">CEP:</label>
+              <input type="number" id="cep" name="cep">
+            </div>
+            <div class="formrow">
+              <label for="logradouro">Logradouro:</label>
+              <input type="text" id="logradouro" name="logradouro">
+            </div>
+            <div class="formrow">
+              <label for="numero">Número:</label>
+              <input type="number" id="numero" name="numero">
+            </div>
+            <div class="formrow">
+              <label for="complemento">Complemento:</label>
+              <input type="text" id="complemento" name="complemento">
+            </div>
+            <div class="formrow">
+              <label for="cidade">Cidade:</label>
+              <input type="text" id="cidade" name="cidade">
+            </div>
+            <div class="formrow">
+              <label for="estado">Estado:</label>
+              <input type="text" id="estado" name="estado">
+            </div>
+            <button type="submit" id="botaoCadastraEndereco">Cadastrar Novo Endereço</button>
+          </form>
+        </div>
+
+        <div class="containerterciario" id="vale">
+          <p><b>Você não possui nenhum vale-presente no momento</b></p>
+        </div>
+
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="./public/scripts/cliente.js"></script>
+  <script src="./public/scripts/validateCliente.js"></script>
+  <script src="./public/api/validaCep.js"></script>
+
+  <footer>
+    <section class="fbutton">
+      <a href="./sobre.html">
+        SOBRE A <img src="./public/images/logo-mini.svg" alt="Mini Logo DO$">
+      </a>
+      <a href="./faleConosco.html">
+        FALE CONOSCO
+      </a>
+      <a href="./trabalheConosco.html">
+        TRABALHE CONOSCO
+      </a>
+      <a href="./faq.html">
+        FAQ
+      </a>
+    </section>
+    <section class="mlogo">
+      <a href="./index.html"><img src="./public/images/logo-mini.svg" alt="Mino Logo DO$"></a>
     </section>
 
-    <main class="paginacliente">
-        <section class="containergeral">
-            <h1 class="bemvindo">Seja Bem-Vindo, Juvenal!</h1>
-            <div class="containersecundario">
-                <div class="menu-cliente">
-                    <a href="">Acompanhe seus Pedidos</a>
-                    <a href="">Meus Pedidos</a>
-                    <a href="">Lista de Desejos</a>
-                    <a href="">Alterar Dados Cadastrais</a>
-                    <a href="">Endereços</a>
-                    <a href="">Vale Compras</a>
-                </div>
-                <div class="pedidosrecentes">
-                    <p><b>Seus Pedidos Recentes:</b></p>
-                    <a href="./produto.html"><div class="container">
-                        <img src="./public/images/calca-bege.png" alt="Calça Bege">
-                        <h1>Calça Bege</h1>
-                        <div class="precos">
-                          <ul>
-                            <li class="preco-antes">R$ 111,00</li>
-                            <li class="preco-agora">R$ 100,00</li>
-                            <li class="off">10% OFF</li>
-                          </ul>
-                        </div>
-                        </div>
-                    </a>
-                    <a href="./produto.html"><div class="container">
-                      <img src="./public/images/calca-bege.png" alt="Calça Bege">
-                      <h1>Calça Bege</h1>
-                      <div class="precos">
-                        <ul>
-                          <li class="preco-antes">R$ 111,00</li>
-                          <li class="preco-agora">R$ 100,00</li>
-                          <li class="off">10% OFF</li>
-                        </ul>
-                      </div>
-                      </div>
-                  </a>
-                </div>
-                <div class="buscasrecentes">
-                    <p><b>Suas Buscas Recentes:</b></p>
-                    <a href="./produto.html"><div class="container">
-                      <img src="./public/images/calca-bege.png" alt="Calça Bege">
-                      <h1>Calça Bege</h1>
-                      <div class="precos">
-                        <ul>
-                          <li class="preco-antes">R$ 111,00</li>
-                          <li class="preco-agora">R$ 100,00</li>
-                          <li class="off">10% OFF</li>
-                        </ul>
-                      </div>
-                      </div>
-                  </a>
-                  <a href="./produto.html"><div class="container">
-                    <img src="./public/images/calca-bege.png" alt="Calça Bege">
-                    <h1>Calça Bege</h1>
-                    <div class="precos">
-                      <ul>
-                        <li class="preco-antes">R$ 111,00</li>
-                        <li class="preco-agora">R$ 100,00</li>
-                        <li class="off">10% OFF</li>
-                      </ul>
-                    </div>
-                    </div>
-                  </a>
-                </div>
-            </div>
-        </section>
-      </main>
+    <section class="fmobile">
+      <div class="fmenu">
+        <p>Menu</p>
+        <div class="contentfmenu">
+          <a href="./login.html">Login</a>
+          <a id="categoriamobile" href="./resultadoBusca.html">Categorias</a>
+          <a href="./sobre.html">Sobre</a>
+          <a href="./faleConosco.html">Fale Conosco</a>
+          <a href="./trabalheConosco.html">Trabalhe Conosco</a>
+          <a href="./faq.html">FAQ</a>
+        </div>
 
-    <footer>
-        <section class="fbutton">
-        <a href="./sobre.html">
-            SOBRE A <img src="./public/images/logo-mini.svg" alt="Mini Logo DO$">
-        </a>
-        <a href="./contato.html">
-            FALE CONOSCO
-        </a>
-        <a href="./trabalheconosco.html">
-            TRABALHE CONOSCO
-        </a>
-        <a href="./faq.html">
-            FAQ
-        </a>
-        </section>
-        <section class="mlogo">
-        <a href="/home.html"><img src="./public/images/logo-mini.svg" alt="Mini Logo DO$"></a>
-        </section>
-
-        <section class="fmobile">
-          <div class="fmenu">
-              <p>Menu</p>
-              <div class="contentfmenu">
-                  <a href="./login.html">Login</a>
-                  <a href="">Categorias</a>
-                  <a href="./sobre.html">Sobre</a>
-                  <a href="./contato.html">Fale Conosco</a>
-                  <a href="./trabalheconosco.html">Trabalhe Conosco</a>
-                  <a href="./faq.html">FAQ</a>
-              </div>
-          </div>
-          <a href="#">Voltar ao Topo</a>
-    </footer>
+        <div class="categoriasmobile" id="divcategoriasmobile">
+          <a style="font-weight: 100;" id="fechar">FECHAR</a>
+          <a href="./resultadoBusca.html">ROUPAS</a>
+          <a href="./resultadoBusca.html">LIVROS</a>
+          <a href="./resultadoBusca.html">CALÇADOS</a>
+          <a href="./resultadoBusca.html">ACESSÓRIOS</a>
+          <a href="./resultadoBusca.html">PARA A CASA</a>
+          <a href="./resultadoBusca.html">ESPORTE</a>
+        </div>
+      </div>
+      <a href="#">Voltar ao Topo</a>
+    </section>
+  </footer>
 
 </body>
 

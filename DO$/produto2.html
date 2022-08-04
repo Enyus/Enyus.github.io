@@ -77,71 +77,72 @@
         <a href="./resultadoBusca.html">ESPORTE</a>
     </section>
 
-
-    <main class="trabalheconosco">
+    <main class="paginaproduto">
         <section class="containergeral">
-            <h1>Trabalhe na <img src="./public/images/logo-mini.svg" alt="mini logo"></h1>
+            <h1> Colete masculino moletom </h1>
+            <div class="produto">
+                <div class="fotosproduto">
+                    <div class="miniimg">
 
-            <h2 style='text-align:center'></h2>
+                        <button onclick="expand()"><img src="./public/images/202203021257-colete-moletom-1.jpeg" alt="Colete masculino moletom"></button>
 
-            <div class="containersecundario">
-                <div class="form">
-                    <p>Cadastre-se a uma de nossas vagas:</p>
-                    <form action="" method="" enctype="multipart/form-data">
-                        <div class="formrow">
-                            <label for="email">E-mail:</label>
-                            <input type="email" id="email" name="email">
+                        <button onclick="expand()"><img src="./public/images/202203021257-colete-moletom-2.jpeg" alt="Colete masculino moletom"></button>
+
+                    </div>
+                    <div class="focoimg"></div>
+                </div>
+                <div class="descgeral">
+                    <h2 class="preco-agora">Preço: R$ 80.00 </h2>
+
+                    <br>
+
+                    <div class="subcontainer">
+                        <div class="desc">
+                            <p> Colete Masculino Em Moletom com Capuz, Modelagem Slim. </p>
+                            <strong>Informações Técnicas:</strong>
+
+                            <p><b> Manga: </b> Cavada </p>
+
+                            <p><b> Cor: </b> Mescla </p>
+
                         </div>
-                        <div class="formrow">
-                            <label for="nome">Nome Completo:</label>
-                            <input type="text" id="nome" name="nome">
-                        </div>
-                        <div class="formrow">
-                            <label for="departamentos">Departamentos:</label>
-                            <select id="departamentos" name="departamento">
-                                <option selected disabled value="escolha">Escolha</option>
-                                <option value="adm">Administração</option>
-                                <option value="dev">Developer</option>
-                                <option value="mkt">Marketing</option>
-                                <option value="fin">Financeiro</option>
-                            </select>
-                        </div>
-                        <div class="formrow">
-                            <label for="disp">Disponibilidade:</label>
-                            <ul id="disp">
-                                <li><input type="radio" id="4h" name="disp" value="4h"><label for="4h">4 horas</label>
-                                </li>
-                                <li><input type="radio" id="8h" name="disp" value="8h"><label for="8h">8 horas</label>
-                                </li>
-                                <li><input type="radio" id="freela" name="disp" value="freela"><label
-                                        for="freela">Freela</label></li>
-                            </ul>
-                        </div>
-                        <div class="formrow">
-                            <label for="mensagem">Mensagem:</label>
-                            <textarea id="mensagem" name="mensagem"></textarea>
-                        </div>
-                        <div class="formrow">
-                            <label for="curriculo">Currículo:</label>
-                            <div class="upload">
-                                <button type="button" id="curriculo"
-                                    onclick="document.getElementById('fileupload').click()">upload</button>
-                                <input type="file" id="fileupload" accept=".pdf" name="curriculo">
+                        <div class="comprar">
+                            <form action="" method="">
+                                <input type="text" name="idProduto" hidden value="4">
+                                <input type="text" name="cepLoja" hidden value="01030010">
+                                <input type="text" name="cep" id="CEP" placeholder="Insira seu CEP">
+                                <button type="submit">Calcular Frete</button>
+                            </form>
+                            <p>Frete: R$ -</p>
+
+
+                            <p class="total">Total: R$ 80.00 </p>
+
+                            <div class="compra">
+                                <form action="" method="">
+                                    <input type="number" hidden name="idProduto" value="4">
+                                    <input type="text" hidden name="source" value="/produto/4">
+
+                                    <input type="text" hidden name="frete" value="0">
+
+                                    <button type="submit">Adicionar ao Carrinho</button>
+                                </form>
+                                <form action="" method="">
+                                    <input type="number" hidden name="idProduto" value="4">
+
+                                    <input type="text" hidden name="frete" value="0">
+
+                                    <button type="submit">Comprar</button>
+                                </form>
                             </div>
                         </div>
-
-                        <button type="submit" id="submit">Enviar</button>
-                    </form>
-                </div>
-                <div class="imagem">
-                    <img src="./public/images/trabalhe-conosco.png" alt="trabalhe conosco">
-                    <h2>Faça parte de uma equipe dinâmica que quer sempre estar a frente do mercado digital!</h2>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <script src="./public/scripts/validateTrabalheConoso.js"></script>
+    <script src="./public/scripts/paginaProduto.js"></script>
 
     <footer>
         <section class="fbutton">

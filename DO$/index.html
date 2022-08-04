@@ -1,239 +1,227 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="pt-br">
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Outlet $</title>
-    <link rel='stylesheet' href='./public/stylesheets/style.css' />
-  </head>
+    <link rel="shortcut icon" href="./public/icon/favicon.png">
+    <link rel="stylesheet" href="./public/stylesheets/style.css">
+    <link rel="stylesheet" href="./public/stylesheets/header.css">
+    <link rel="stylesheet" href="./public/stylesheets/footer.css">
+</head>
 
 <body>
-
   <header>
     <section class="header-principal">
       <div class="logo">
-        <a href="./home.html"><img src="./public/images/logo.png" alt="Logo DO$"></a>
+        <a href="./index.html"><img src="./public/images/logo.png" alt="Logo DO$"></a>
       </div>
       <div class="busca">
         <p>Pesquise sua marca/produto:</p>
-        <input type="text">
-        <a href="./resultadobusca.html"><img src="./public/images/search-icon.png" alt="search"></a>
+        
+            <input type="text" id="campobusca">
+            
+              <a href="./resultadoBusca.html" id="botaobuscar"><img src="./public/images/search-icon.png" alt="search"></a>
       </div>
       <div class="hbutton">
+
         <div>
-          <a href="./login.html">
-          <img src='./public/images/login.svg' alt="login">
-          <p>LOG IN</p>
+          
+                      <a href="./login.html">
+                        <img src='./public/images/login.svg' alt="login">
+                        <p>LOG IN</p>
+                      </a>
+        </div>
+
+        <div>
+                      <a href="./cadastroLoja.html">
+                        <img src="./public/images/lojista.svg" alt="login lojista">
+                        <p>VENDA CONOSCO</p>
+                      </a>
+        </div>
+
+        <div>
+          <a href="./carrinhoSacola.html">
+                <img src="./public/images/carrinho.svg" alt="carrinho">
+                <p>SEU CARRINHO</p>
           </a>
         </div>
-        <div>
-          <a href="./cadastroloja.html">
-          <img src="./public/images/lojista.svg" alt="login lojista">
-          <p>VENDA CONOSCO</p>
-          </a>
-        </div>
-        <div>
-          <a href="./carrinho-sacola.html">
-          <img src="./public/images/carrinho.svg" alt="carrinho">
-          <p>SEU CARRINHO</p>
-          </a>
-        </div>
+
       </div>
     </section>
 
     <section class="buscamobile">
       <p>busca:</p>
-      <input type="text">
-      <a href="./resultadobusca.html"><img src="./public/images/search-icon.png" alt="search"></a>
+      
+          <input type="text" id="campobuscamobile">
+          
+            <a href="./resultadoBusca.html" id="botaobuscarmobile"><img src="./public/images/search-icon.png" alt="search"></a>
     </section>
 
   </header>
-    
-    <section class="header-menu">
-        <a href="">
-          ROUPAS
-        </a>
-        <a href="">
-          LIVROS
-        </a>
-        <a href="">
-          CALÇADOS
-        </a>
-        <a href="">
-          ACESSÓRIOS
-        </a>
-        <a href="">
-          PARA A CASA
-        </a>
-        <a href="">
-          ESPORTE
-        </a>
-    </section>
 
-    <!-- Este menu aside só deve estar nas páginas estáticas de html -->
-    <aside class="estatica">
-      <p>>></p>
-      <div class="content">
-        <p>Todas as Páginas</p>
-        <a href="./cadastroloja.html">Cadastro Loja</a>
-        <a href="./cadastroproduto.html">Cadastro do Produto</a>
-        <a href="./cadastrousuario.html">Cadastro do Usuário</a>
-        <a href="./carrinho-sacola.html">Carrinho - Sacola</a>
-        <a href="./carrinho-identificacao.html">Carrinho - Identificação</a>
-        <a href="./carrinho-entrega.html">Carrinho - Entrega</a>
-        <a href="./carrinho-pagamento.html">Carrinho - Pagamento</a>
-        <a href="./contato.html">Contato</a>
-        <a href="./faq.html">Dúvidas Frequentes (FAQ)</a>
-        <a href="./home.html">Home</a>
-        <a href="./login.html">Login</a>
-        <a href="./paginacliente.html">Página do Cliente</a>
-        <a href="./paginaloja.html">Página do Lojista</a>
-        <a href="./produto.html">Página do Produto</a>
-        <a href="./resultadobusca.html">Página de Resultado de Buscas</a>
-        <a href="./sobre.html">Sobre</a>
-        <a href="./trabalheconosco.html">Trabalhe Conosco</a>
-      </div>
-    </aside>
-    <!-- Este menu aside só deve estar nas páginas estáticas de html -->
+  <section class="header-menu">
+    <a href="./resultadoBusca.html">ROUPAS</a>
+    <a href="./resultadoBusca.html">LIVROS</a>
+    <a href="./resultadoBusca.html">CALÇADOS</a>
+    <a href="./resultadoBusca.html">ACESSÓRIOS</a>
+    <a href="./resultadoBusca.html">PARA A CASA</a>
+    <a href="./resultadoBusca.html">ESPORTE</a>
+  </section>
 
     <main>
- 
-        <section class="banner">
-          <img src="./public/images/banner.png" alt="banner">
-        </section>
-  
-        <section class="ofertas">
-          <div class="ofertasrow">
-            <a href="./produto.html"><div class="container">
-            <img src="./public/images/calca-bege.png" alt="Calça Bege">
-            <h1>Calça Bege</h1>
-            <div class="precos">
-              <ul>
-                <li class="preco-antes">R$ 111,00</li>
-                <li class="preco-agora">R$ 100,00</li>
-                <li class="off">10% OFF</li>
-              </ul>
-            </div>
-            </div></a>
-            <a href="./produto.html"><div class="container">
-            <img src="./public/images/calca-bege.png" alt="Calça Bege">
-            <h1>Calça Bege</h1>
-            <div class="precos">
-              <ul>
-                <li class="preco-antes">R$ 111,00</li>
-                <li class="preco-agora">R$ 100,00</li>
-                <li class="off">10% OFF</li>
-              </ul>
-            </div>
-            </div></a>
-            <a href="./produto.html"><div class="container">
-              <img src="./public/images/calca-bege.png" alt="Calça Bege">
-              <h1>Calça Bege</h1>
-              <div class="precos">
-                <ul>
-                  <li class="preco-antes">R$ 111,00</li>
-                  <li class="preco-agora">R$ 100,00</li>
-                  <li class="off">10% OFF</li>
-                </ul>
-              </div>
-            </div></a>
-            <a href="./produto.html"><div class="container">
-              <img src="./public/images/calca-bege.png" alt="Calça Bege">
-              <h1>Calça Bege</h1>
-              <div class="precos">
-                <ul>
-                  <li class="preco-antes">R$ 111,00</li>
-                  <li class="preco-agora">R$ 100,00</li>
-                  <li class="off">10% OFF</li>
-                </ul>
-              </div>
-            </div></a>
-          </div>
-          <div class="ofertasrow">
-            <a href="./produto.html"><div class="container">
-              <img src="./public/images/calca-bege.png" alt="Calça Bege">
-              <h1>Calça Bege</h1>
-              <div class="precos">
-                <ul>
-                  <li class="preco-antes">R$ 111,00</li>
-                  <li class="preco-agora">R$ 100,00</li>
-                  <li class="off">10% OFF</li>
-                </ul>
-              </div>
-            </div></a>
-            <a href="./produto.html"><div class="container">
-              <img src="./public/images/calca-bege.png" alt="Calça Bege">
-              <h1>Calça Bege</h1>
-              <div class="precos">
-                <ul>
-                  <li class="preco-antes">R$ 111,00</li>
-                  <li class="preco-agora">R$ 100,00</li>
-                  <li class="off">10% OFF</li>
-                </ul>
-              </div>
-            </div></a>
-            <a href="./produto.html"><div class="container">
-              <img src="./public/images/calca-bege.png" alt="Calça Bege">
-              <h1>Calça Bege</h1>
-              <div class="precos">
-                <ul>
-                  <li class="preco-antes">R$ 111,00</li>
-                  <li class="preco-agora">R$ 100,00</li>
-                  <li class="off">10% OFF</li>
-                </ul>
-              </div>
-            </div></a>
-            <a href="./produto.html"><div class="container">
-              <img src="./public/images/calca-bege.png" alt="Calça Bege">
-              <h1>Calça Bege</h1>
-              <div class="precos">
-                <ul>
-                  <li class="preco-antes">R$ 111,00</li>
-                  <li class="preco-agora">R$ 100,00</li>
-                  <li class="off">10% OFF</li>
-                </ul>
-              </div>
-            </div></a>
-          </div>
-        
-        </section>
+      <section class="banner">
+        <img src="./public/images/banner.png" alt="banner">
+      </section>
 
+      <section class="ofertas">
+        <div class="ofertasrow">
+          
+            <a href="./produto1.html" ><div class="container">
+            <img src="./public/images/calca-bege.png" alt='Calça Bege' >
+            <h1>Calça Bege</h1>
+            <div class="precos">
+              <ul>
+                  <li class="preco-antes">R$ 110.00</li>
+                  <li class="preco-agora">R$ 99.00 </li>
+                  <li class="off">10% OFF</li>
+              </ul>
+            </div>
+            </div></a>
+          
+            <a href="./produto2.html" ><div class="container">
+            <img src="./public/images/202203021257-colete-moletom-1.jpeg" alt='Colete masculino moletom' >
+            <h1>Colete masculino moletom</h1>
+            <div class="precos">
+              <ul>
+                  <li class="preco-agora">R$ 80.00 </li>
+              </ul>
+            </div>
+            </div></a>
+          
+            <a href="./produto3.html" ><div class="container">
+            <img src="./public/images/202203021259-terno-off-white-masculino-1.jpeg" alt='Paletó Off White Masculino' >
+            <h1>Paletó Off White Masculino</h1>
+            <div class="precos">
+              <ul>
+                
+                  <li class="preco-agora">R$ 220.00 </li>
+                
+              </ul>
+            </div>
+            </div></a>
+          
+            <a href="./produto4.html" ><div class="container">
+            <img src="./public/images/202203031007-regata1.jpg" alt="REGATA ESPORTIVA SEM ESTAMPA CINZA" >
+            <h1>REGATA ESPORTIVA SEM ESTAMPA CINZA</h1>
+            <div class="precos">
+              <ul>
+                
+                  <li class="preco-antes">R$ 55.00</li>
+                  <li class="preco-agora">R$ 53.90 </li>
+                  <li class="off">2% OFF</li>
+                
+              </ul>
+            </div>
+            </div></a>
+          
+            <a href="./produto5.html" ><div class="container">
+            <img src="./public/images/202203031044-homemmaisrico1.jpg" alt='O homem mais rico da Babilônia' >
+            <h1>O homem mais rico da Babilônia</h1>
+            <div class="precos">
+              <ul>
+                
+                  <li class="preco-agora">R$ 40.00 </li>
+                
+              </ul>
+            </div>
+            </div></a>
+          
+            <a href="./produto6.html" ><div class="container">
+            <img src="./public/images/202203031046-mulherescorremlobos1.jpg" alt='Mulheres que correm com os lobos' >
+            <h1>Mulheres que correm com os lobos</h1>
+            <div class="precos">
+              <ul>
+                
+                  <li class="preco-agora">R$ 46.00 </li>
+                
+              </ul>
+            </div>
+            </div></a>
+          
+            <a href="./produto7.html" ><div class="container">
+            <img src="./public/images/20220409193700-tênis-top-1.jpeg" alt='Tênis Top' >
+            <h1>Tênis Top</h1>
+            <div class="precos">
+              <ul>
+                
+                  <li class="preco-agora">R$ 650.00 </li>
+                
+              </ul>
+            </div>
+            </div></a>
+          
+            <a href="./produto8.html" ><div class="container">
+            <img src='./public/images/mesa-jantar-6-lugares.jpg' alt='Mesa de jantar retangular mel' >
+            <h1>Mesa de jantar retangular mel</h1>
+            <div class="precos">
+              <ul>
+                
+                  <li class="preco-agora">R$ 1500.00 </li>
+                
+              </ul>
+            </div>
+            </div></a>
+          
+        </div>
+      
+      </section>
     </main>
 
-  <footer>
-      <section class="fbutton">
-      <a href="./sobre.html">
-          SOBRE A <img src="./public/images/logo-mini.svg" alt="Mini Logo DO$">
-      </a>
-      <a href="./contato.html">
-          FALE CONOSCO
-      </a>
-      <a href="./trabalheconosco.html">
-          TRABALHE CONOSCO
-      </a>
-      <a href="./faq.html">
-          FAQ
-      </a>
-      </section>
-      <section class="mlogo">
-      <a href="/home.html"><img src="./public/images/logo-mini.svg" alt="Mini Logo DO$"></a>
-      </section>
+    <footer>
+        <section class="fbutton">
+        <a href="./sobre.html">
+            SOBRE A <img src="./public/images/logo-mini.svg" alt="Mini Logo DO$">
+        </a>
+        <a href="./faleConosco.html">
+            FALE CONOSCO
+        </a>
+        <a href="./trabalheConosco.html">
+            TRABALHE CONOSCO
+        </a>
+        <a href="./faq.html">
+            FAQ
+        </a>
+        </section>
+        <section class="mlogo">
+        <a href="./index.html"><img src="./public/images/logo-mini.svg" alt="Mino Logo DO$"></a>
+        </section>
 
-      <section class="fmobile">
-        <div class="fmenu">
-            <p>Menu</p>
-            <div class="contentfmenu">
-                <a href="./login.html">Login</a>
-                <a href="">Categorias</a>
-                <a href="./sobre.html">Sobre</a>
-                <a href="./contato.html">Fale Conosco</a>
-                <a href="./trabalheconosco.html">Trabalhe Conosco</a>
-                <a href="./faq.html">FAQ</a>
+        <section class="fmobile">
+            <div class="fmenu">
+                <p>Menu</p>
+                <div class="contentfmenu">
+                    <a href="./login.html">Login</a>
+                    <a href="./resultadoBusca.html" id="categoriamobile">Categorias</a>
+                    <a href="./sobre.html">Sobre</a>
+                    <a href="./faleConosco.html">Fale Conosco</a>
+                    <a href="./trabalheConosco.html">Trabalhe Conosco</a>
+                    <a href="./faq.html">FAQ</a>
+                </div>
+                <div class="categoriasmobile" id="divcategoriasmobile">
+                    <a style="font-weight: 100;" id="fechar">FECHAR</a>
+                    <a href="./resultadoBusca.html">ROUPAS</a>
+                    <a href="./resultadoBusca.html">LIVROS</a>
+                    <a href="./resultadoBusca.html">CALÇADOS</a>
+                    <a href="./resultadoBusca.html">ACESSÓRIOS</a>
+                    <a href="./resultadoBusca.html">PARA A CASA</a>
+                    <a href="./resultadoBusca.html">ESPORTE</a>
+                </div>
             </div>
-        </div>
-        <a href="#">Voltar ao Topo</a>
-  </footer>
+            <a href="#">Voltar ao Topo</a>
+        </section>
+    </footer>
 
 </body>
 

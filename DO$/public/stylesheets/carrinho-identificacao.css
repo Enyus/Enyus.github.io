@@ -1,39 +1,15 @@
 .carrinho-identificacao {
     margin: 0 25px 80px 25px;
-    display: flexbox;
+}
+
+.carrinho-identificacao .processo-da-compra .identificacao {
+    border-bottom: 4px solid #e84218
 }
 
 .carrinho-identificacao .container-identificacao {
     display: flex;
     justify-content: center;
 }
-
-
-.carrinho-identificacao .processo-da-compra div {
-    height: 45px;
-    margin: 25px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 0 280px;
-    background-color: #C4C4C4;
-}
-
-.carrinho-identificacao .processo-da-compra div a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    font-weight: 800;
-    transition: background-color 0.1s;
-}
-
-.carrinho-identificacao .processo-da-compra div a.identificacao {
-    border-bottom: 4px solid #e84218;
-}
-
 .container-identificacao .dados-pessoais {
     background-color: #f2f2f2;
     display: flex;
@@ -123,10 +99,13 @@
     background-color: #F1F1F1;
     width: 400px;
     height: 600px;
+    height: fit-content;
+    z-index: -1;
 }
 
 .container-identificacao .resumo-compra div {
     position: relative;
+    margin: 0 10px;
 }
 
 .container-identificacao .resumo-compra h3 {
@@ -199,6 +178,20 @@
 
 .carrinho-identificacao section.resumo-compra .ir-pagamento:hover {
     background-color: #fff2ef ;
+}
+
+.menu-carrinho {
+    height: 45px;
+    margin: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 280px;
+    background-color: #C4C4C4;
+}
+
+.menu-carrinho a {
+    margin: 0 10px;
 }
 
 /* Fazendo as alterações para mobile: */
