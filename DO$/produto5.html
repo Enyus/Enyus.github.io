@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
     <link rel="shortcut icon" href="./public/icon/favicon.png">
+    <link rel="stylesheet" href="./public/stylesheets/reset.css">
+    <link rel="stylesheet" href="./public/stylesheets/general.css">
     <link rel="stylesheet" href="./public/stylesheets/header.css">
-    <link rel="stylesheet" href="./public/stylesheets/style.css">
     <link rel="stylesheet" href="./public/stylesheets/footer.css">
 </head>
 
@@ -78,119 +79,128 @@
     </section>
 
 
-  <main class="paginaproduto">
-    <section class="containergeral">
-        <h1> O homem mais rico da Babilônia </h1>
-        <div class="produto">
-            <div class="fotosproduto">
-                <div class="miniimg">
-                    
-                        <button onclick="expand()"><img src="./public/images/202203031044-homemmaisrico1.jpg" alt="O homem mais rico da Babilônia" ></button>
-                    
-                </div>
-                <div class="focoimg"></div>
-            </div>
-            <div class="descgeral">
-                <h2 class="preco-agora">Preço: R$ 40.00 </h2>
-                
-                    <br>
-                
-                <div class="subcontainer">
-                    <div class="desc">
-                        <p> Com mais de dois milhões de exemplares vendidos no mundo todo, O homem mais rico da Babilônia é um clássico sobre como multiplicar riqueza e solucionar problemas financeiros. Baseando-se nos segredos de sucesso dos antigos babilônicos ― os habitantes da cidade mais rica e próspera de seu tempo ―, George S. Clason mostra soluções ao mesmo tempo sábias e muito atuais para evitar a falta de dinheiro, como não desperdiçar recursos durante tempos de opulência, buscar conhecimento e informação em vez de apenas lucro, assegurar uma renda para o futuro, manter a pontualidade no pagamento de dívidas e, sobretudo, cultivar as próprias aptidões, tornando-se cada vez mais habilidoso e consciente. </p>
-                        <strong>Informações Técnicas:</strong>
-                        
-                            <p><b> Autor(a): </b> George S Clason </p>
-                        
-                            <p><b> Capa: </b> Comum </p>
-                        
-                            <p><b> Edição: </b> padrão, 4 agosto 2017 </p>
-                        
-                            <p><b> Idioma: </b> Portugês </p>
-                        
+    <main class="paginaproduto">
+        <section class="containergeral">
+            <h1> O homem mais rico da Babilônia </h1>
+            <div class="produto">
+                <div class="fotosproduto">
+                    <div class="miniimg">
+
+                        <button onclick="expand()"><img src="./public/images/202203031044-homemmaisrico1.jpg"
+                                alt="O homem mais rico da Babilônia"></button>
+
                     </div>
-                    <div class="comprar">
-                        <form action="" method="">
-                            <input type="text" name="idProduto" hidden value="14">
-                            <input type="text" name="cepLoja" hidden value="01030010">
-                            <input type="text" name="cep" id="CEP" placeholder="Insira seu CEP">
-                            <button type="submit">Calcular Frete</button>
-                        </form>
-                        <p>Frete: R$ -</p>
-                        
-                        
-                            <p class="total">Total: R$ 40.00 </p>
-                        
-                        <div class="compra">
+                    <div class="focoimg"></div>
+                </div>
+                <div class="descgeral">
+                    <h2 class="preco-agora">Preço: R$ 40.00 </h2>
+
+                    <br>
+
+                    <div class="subcontainer">
+                        <div class="desc">
+                            <p> Com mais de dois milhões de exemplares vendidos no mundo todo, O homem mais rico da
+                                Babilônia é um clássico sobre como multiplicar riqueza e solucionar problemas
+                                financeiros. Baseando-se nos segredos de sucesso dos antigos babilônicos ― os habitantes
+                                da cidade mais rica e próspera de seu tempo ―, George S. Clason mostra soluções ao mesmo
+                                tempo sábias e muito atuais para evitar a falta de dinheiro, como não desperdiçar
+                                recursos durante tempos de opulência, buscar conhecimento e informação em vez de apenas
+                                lucro, assegurar uma renda para o futuro, manter a pontualidade no pagamento de dívidas
+                                e, sobretudo, cultivar as próprias aptidões, tornando-se cada vez mais habilidoso e
+                                consciente. </p>
+                            <strong>Informações Técnicas:</strong>
+
+                            <p><b> Autor(a): </b> George S Clason </p>
+
+                            <p><b> Capa: </b> Comum </p>
+
+                            <p><b> Edição: </b> padrão, 4 agosto 2017 </p>
+
+                            <p><b> Idioma: </b> Portugês </p>
+
+                        </div>
+                        <div class="comprar">
                             <form action="" method="">
-                                <input type="number" hidden name="idProduto" value="14">
-                                <input type="text" hidden name="source" value="/produto/14">
-                                
-                                    <input type="text" hidden name="frete" value="0">
-                                
-                                <button type="submit">Adicionar ao Carrinho</button>
+                                <input type="text" name="idProduto" hidden value="14">
+                                <input type="text" name="cepLoja" hidden value="01030010">
+                                <input type="text" name="cep" id="CEP" placeholder="Insira seu CEP">
+                                <button type="submit">Calcular Frete</button>
                             </form>
-                            <form action="" method="">
-                                <input type="number" hidden name="idProduto" value="14">
-                                
+                            <p>Frete: R$ -</p>
+
+
+                            <p class="total">Total: R$ 40.00 </p>
+
+                            <div class="compra">
+                                <form action="" method="">
+                                    <input type="number" hidden name="idProduto" value="14">
+                                    <input type="text" hidden name="source" value="/produto/14">
+
                                     <input type="text" hidden name="frete" value="0">
-                                
-                                <button type="submit">Comprar</button>
-                            </form>                          
+
+                                    <button type="submit">Adicionar ao Carrinho</button>
+                                </form>
+                                <form action="" method="">
+                                    <input type="number" hidden name="idProduto" value="14">
+
+                                    <input type="text" hidden name="frete" value="0">
+
+                                    <button type="submit">Comprar</button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-  </main>
+        </section>
+    </main>
 
-  <script src="./public/scripts/paginaProduto.js"></script>
+    <script src="./public/scripts/paginaProduto.js"></script>
 
-  <footer>
-    <section class="fbutton">
-      <a href="./sobre.html">
-        SOBRE A <img src="./public/images/logo-mini.svg" alt="Mini Logo DO$">
-      </a>
-      <a href="./faleConosco.html">
-        FALE CONOSCO
-      </a>
-      <a href="./trabalheConosco.html">
-        TRABALHE CONOSCO
-      </a>
-      <a href="./faq.html">
-        FAQ
-      </a>
-    </section>
-    <section class="mlogo">
-      <a href="./index.html"><img src="./public/images/logo-mini.svg" alt="Mino Logo DO$"></a>
-    </section>
+    <footer>
+        <section class="fbutton">
+            <a href="./sobre.html">
+                SOBRE A <img src="./public/images/logo-mini.svg" alt="Mini Logo DO$">
+            </a>
+            <a href="./faleConosco.html">
+                FALE CONOSCO
+            </a>
+            <a href="./trabalheConosco.html">
+                TRABALHE CONOSCO
+            </a>
+            <a href="./faq.html">
+                FAQ
+            </a>
+        </section>
+        <section class="mlogo">
+            <a href="./index.html"><img src="./public/images/logo-mini.svg" alt="Mino Logo DO$"></a>
+        </section>
 
-    <section class="fmobile">
-      <div class="fmenu">
-        <p>Menu</p>
-        <div class="contentfmenu">
-          <a href="./login.html">Login</a>
-          <a id="categoriamobile" href="./resultadoBusca.html">Categorias</a>
-          <a href="./sobre.html">Sobre</a>
-          <a href="./faleConosco.html">Fale Conosco</a>
-          <a href="./trabalheConosco.html">Trabalhe Conosco</a>
-          <a href="./faq.html">FAQ</a>
-        </div>
-
-        <div class="categoriasmobile" id="divcategoriasmobile">
-          <a style="font-weight: 100;" id="fechar">FECHAR</a>
-          <a href="./resultadoBusca.html">ROUPAS</a>
-          <a href="./resultadoBusca.html">LIVROS</a>
-          <a href="./resultadoBusca.html">CALÇADOS</a>
-          <a href="./resultadoBusca.html">ACESSÓRIOS</a>
-          <a href="./resultadoBusca.html">PARA A CASA</a>
-          <a href="./resultadoBusca.html">ESPORTE</a>
-        </div>
-      </div>
-      <a href="#">Voltar ao Topo</a>
-    </section>
-  </footer>
+        <section class="fmobile">
+            <div class="fmenu">
+                <p>Menu</p>
+                <div class="contentfmenu">
+                    <a href="./login.html">Login</a>
+                    <a id="categoriamobile">Categorias</a>
+                    <a href="./sobre.html">Sobre</a>
+                    <a href="./faleConosco.html">Fale Conosco</a>
+                    <a href="./trabalheConosco.html">Trabalhe Conosco</a>
+                    <a href="./faq.html">FAQ</a>
+                </div>
+                <div class="categoriasmobile" id="divcategoriasmobile">
+                    <a style="font-weight: 100;" id="fechar">FECHAR</a>
+                    <a href="./resultadoBusca.html">ROUPAS</a>
+                    <a href="./resultadoBusca.html">LIVROS</a>
+                    <a href="./resultadoBusca.html">CALÇADOS</a>
+                    <a href="./resultadoBusca.html">ACESSÓRIOS</a>
+                    <a href="./resultadoBusca.html">PARA A CASA</a>
+                    <a href="./resultadoBusca.html">ESPORTE</a>
+                </div>
+            </div>
+            <a href="#">Voltar ao Topo</a>
+        </section>
+        <script src="./public/scripts/botaoFooter.js"></script>
+    </footer>
 
 </body>
 

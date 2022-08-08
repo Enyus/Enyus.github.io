@@ -1,83 +1,88 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entrega</title>
     <link rel="shortcut icon" href="./public/icon/favicon.png">
-    <link rel="stylesheet" href="./public/stylesheets/style.css">
+    <link rel="stylesheet" href="./public/stylesheets/reset.css">
+    <link rel="stylesheet" href="./public/stylesheets/general.css">
     <link rel="stylesheet" href="./public/stylesheets/header.css">
+    <link rel='stylesheet' href='./public/stylesheets/carrinho-entrega.css'>
     <link rel="stylesheet" href="./public/stylesheets/footer.css">
-    <link rel='stylesheet' href='./public/stylesheets/carrinho-entrega.css' />
 </head>
-<body>
-  <header>
-    <section class="header-principal">
-      <div class="logo">
-        <a href="./index.html"><img src="./public/images/logo.png" alt="Logo DO$"></a>
-      </div>
-      <div class="busca">
-        <p>Pesquise sua marca/produto:</p>
-        
-            <input type="text" id="campobusca">
-            
-              <a href="./resultadoBusca.html" id="botaobuscar"><img src="./public/images/search-icon.png" alt="search"></a>
-      </div>
-      <div class="hbutton">
 
-        <div>
-          
-                      <a href="./login.html">
+<body>
+    <header>
+        <section class="header-principal">
+            <div class="logo">
+                <a href="./index.html"><img src="./public/images/logo.png" alt="Logo DO$"></a>
+            </div>
+            <div class="busca">
+                <p>Pesquise sua marca/produto:</p>
+
+                <input type="text" id="campobusca">
+
+                <a href="./resultadoBusca.html" id="botaobuscar"><img src="./public/images/search-icon.png"
+                        alt="search"></a>
+            </div>
+            <div class="hbutton">
+
+                <div>
+
+                    <a href="./login.html">
                         <img src='./public/images/login.svg' alt="login">
                         <p>LOG IN</p>
-                        
-                      </a>
-        </div>
 
-        <div>
-          
-                      <a href="./cadastroLoja.html">
+                    </a>
+                </div>
+
+                <div>
+
+                    <a href="./cadastroLoja.html">
                         <img src="./public/images/lojista.svg" alt="login lojista">
                         <p>VENDA CONOSCO</p>
-                        
-                      </a>
-        </div>
 
-        <div>
-          <a href="./carrinhoSacola.html">
-            
-              <p class="notificacaocarrinho">
-                        2
-              </p>
-              
-                <img src="./public/images/carrinho.svg" alt="carrinho">
-                <p>SEU CARRINHO</p>
-          </a>
-        </div>
+                    </a>
+                </div>
 
-      </div>
+                <div>
+                    <a href="./carrinhoSacola.html">
+
+                        <p class="notificacaocarrinho">
+                            2
+                        </p>
+
+                        <img src="./public/images/carrinho.svg" alt="carrinho">
+                        <p>SEU CARRINHO</p>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="buscamobile">
+            <p>busca:</p>
+
+            <input type="text" id="campobuscamobile">
+
+            <a href="./resultadoBusca.html" id="botaobuscarmobile"><img src="./public/images/search-icon.png"
+                    alt="search"></a>
+        </section>
+
+    </header>
+
+    <section class="header-menu">
+        <a href="./resultadoBusca.html">ROUPAS</a>
+        <a href="./resultadoBusca.html">LIVROS</a>
+        <a href="./resultadoBusca.html">CALÇADOS</a>
+        <a href="./resultadoBusca.html">ACESSÓRIOS</a>
+        <a href="./resultadoBusca.html">PARA A CASA</a>
+        <a href="./resultadoBusca.html">ESPORTE</a>
     </section>
 
-    <section class="buscamobile">
-      <p>busca:</p>
-      
-          <input type="text" id="campobuscamobile">
-          
-            <a href="./resultadoBusca.html" id="botaobuscarmobile"><img src="./public/images/search-icon.png" alt="search"></a>
-    </section>
-
-  </header>
-
-  <section class="header-menu">
-    <a href="./resultadoBusca.html">ROUPAS</a>
-    <a href="./resultadoBusca.html">LIVROS</a>
-    <a href="./resultadoBusca.html">CALÇADOS</a>
-    <a href="./resultadoBusca.html">ACESSÓRIOS</a>
-    <a href="./resultadoBusca.html">PARA A CASA</a>
-    <a href="./resultadoBusca.html">ESPORTE</a>
-  </section>
-    
     <main class="carrinho-entrega">
 
         <section class="processo-da-compra">
@@ -88,12 +93,13 @@
                 <a class="pagamento" href="./carrinhoPagamento.html">Pagamento</a>
             </div>
         </section>
-    
+
         <div class="container-entrega">
             <section class="dados-destinatario">
                 <div>
                     <h3>Dados do Destinatário</h3>
-                    <a href="./carrinhoSacola.html"><img src="./public/icon/carrinho-editar.png" alt="edit-destinatario"></a>
+                    <a href="./carrinhoSacola.html"><img src="./public/icon/carrinho-editar.png"
+                            alt="edit-destinatario"></a>
                 </div>
                 <p>Cássio S Santini</p>
                 <div class="contato">
@@ -104,19 +110,20 @@
             <section class="entrega">
                 <form action="./carrinhoPagamento.html" method="get" id="form">
                     <h3>Entrega</h3>
-                    
+
 
                     <div class="cep">
                         <label for="cep">CEP</label>
                         <div>
                             <input type="text" name="cep" id="cep" placeholder="xxxxx-xxx">
-                            <a class="nao-sei-cep" href="https://buscacepinter.correios.com.br/app/endereco/index.php" target="_blank">Não sei o CEP</a>
+                            <a class="nao-sei-cep" href="https://buscacepinter.correios.com.br/app/endereco/index.php"
+                                target="_blank">Não sei o CEP</a>
                         </div>
                     </div>
                     <div>
                         <label for="">Endereço de entrega</label>
                         <input type="text" name="logradouro" id="logradouro" class="endereco-entrega">
-                    </div>    
+                    </div>
                     <div class="numero-compl">
                         <div>
                             <div>
@@ -173,76 +180,76 @@
                 <div>
                     <table>
 
-                        
-                            <tr>
-                                <td class="img"><img src="./public/images/calca-bege.png" alt=""></td>
-                                <td class="produto">
-                                    <h3 class="label">Calça Bege</h3>
-                                    
-                                        
-                                        <div class="tamanho">
-                                            <h4 class="label">Cor:</h4>
-                                            <h4 class="dados">Bege</h4>
-                                        </div>
-                                        
-                                    
-                                        
-                                        <div class="tamanho">
-                                            <h4 class="label">Marca:</h4>
-                                            <h4 class="dados">Calças AÊ</h4>
-                                        </div>
-                                        
-                                    
-                                        
-                                        <div class="tamanho">
-                                            <h4 class="label">Tamanho:</h4>
-                                            <h4 class="dados">G</h4>
-                                        </div>
-                                        
-                                    
-                                        
-                                    
-                                        
-                                    
-                                </td>
-                                <td>
-                                    <h4>R$ 99.00</h4>
-                                </td>
-                            </tr>
-                        
-                            <tr>
-                                <td class="img"><img src="./public/images/20220409193700-tênis-top-1.jpeg" alt=""></td>
-                                <td class="produto">
-                                    <h3 class="label">Tênis Top</h3>
-                                    
-                                        
-                                        <div class="tamanho">
-                                            <h4 class="label">Cor:</h4>
-                                            <h4 class="dados">Preto ou Vermelho</h4>
-                                        </div>
-                                        
-                                    
-                                        
-                                        <div class="tamanho">
-                                            <h4 class="label">Estilo:</h4>
-                                            <h4 class="dados">Topzera</h4>
-                                        </div>
-                                        
-                                    
-                                        
-                                        <div class="tamanho">
-                                            <h4 class="label">Corte:</h4>
-                                            <h4 class="dados">Descolado</h4>
-                                        </div>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    <h4>R$ 650.00</h4>
-                                </td>
-                            </tr>
-                        
-                        
+
+                        <tr>
+                            <td class="img"><img src="./public/images/calca-bege.png" alt=""></td>
+                            <td class="produto">
+                                <h3 class="label">Calça Bege</h3>
+
+
+                                <div class="tamanho">
+                                    <h4 class="label">Cor:</h4>
+                                    <h4 class="dados">Bege</h4>
+                                </div>
+
+
+
+                                <div class="tamanho">
+                                    <h4 class="label">Marca:</h4>
+                                    <h4 class="dados">Calças AÊ</h4>
+                                </div>
+
+
+
+                                <div class="tamanho">
+                                    <h4 class="label">Tamanho:</h4>
+                                    <h4 class="dados">G</h4>
+                                </div>
+
+
+
+
+
+
+                            </td>
+                            <td>
+                                <h4>R$ 99.00</h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="img"><img src="./public/images/20220409193700-tênis-top-1.jpeg" alt=""></td>
+                            <td class="produto">
+                                <h3 class="label">Tênis Top</h3>
+
+
+                                <div class="tamanho">
+                                    <h4 class="label">Cor:</h4>
+                                    <h4 class="dados">Preto ou Vermelho</h4>
+                                </div>
+
+
+
+                                <div class="tamanho">
+                                    <h4 class="label">Estilo:</h4>
+                                    <h4 class="dados">Topzera</h4>
+                                </div>
+
+
+
+                                <div class="tamanho">
+                                    <h4 class="label">Corte:</h4>
+                                    <h4 class="dados">Descolado</h4>
+                                </div>
+
+
+                            </td>
+                            <td>
+                                <h4>R$ 650.00</h4>
+                            </td>
+                        </tr>
+
+
                     </table>
                 </div>
                 <div class="total">
@@ -253,43 +260,44 @@
                     <div>
                         <p>Taxa de entrega</p>
                         <p>à calcular</p>
-                        
+
                     </div>
                     <div class="total">
                         <p>Total</p>
-                        
-                            <p>R$ 749.00</p>
-                        
+
+                        <p>R$ 749.00</p>
+
                     </div>
                 </div>
                 <div>
-                    <button class="ir-pagamento" type="submit" id="submit" onclick="document.getElementById('ir-pagamento').click()">Ir para pagamento</button>
+                    <button class="ir-pagamento" type="submit" id="submit"
+                        onclick="document.getElementById('ir-pagamento').click()">Ir para pagamento</button>
                 </div>
             </section>
         </div>
     </main>
 
-<script src="./public/scripts/carrinhoEntrega.js"></script>
-<script src="./public/api/validaCep.js"></script>
+    <script src="./public/scripts/carrinhoEntrega.js"></script>
+    <script src="./public/api/validaCep.js"></script>
 
 
     <footer>
         <section class="fbutton">
-        <a href="./sobre.html">
-            SOBRE A <img src="./public/images/logo-mini.svg" alt="Mini Logo DO$">
-        </a>
-        <a href="./faleConosco.html">
-            FALE CONOSCO
-        </a>
-        <a href="./trabalheConosco.html">
-            TRABALHE CONOSCO
-        </a>
-        <a href="./faq.html">
-            FAQ
-        </a>
+            <a href="./sobre.html">
+                SOBRE A <img src="./public/images/logo-mini.svg" alt="Mini Logo DO$">
+            </a>
+            <a href="./faleConosco.html">
+                FALE CONOSCO
+            </a>
+            <a href="./trabalheConosco.html">
+                TRABALHE CONOSCO
+            </a>
+            <a href="./faq.html">
+                FAQ
+            </a>
         </section>
         <section class="mlogo">
-        <a href="./index.html"><img src="./public/images/logo-mini.svg" alt="Mino Logo DO$"></a>
+            <a href="./index.html"><img src="./public/images/logo-mini.svg" alt="Mino Logo DO$"></a>
         </section>
 
         <section class="fmobile">
@@ -297,7 +305,7 @@
                 <p>Menu</p>
                 <div class="contentfmenu">
                     <a href="./login.html">Login</a>
-                    <a href="./resultadoBusca.html" id="categoriamobile">Categorias</a>
+                    <a id="categoriamobile">Categorias</a>
                     <a href="./sobre.html">Sobre</a>
                     <a href="./faleConosco.html">Fale Conosco</a>
                     <a href="./trabalheConosco.html">Trabalhe Conosco</a>
@@ -315,6 +323,7 @@
             </div>
             <a href="#">Voltar ao Topo</a>
         </section>
+        <script src="./public/scripts/botaoFooter.js"></script>
     </footer>
 
 </body>
