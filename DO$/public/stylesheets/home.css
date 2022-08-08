@@ -1,0 +1,21 @@
+.banner {
+    margin: 20px 3%;
+    border-radius: 10px;
+    background-color: #E84118;
+    display: flex;
+    justify-content: center;
+}
+
+.banner img {
+    max-width: 95%;
+}
+
+.ofertas {
+    margin: 20px 3% 60px 3%;
+}
+
+.ofertasrow {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
