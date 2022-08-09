@@ -1,0 +1,106 @@
+.containersecundario {
+    display: flex;
+}
+
+.form,
+.imagem {
+    width: 50%;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form p {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.form form {
+    width: 100%;
+}
+
+.formrow {
+    display: flex;
+    align-items: center;
+}
+
+.formrow label {
+    text-align: right;
+    width: 30%;
+}
+
+.formrow input,
+.formrow select,
+.formrow textarea,
+.upload,
+.formrow ul {
+    display: flex;
+    margin: 10px 20px;
+    width: 260px;
+    max-width: 100%;
+}
+
+.formrow input[type=radio] {
+    width: 10px;
+    margin: 10px;
+}
+
+#disp li {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+#disp li label {
+    width: auto;
+}
+
+button#curriculo {
+    width: 164px;
+    background: #D3D3D3;
+    height: 32px;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+#fileupload {
+    display: none;
+}
+
+.imagem img {
+    width: 100%;
+}
+
+.imagem h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+@media screen and (max-width: 720px) {
+    .containersecundario {
+        display: block;
+        width: 100%;
+    }
+
+    .form,
+    .imagem {
+        width: 100%;
+    }
+
+    .formrow {
+        display: block;
+    }
+
+    .formrow input,
+    .formrow select,
+    .formrow textarea,
+    .upload,
+    .formrow ul {
+        margin: 10px 0;
+    }
+}
