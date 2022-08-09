@@ -1,0 +1,58 @@
+.missao {
+    display: flex;
+    margin: 0 3% 10px 3%;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 23px;
+    align-items: center;
+}
+
+.missao h2 {
+    width: 20%;
+}
+
+.missao h2 img {
+    height: 20px;
+    vertical-align: middle;
+}
+
+.missao p, .missao ul {
+    width: 100%;
+    text-align: justify;
+}
+
+.missao ul {
+    list-style-type: disc;
+    margin-left: 25px;
+    padding-right: 25px;
+}
+
+.colaboradores {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.colaboradores a {
+    width: 80px;
+}
+
+.colaboradores p {
+    text-align: center;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 720px) {
+    .missao {
+        display: block;
+        padding: 0;
+    }
+
+    .missao h2 {
+        width: 100%;
+        margin: 10px 0;
+        text-align: center;
+    }
+}
