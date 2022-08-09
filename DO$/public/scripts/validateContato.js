@@ -1,3 +1,6 @@
+const buttonsCategorias = Array.from(document.querySelector(".buttonscontato").children);
+const respostasPadrao = Array.from(document.getElementById("respostas-categoria").children);
+
 const inputNome = document.getElementById('nome');
 const inputEmail = document.getElementById('email');
 const inputTelefone = document.getElementById('telefone');
@@ -8,13 +11,21 @@ const erros = [];
 
 buttonSubmit.disabled = "true";
 
-function checkValidation () {
+// Mostrar respostas padrão:
+buttonsCategorias.forEach(element => {
+    element.onclick = (e) => {
+        respostasPadrao[buttonsCategorias.indexOf(element)].classList.toggle('inativo');
+    }
+});
+
+// validações:
+function checkValidation() {
     if (erros.length == 0 &&
         inputNome.value != '' && inputNome.value != 'Nome Completo' &&
         inputEmail.value != '' && inputEmail.value != 'E-mail' &&
         inputTelefone.value != '' && inputTelefone.value != 'Telefone para contato (xx) xxxxx-xxxx' &&
         inputMensagem.value != '' && inputMensagem.value != 'Digite aqui sua dúvida') {
-            buttonSubmit.disabled = false
+        buttonSubmit.disabled = false
     } else {
         buttonSubmit.disabled = "true";
     };

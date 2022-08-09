@@ -1,0 +1,109 @@
+.buttonscontato {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.buttonscontato button {
+    height: 100px;
+    background: #FFFFFF;
+    border: 2px solid #F3F3F3;
+    transition: 0.5s;
+}
+
+.buttonscontato button:hover {
+    background: #F3F3F3;
+    border-color: darkgray;
+}
+
+.buttonscontato button:focus {
+    background: gray;
+    color: #F3F3F3;
+}
+
+.buttonscontato p {
+    margin-left: 50%;
+    text-align: initial;
+}
+
+.resposta-categoria {
+    padding: 20px;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.inativo {
+    display: none;
+}
+
+.pcontato {
+    text-align: center;
+    margin: 20px 0;
+}
+
+form.contato {
+    display: flex;
+}
+
+form.contato div {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 10px;
+    background-color: #C1C1C1;
+}
+
+form.contato input {
+    margin-bottom: 10px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 1px solid #C7C7C7;
+    color: #C1C1C1;
+}
+
+form.contato input:last-child {
+    margin-bottom: 0;
+}
+
+form.contato textarea {
+    height: 100%;
+    min-height: 150px;
+    background: #FFFFFF;
+    border: 1px solid #C7C7C7;
+    color: #C1C1C1;
+    padding: 15px;
+}
+
+#submit {
+    height: 50px;
+    width: 150px;
+    background: #FFFFFF;
+    border: 1px solid #C7C7C7;
+    align-self: center;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 720px) {
+    .buttonscontato {
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .buttonscontato p {
+        margin-left: 0;
+    }
+
+    form.contato {
+        display: block;
+    }
+
+    form.contato div {
+        width: 100%;
+    }
+
+    #submit {
+        display: block;
+        margin: 10px auto;
+    }
+}

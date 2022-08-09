@@ -2,6 +2,7 @@
 
 * {
     box-sizing: border-box;
+    font-family: 'Rajdhani', sans-serif;
 }
 
 :root {
@@ -88,6 +89,7 @@ a {
     font-size: 36px;
     line-height: 46px;
     font-weight: bolder;
+    margin-bottom: 20px;
 }
 
 .containergeral h1 img {
@@ -97,4 +99,8 @@ a {
 .containergeral h2 {
     font-weight: bolder;
     font-size: 18px;
+}
+
+button {
+    cursor: pointer;
 }
