@@ -64,6 +64,7 @@ form.fotoPerfil button {
     display: block;
     margin: 10px auto;
     border: none;
+    background: none;
 }
 
 form.fotoPerfil img {
@@ -72,6 +73,7 @@ form.fotoPerfil img {
 
 .excluir {
     border: none;
+    background: none;
 }
 
 .excluir img {

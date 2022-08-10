@@ -44,7 +44,7 @@ function showPreview (event) {
 };
 
 botaoInicio.onclick = (e) => {
-    divInicio.style.display= 'flex';
+    divInicio.style.display= 'inherit';
     divPedidos.style.display='none';
     divProdutos.style.display='none';
     divDados.style.display='none';

@@ -1,0 +1,274 @@
+.containersecundario {
+    display: flex;
+}
+
+#pedidos,
+#listaprodutos,
+#dados,
+#administradores,
+#mensagens,
+#curriculos {
+    display: none;
+}
+
+.menu-loja {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    min-width: 200px;
+}
+
+.menu-loja a {
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.containerterciario {
+    display: flex;
+    width: 100%;
+}
+
+.paginaloja h2 {
+    font-size: 1.4rem;
+}
+
+.faturadorecentemente,
+.resumopedidos {
+    width: 50%;
+    margin: 0 10px;
+}
+
+.faturadorecentemente:first-child {
+    font-weight: bolder;
+}
+
+.faturadorecentemente .containerinfo,
+.infocard {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #D3D3D3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.hoje,
+.estasemana {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.hoje b,
+.estasemana b {
+    font-weight: bold;
+    display: block;
+    width: 75px;
+    text-align: end;
+}
+
+.infocard {
+    width: 100%;
+}
+
+.info {
+    text-align: end;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.info img {
+    height: 1rem;
+    vertical-align: middle;
+}
+
+.resumopedidos .containerinfo {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.resumopedidos .containerinfo p {
+    font-weight: initial;
+    margin: 20px 0;
+}
+
+table {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.3vw;
+    width: 100%;
+}
+
+th {
+    font-weight: bold;
+}
+
+th,
+td {
+    vertical-align: middle;
+    padding: 10px 5px
+}
+
+td:last-child {
+    display: flex;
+    justify-content: center;
+}
+
+.icone {
+    width: 20px;
+    margin: 5px;
+}
+
+.paginaloja #listaprodutos .modal button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.paginaloja #listaprodutos .modal button:hover {
+    opacity: 1;
+}
+
+.paginaloja #listaprodutos .modal .cancelbtn,
+.paginaloja #listaprodutos .modal .deletebtn {
+    width: 50%;
+    font-weight: bold;
+}
+
+.paginaloja #listaprodutos .modal .cancelbtn {
+    height: 10%;
+    font-size: 16px;
+    background-color: #ccc;
+    color: black;
+}
+
+.paginaloja #listaprodutos .modal .deletebtn {
+    font-size: 26px;
+    background-color: #f44336;
+}
+
+.paginaloja #listaprodutos .modal .modal-container {
+    position: relative;
+    padding: 16px;
+    text-align: center;
+}
+
+.paginaloja #listaprodutos .modal .modal-container p {
+    font-size: 16px;
+    text-align: center;
+}
+
+.paginaloja #listaprodutos .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #00000065;
+}
+
+.paginaloja #listaprodutos .modal-content {
+    background-color: #fefefe;
+    margin: 3% auto 15% auto;
+    border: 1px solid #888;
+    width: 50%;
+    opacity: 1;
+    transition: margin .8s;
+}
+
+.paginaloja #listaprodutos a.deletarProduto:hover+div.modal>form.modal-content {
+    margin: 0% auto 15%;
+    opacity: 0;
+}
+
+.close {
+    cursor: pointer;
+}
+
+form.fotoPerfil {
+    height: unset;
+}
+
+form.fotoPerfil button {
+    display: block;
+    margin: 10px auto;
+    border: none;
+    background: none;
+}
+
+form.fotoPerfil img {
+    height: 200px;
+}
+
+#administradores td:last-child button {
+    background: none;
+    border: none;
+}
+
+@media screen and (max-width: 720px) {
+    .containersecundario, .containerterciario {
+        display: block;
+    }
+
+    .menu-loja {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 5px;
+        align-items: center;
+        text-align: center;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        padding: 5px;
+        font-size: 0.9rem;
+        background: white;
+        width: fit-content;
+        margin-left: -5px;
+    }
+
+    .menu-loja a {
+        margin-bottom: 0;
+    }
+
+    .faturadorecentemente, .resumopedidos {
+        width: 100%;
+    }
+
+    .infocard, .faturadorecentemente .containerinfo {
+        margin: 0;
+    }
+
+    .hoje, .estasemana {
+        display: block;
+    }
+
+    h2 {
+        margin-top: 20px;
+    }
+
+    .containtergeral {
+        padding: 10px;
+    }
+
+    th, td {
+        padding: 3px 2px;
+    }
+
+    table button {
+        font-size: 1vw;
+        padding: 1px;
+    }
+
+    .icone {
+        width: 2vw;
+    }
+}
