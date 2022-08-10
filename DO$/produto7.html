@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./public/stylesheets/reset.css">
     <link rel="stylesheet" href="./public/stylesheets/general.css">
     <link rel="stylesheet" href="./public/stylesheets/header.css">
+    <link rel="stylesheet" href="./public/stylesheets/produto.css">
     <link rel="stylesheet" href="./public/stylesheets/footer.css">
 </head>
 
@@ -124,7 +125,7 @@
                                 <input type="text" name="idProduto" hidden value="19">
                                 <input type="text" name="cepLoja" hidden value="03606010">
                                 <input type="text" name="cep" id="CEP" placeholder="Insira seu CEP">
-                                <button type="submit">Calcular Frete</button>
+                                <button class="calcula-frete" type="submit">Calcular Frete</button>
                             </form>
                             <p>Frete: R$ -</p>
 
@@ -138,14 +139,14 @@
 
                                     <input type="text" hidden name="frete" value="0">
 
-                                    <button type="submit">Adicionar ao Carrinho</button>
+                                    <button class="red-button" type="submit">Adicionar ao Carrinho</button>
                                 </form>
                                 <form action="" method="">
                                     <input type="number" hidden name="idProduto" value="19">
 
                                     <input type="text" hidden name="frete" value="0">
 
-                                    <button type="submit">Comprar</button>
+                                    <button class="red-button" type="submit">Comprar</button>
                                 </form>
                             </div>
                         </div>

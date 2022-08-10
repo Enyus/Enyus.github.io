@@ -60,7 +60,7 @@ form.fotoPerfil {
     height: unset;
 }
 
-form.fotoPerfil button {
+form.fotoPerfil button:first-of-type {
     display: block;
     margin: 10px auto;
     border: none;
