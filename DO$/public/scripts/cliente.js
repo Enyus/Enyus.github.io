@@ -63,7 +63,7 @@ function checkValidationEndereco () {
 }
 
 botaoInicio.onclick = (e) => {
-    divInicio.style.display= 'flex';
+    divInicio.style.display= 'inherit';
     divPedidos.style.display='none';
     divDesejos.style.display='none';
     divDados.style.display='none';

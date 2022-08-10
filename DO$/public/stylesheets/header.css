@@ -74,7 +74,7 @@ header section {
 }
 
 .fotoPerfil {
-  height: 50px !important;
+  height: 50px;
   border-radius: 50%;
 }
 

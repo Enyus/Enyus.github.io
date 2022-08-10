@@ -5,11 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contato</title>
+  <title>Página do Cliente</title>
   <link rel="shortcut icon" href="./public/icon/favicon.png">
   <link rel="stylesheet" href="./public/stylesheets/reset.css">
   <link rel="stylesheet" href="./public/stylesheets/general.css">
   <link rel="stylesheet" href="./public/stylesheets/header.css">
+  <link rel="stylesheet" href="./public/stylesheets/paginaCliente.css">
   <link rel="stylesheet" href="./public/stylesheets/footer.css">
 </head>
 
@@ -159,6 +160,7 @@
         <div class="containerterciario" id="pedidos">
           <div class="pedidosrecentes">
             <p><b>Seus Pedidos Recentes:</b></p>
+            <p class="ver-tabela">Para melhor visualizar a tabela, vire o celular na horizontal.</p>
             <table>
               <tr>
                 <th>Número</th>
@@ -451,7 +453,7 @@
               <label for="password">Confirma Nova Senha:</label>
               <input type="password" id="confirmapassword" name="confirmasenha">
             </div>
-            <button type="submit" id="submit">Alterar Dados</button>
+            <button class="red-button" type="submit" id="submit">Alterar Dados</button>
           </form>
 
           <p><b>Adicione/Altere sua Foto de Perfil:</b></p>
@@ -463,7 +465,7 @@
 
             </button>
             <input type="file" id="fotoPerfil" accept=".png, .jpg" name="perfil" style="display: none;">
-            <button type="submit" id="submitPerfil">Alterar Dados</button>
+            <button class="red-button" type="submit" id="submitPerfil">Alterar Dados</button>
           </form>
 
           <p><b>Deletar conta</b></p>
@@ -473,7 +475,7 @@
               <label for="confirmadeletausuario">Ao clicar aqui, você confirma que está ciente que a deleção de seu
                 usuário é irreversível</label>
             </div>
-            <button type="submit" id="botaoDeletaUsuario">Deletar Conta</button>
+            <button class="red-button" type="submit" id="botaoDeletaUsuario">Deletar Conta</button>
           </form>
 
         </div>
@@ -486,7 +488,7 @@
               Rua João das Neves, 123, apt 01, Birigui/
               São Paulo - CEP: 16200001
               <form action="" method="get">
-                <button type="submit"><img src="./public/icon/carrinho-lixeira.png" alt="excluir"></button>
+                <button class="excluir" type="submit"><img src="./public/icon/carrinho-lixeira.png" alt="excluir"></button>
               </form>
             </li>
 
@@ -518,7 +520,7 @@
               <label for="estado">Estado:</label>
               <input type="text" id="estado" name="estado">
             </div>
-            <button type="submit" id="botaoCadastraEndereco">Cadastrar Novo Endereço</button>
+            <button class="red-button" type="submit" id="botaoCadastraEndereco">Cadastrar Novo Endereço</button>
           </form>
         </div>
 

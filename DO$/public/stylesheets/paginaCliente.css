@@ -1,0 +1,139 @@
+.containersecundario {
+    display: flex;
+}
+
+#pedidos, #desejos, #dados, #enderecos, #vale {
+    display: none;
+}
+
+.menu-cliente {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    min-width: 200px;
+}
+
+.menu-cliente a {
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.containerterciario {
+    display: flex;
+    width: 100%;
+}
+
+.pedidosrecentes, .buscasrecentes {
+    width: 50%;
+}
+
+.pedidosrecentes .container {
+    margin: 10px auto;
+}
+
+.paginacliente b {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#pedidos .pedidosrecentes {
+    width: 100%;
+}
+
+table {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.3vw;
+}
+
+th {
+    font-weight: bold;
+}
+
+th, td {
+    vertical-align: middle;
+    padding: 10px 5px
+}
+
+form.fotoPerfil {
+    height: unset;
+}
+
+form.fotoPerfil button {
+    display: block;
+    margin: 10px auto;
+    border: none;
+}
+
+form.fotoPerfil img {
+    height: 200px;
+}
+
+.excluir {
+    border: none;
+}
+
+.excluir img {
+    width: 20px;
+}
+
+.cadastrousuario {
+    margin: 20px 0;
+}
+
+#enderecos ul {
+    margin: 20px 0;
+}
+
+#enderecos li {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+@media screen and (max-width: 720px) {
+    .containersecundario, .containerterciario {
+        display: block;
+    }
+
+    .menu-cliente {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        align-items: center;
+        text-align: center;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        padding: 5px;
+        font-size: 0.9rem;
+        background: white;
+    }
+
+    .menu-cliente a {
+        margin-bottom: 0;
+    }
+
+    .menu-cliente a:last-of-type {
+        grid-column: span 3;
+    }
+
+    .pedidosrecentes, .buscasrecentes {
+        width: 100%;
+    }
+}
+
+.ver-tabela {
+    display: none;
+}
+
+@media screen and (max-width: 400px) {
+    table {
+        display: none;
+    }
+
+    .ver-tabela {
+        display: block;
+    }
+}
