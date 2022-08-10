@@ -148,3 +148,46 @@
     display: flex;
     flex-direction: column;
 }
+
+@media screen and (max-width: 720px) {
+    .produto, .subcontainer, .comprar, .fotosproduto {
+        display: block;
+    }
+
+    .miniimg {
+        flex-direction: row;
+        height: fit-content;
+    }
+
+    .miniimg button {
+        height: fit-content;
+    }
+
+    .miniimg img {
+        max-height: 100px;
+        max-width: 80px;
+    }
+
+    .miniimg button:last-child img {
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+
+    .focoimg {
+        max-width: 100%;
+        justify-content: center;
+        height: 80%;
+    }
+
+    .focoimg img {
+        border-radius: 0 0 10px 10px;
+    }
+
+    .fotosproduto, .descgeral, .subcontainer, .desc, .comprar {
+        width: 100%;
+    }
+
+    .descgeral, .comprar {
+        margin-top: 20px;
+    }
+}
