@@ -2,6 +2,11 @@
     margin: 0 25px 80px 25px;
 }
 
+h3 {
+    font-weight: bold;
+    font-size: 18px;
+}
+
 .carrinho-pagamento .processo-da-compra .pagamento {
     border-bottom: 4px solid #e84218
 }
@@ -10,16 +15,20 @@
     display: flex;
     justify-content: space-between;
 }
+
 .carrinho-pagamento .container-pagamento .destinatario-entrega img {
     width: 20px;
-}            
+}
+
 .carrinho-pagamento .container-pagamento .dest-entr-pag {
     width: 69%;
 }
+
 .carrinho-pagamento .destinatario-entrega {
     display: flex;
     justify-content: space-between;
 }
+
 .carrinho-pagamento .destinatario-entrega section {
     display: flex;
     flex-direction: column;
@@ -27,6 +36,7 @@
     background-color: white;
     height: 156px;
 }
+
 .carrinho-pagamento .destinatario-entrega section h3 {
     margin: 0 0 10px 0;
 }
@@ -34,19 +44,24 @@
 .carrinho-pagamento .destinatario-entrega section p {
     margin: 0;
 }
+
 .carrinho-pagamento .destinatario-entrega section p {
     font-size: 14px;
 }
+
 .container-pagamento .destinatario-entrega .titulo-div div {
     display: flex;
     justify-content: space-between;
 }
+
 .container-pagamento .destinatario-entrega .dados-destinatario {
     width: 43%;
 }
+
 .container-pagamento .destinatario-entrega .dados-entrega {
     width: 55%;
 }
+
 .container-pagamento .pagamento {
     padding: 26px;
     height: fit-content;
@@ -57,11 +72,13 @@
 .container-pagamento .pagamento form {
     display: flex;
 }
+
 .container-pagamento .pagamento p {
     font-size: 18px;
     font-weight: 800;
     margin: 0 0 20px 0;
 }
+
 .container-pagamento .forma-pagamento {
     padding-right: 26px;
     margin-right: 26px;
@@ -71,14 +88,17 @@
     flex-direction: column;
     border-right: 1px solid black;
 }
+
 .container-pagamento .forma-pagamento input {
     display: none;
 }
-input:checked ~ label {
+
+input:checked~label {
     border: none;
     color: white;
     background-color: #e84218;
 }
+
 .container-pagamento .forma-pagamento label {
     display: flex;
     align-items: center;
@@ -90,16 +110,20 @@ input:checked ~ label {
     border: 1px solid #494949;
     cursor: pointer;
 }
+
 .container-pagamento .dados-pagamento {
     width: 298px;
 }
+
 .container-pagamento .img-cartoes {
     height: 45px;
 }
+
 .container-pagamento .dados-pagamento div {
     display: flex;
     flex-direction: column;
 }
+
 .container-pagamento .dados-pagamento div input,
 .container-pagamento .dados-pagamento div select {
     padding-left: 10px;
@@ -107,21 +131,25 @@ input:checked ~ label {
     margin-bottom: 10px;
     height: 38px;
 }
+
 .container-pagamento .dados-pagamento div select,
 .container-pagamento .dados-pagamento .validade-cartao div {
     display: flex;
     flex-direction: row;
 }
+
 .container-pagamento .validade-cartao select {
     font-size: 14px;
     width: 106px;
 }
+
 .container-pagamento .validade-cartao p {
     display: flex;
     font-size: 24px;
     font-weight: normal;
     margin: 0 10px;
 }
+
 .container-pagamento .cod-seguranca input {
     width: 65px;
 }
@@ -134,6 +162,7 @@ input:checked ~ label {
     justify-content: space-evenly;
     padding: 0 280px;
     background-color: #C4C4C4;
+    font-weight: bold;
 }
 
 .menu-carrinho a {
@@ -141,46 +170,56 @@ input:checked ~ label {
 }
 
 .carrinho-pagamento section.resumo {
-    display: flex;  
+    display: flex;
     flex-direction: column;
     width: 29%;
     background-color: #f1f1f1;
     padding: 30px;
 }
+
 .carrinho-pagamento section.resumo h3 {
     margin: 0
 }
+
 .carrinho-pagamento section.resumo table {
     margin: 20px 0 60px 0;
     width: 100%;
-    border: 1px solid black;
 }
+
 .carrinho-pagamento section.resumo table td.img {
     height: 118px;
     width: 75px;
 }
+
 .carrinho-pagamento section.resumo table img {
     width: 100%;
 }
+
 .carrinho-pagamento section.resumo table h3 {
     margin: 0;
     font-size: 13px;
 }
+
 .carrinho-pagamento section.resumo table h4 {
     margin: 0;
     font-size: 12px;
 }
+
 .carrinho-pagamento section.resumo table h4.dados {
     margin-left: 5px;
     font-size: 12px;
     color: #837F7F;
 }
+
 .carrinho-pagamento section.resumo table td {
     border-bottom: 1px solid rgb(192, 192, 192);
+    vertical-align: middle;
 }
+
 .carrinho-pagamento section.resumo table div {
     display: flex;
 }
+
 .carrinho-pagamento section.resumo .total div {
     display: flex;
     align-items: flex-end;
@@ -188,10 +227,12 @@ input:checked ~ label {
     margin: 15px 0;
     border-bottom: 1px solid rgb(192, 192, 192);
 }
+
 .carrinho-pagamento section.resumo .total div p {
-    margin-bottom: 0px;   
+    margin-bottom: 0px;
 }
-.carrinho-pagamento section.resumo .finalizar-compra {
+
+.finalizar-compra {
     border: 1px solid #e84218;
     margin-top: 20px;
     height: 39px;
@@ -201,104 +242,28 @@ input:checked ~ label {
     font-weight: 800;
     color: #e84218;
     cursor: pointer;
-    transition: color 0.1s, background-color 0.1s;
-}.carrinho-pagamento section.resumo .finalizar-compra:hover {
+    transition: 0.1s;
+}
+
+.finalizar-compra:disabled {
+    opacity: 50%;
+}
+
+.carrinho-pagamento section.resumo .finalizar-compra:hover {
     color: white;
-    background-color:#e84218;
+    background-color: #e84218;
 }
 
 
-footer {
-    background-color: #FFFFFF;
-    width: 100vw;
-    padding: 0 3%;
-    display: flex;
-    position: fixed;
-    bottom: 0;
-    height: 5vh;
-    min-height: 50px;
-    align-items: center;
-    }
-    
-    footer .fbutton {
-    width: 60%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    }
-    
-    footer .fbutton a {
-    display: flex;
-    align-items: center;
-    }
-    
-    footer .fbutton a img {
-    height: 16px;
-    position: relative;
-    left: 4px;
-    }
-    
-    footer .mlogo {
-    width: 40%;
-    display: flex;
-    justify-content: end;
-    }
-    
-    footer section.fmobile {
-    display: none;
-    }
-    
-    footer section.fmobile div,
-    footer section.fmobile a {
-    width: 50vw;
-    text-align: center;
-    font-weight: bold;
-    font-size: 20px;
-    margin: auto 0 auto 0;
-    }
-    
-    footer section.fmobile div:first-child {
-    border-right: solid 1px;
-    }
-    
-    footer section.fmobile div.fmenu p {
-    margin: 0;
-    }
-    
-    footer section.fmobile div.fmenu div.contentfmenu {
-    position: fixed;
-    width: 50vw;
-    height: 50vh;
-    bottom: 50px;
-    display: none;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: white;
-    }
-    
-    footer section.fmobile div.fmenu:hover div.contentfmenu {
-    display: flex;
-    }
-    
-    footer section.fmobile div.fmenu div.contentfmenu a {
-    font-size: 20px;
-    }
-
 /* Fazendo as alterações para mobile: */
 @media screen and (max-width: 720px) {
-    header .logo, header .header-principal .hbutton {
-        width: 50vw !important;
-      }
-    
-    header section.buscamobile, footer section.fmobile {
-       display: flex;
-    }
-    
-    footer, .carrinho-entrega .processo-da-compra div {
+    .carrinho-entrega .processo-da-compra div {
         padding: 0;
-      }
+    }
 
-    header .header-principal .busca, div.hbutton p, section.header-menu, section.fbutton, section.mlogo, .carrinho-entrega .processo-da-compra div .identificacao, .carrinho-entrega .processo-da-compra div .sacola, .carrinho-entrega .processo-da-compra div .pagamento {
+    .carrinho-entrega .processo-da-compra div .identificacao,
+    .carrinho-entrega .processo-da-compra div .sacola,
+    .carrinho-entrega .processo-da-compra div .pagamento {
         display: none;
     }
 
@@ -306,7 +271,8 @@ footer {
         display: block !important;
     }
 
-    .carrinho-entrega .resumo, .carrinho-entrega .container-carrinho .container-sacola {
+    .carrinho-entrega .resumo,
+    .carrinho-entrega .container-carrinho .container-sacola {
         width: unset;
         height: unset;
         margin-bottom: 10px;
@@ -343,24 +309,14 @@ footer {
     .carrinho-entrega .entrega {
         margin: 10px 0;
     }
-}
 
-
-/* Fazendo as alterações para mobile: */
-@media screen and (max-width: 720px) {
-    header .logo, header .header-principal .hbutton {
-        width: 50vw !important;
-      }
-    
-    header section.buscamobile, footer section.fmobile {
-       display: flex;
-    }
-    
-    footer, .carrinho-pagamento .processo-da-compra div {
+    .carrinho-pagamento .processo-da-compra div {
         padding: 0;
-      }
+    }
 
-    header .header-principal .busca, div.hbutton p, section.header-menu, section.fbutton, section.mlogo, .carrinho-pagamento .processo-da-compra div .identificacao, .carrinho-pagamento .processo-da-compra div .entrega, .carrinho-pagamento .processo-da-compra div .sacola {
+    .carrinho-pagamento .processo-da-compra div .identificacao,
+    .carrinho-pagamento .processo-da-compra div .entrega,
+    .carrinho-pagamento .processo-da-compra div .sacola {
         display: none;
     }
 
@@ -368,26 +324,24 @@ footer {
         display: block;
     }
 
-    .carrinho-pagamento .container-pagamento .dest-entr-pag, .container-pagamento .destinatario-entrega .dados-destinatario, .container-pagamento .destinatario-entrega .dados-entrega {
+    .carrinho-pagamento .container-pagamento .dest-entr-pag,
+    .container-pagamento .destinatario-entrega .dados-destinatario,
+    .container-pagamento .destinatario-entrega .dados-entrega {
         width: 100%;
         margin-bottom: 5px;
     }
 
-    .carrinho-pagamento .destinatario-entrega, .container-pagamento .pagamento form {
+    .carrinho-pagamento .destinatario-entrega,
+    .container-pagamento .pagamento form {
         display: block;
         width: 100%;
-    }
-
-    .container-pagamento .pagamento .forma-pagamento, .container-pagamento .pagamento .dados-pagamento {
-        padding: 5px;
-        margin: 5px;
     }
 
     .container-pagamento .pagamento .forma-pagamento button {
         margin: 10px;
     }
 
-    .container-pagamento .pagamento .forma-pagamento{
+    .container-pagamento .pagamento .forma-pagamento {
         text-align: center;
         border: none;
         height: auto;
@@ -400,10 +354,6 @@ footer {
 
     .container-pagamento .pagamento {
         height: auto;
-    }
-
-    .container-pagamento .dados-pagamento div input {
-        width: 250px;
     }
 
     .container-pagamento .dados-pagamento {

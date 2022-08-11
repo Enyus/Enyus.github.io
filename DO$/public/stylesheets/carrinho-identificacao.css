@@ -24,6 +24,8 @@
     background-color: #f2f2f2;
     display: flex;
     flex-direction: column;
+    padding: 20px;
+    height: auto;
 }
 
 .container-identificacao .dados-pessoais div {
@@ -34,6 +36,7 @@
 .container-identificacao .dados-pessoais h3 {
     margin-left: 1vh;
     font-size: 20px;
+    font-weight: bold;
 }
 
 .container-identificacao .dados-pessoais .formulario-dados-pessoais div {
@@ -72,18 +75,19 @@
     box-sizing: border-box;
 }
 
-.container-identificacao .dados-pessoais .ir-entrega {
+.ir-entrega {
     border: 1px solid #e84218;
-    margin-top: 60px;
-    margin-left: 6.5vh;
+    margin: 10px auto;
     height: 39px;
     width: 70%;
-    align-items: center;
     background-color: #FFFFFF;
     color: #e84218;
     font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.1s;
+}
+
+.ir-entrega:disabled {
+    opacity: 50%;
+    cursor: not-allowed;
 }
 
 .container-identificacao .resumo-compra {
@@ -111,6 +115,7 @@
 .container-identificacao .resumo-compra h3 {
     margin-left: 1vh;
     font-size: 20px;
+    font-weight: bold;
 }
 
 .container-identificacao .resumo-compra table {
@@ -122,12 +127,12 @@
     flex-direction: column;
     min-width: 500px;
     max-width: 800px;
+    padding: 20px;
 }
 
 .carrinho-identificacao section.resumo-compra table {
     margin: 20px 0 60px 0;
     width: 100%;
-    border: 1px solid black;
 }
 .carrinho-identificacao section.resumo-compra table td.img {
     height: 118px;
@@ -151,6 +156,7 @@
 }
 .carrinho-identificacao section.resumo-compra table td {
     border-bottom: 1px solid rgb(192, 192, 192);
+    vertical-align: middle;
 }
 .carrinho-identificacao section.resumo-compra table div {
     display: flex;
@@ -188,6 +194,7 @@
     justify-content: space-evenly;
     padding: 0 280px;
     background-color: #C4C4C4;
+    font-weight: bold;
 }
 
 .menu-carrinho a {

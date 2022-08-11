@@ -83,11 +83,8 @@ header section {
 }
 
 header a,
-footer a,
 .header-menu a {
   font-weight: bold;
-  color: #000;
-  text-decoration: none;
 }
 
 .buscamobile {

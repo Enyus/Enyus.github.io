@@ -1,6 +1,12 @@
 .carrinho-entrega {
     margin: 0 25px 80px 25px;
 }
+
+h3 {
+    font-weight: bold;
+    font-size: 18px;
+}
+
 .carrinho-entrega .processo-da-compra .entrega {
     border-bottom: 4px solid #e84218
 }
@@ -8,7 +14,7 @@
 .carrinho-entrega .container-entrega {
     display: flex;
     justify-content: center;
-    
+
 }
 
 .carrinho-entrega .container-entrega section {
@@ -25,18 +31,17 @@
     height: 260px;
     width: 30%;
 }
+
 .carrinho-entrega .dados-destinatario div {
     display: flex;
     justify-content: space-between;
 }
-.carrinho-entrega .dados-destinatario h3 {
-    margin: 0;
-    font-size: 18px;
-}
+
 .carrinho-entrega .dados-destinatario img {
     height: 20px;
     width: 20px;
 }
+
 .carrinho-entrega .dados-destinatario .contato {
     flex-direction: column;
 }
@@ -45,79 +50,95 @@
     margin: 0;
 }
 
-
 .carrinho-entrega .entrega {
     flex-direction: column;
     margin: 0 30px;
-    width: 31%;
 }
+
 .carrinho-entrega .entrega div {
     margin-bottom: 5px;
 }
+
 .carrinho-entrega .entrega h3 {
     margin: 0;
 }
+
 .carrinho-entrega .entrega label {
     padding-left: 5px;
     font-size: 14px;
     color: #999999;
 }
+
 .carrinho-entrega .entrega input[type='text'] {
     padding-left: 10px;
     height: 42px;
     width: 100%;
     font-size: 16px;
 }
+
 .carrinho-entrega .entrega .cep {
     display: flex;
     flex-direction: column;
 }
+
 .carrinho-entrega .entrega .cep div {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .carrinho-entrega .entrega .cep .nao-sei-cep {
     font-weight: 800;
     font-size: 14px;
     text-align: center;
-} 
+}
+
 .carrinho-entrega .entrega .endereco-entrega {
     border: 1px solid rgb(120, 120, 120);
     padding: 20px 10px;
 }
+
 .carrinho-entrega .entrega .endereco-entrega p {
     margin: 0;
     font-size: 16px;
 }
+
 .carrinho-entrega .entrega .numero-compl div {
     display: flex;
 }
-.carrinho-entrega .entrega .numero-compl div div{
+
+.carrinho-entrega .entrega .numero-compl div div {
     margin: 2px;
     display: flex;
     flex-direction: column;
 }
 
-.carrinho-entrega .entrega .numero-compl a{
+.carrinho-entrega .entrega .numero-compl a {
     color: rgb(85, 85, 85);
     font-size: 10px;
     font-weight: 800;
-}.carrinho-entrega .entrega .numero-compl a:hover {
+}
+
+.carrinho-entrega .entrega .numero-compl a:hover {
     text-decoration: underline;
 }
+
 .carrinho-entrega .entrega .cep .nao-sei-cep {
     color: rgb(85, 85, 85);
     font-size: 10px;
     font-weight: 800;
-}.carrinho-entrega .entrega .cep .nao-sei-cep:hover {
+}
+
+.carrinho-entrega .entrega .cep .nao-sei-cep:hover {
     text-decoration: underline;
 }
+
 .carrinho-entrega .entrega .modalidade-entrega {
     margin-top: 10px;
     display: flex;
     flex-direction: column;
 }
+
 .carrinho-entrega .entrega .modalidade-entrega .container {
     display: flex;
     flex-direction: column;
@@ -127,14 +148,17 @@
     height: fit-content;
     width: 100%;
 }
+
 .carrinho-entrega .entrega .modalidade-entrega .container label {
     color: black;
 }
+
 .carrinho-entrega .entrega .modalidade-entrega .container div {
     display: flex;
     align-items: center;
     margin: 5px 0;
 }
+
 .carrinho-entrega .entrega .modalidade-entrega input {
     height: 20px;
     width: 20px;
@@ -148,39 +172,49 @@
     width: 29%;
     background-color: #f1f1f1;
 }
+
 .carrinho-entrega section.resumo h3 {
     margin: 0
 }
+
 .carrinho-entrega section.resumo table {
     width: 100%;
-    border: 1px solid black;
 }
+
 .carrinho-entrega section.resumo table td.img {
     height: 118px;
     width: 75px;
 }
+
 .carrinho-entrega section.resumo table img {
     width: 100%;
 }
+
 .carrinho-entrega section.resumo table h3 {
     margin: 0;
     font-size: 13px;
 }
+
 .carrinho-entrega section.resumo table h4 {
     margin: 0;
     font-size: 12px;
 }
+
 .carrinho-entrega section.resumo table h4.dados {
     margin-left: 5px;
     font-size: 12px;
     color: #837F7F;
 }
+
 .carrinho-entrega section.resumo table td {
     border-bottom: 1px solid rgb(192, 192, 192);
+    vertical-align: middle;
 }
+
 .carrinho-entrega section.resumo table div {
     display: flex;
 }
+
 .carrinho-entrega section.resumo .total div {
     display: flex;
     align-items: flex-end;
@@ -188,9 +222,11 @@
     margin: 15px 0;
     border-bottom: 1px solid rgb(192, 192, 192);
 }
+
 .carrinho-entrega section.resumo .total div p {
-    margin-bottom: 0px;   
+    margin-bottom: 0px;
 }
+
 .carrinho-entrega section.resumo .ir-pagamento {
     border: 1px solid #e84218;
     margin-top: 20px;
@@ -200,8 +236,10 @@
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.1s;
-}.carrinho-entrega section.resumo .ir-pagamento:hover {
-    background-color: #fff2ef ;
+}
+
+.carrinho-entrega section.resumo .ir-pagamento:hover {
+    background-color: #fff2ef;
 }
 
 section.entrega ul {
@@ -224,6 +262,7 @@ section.entrega ul li {
     justify-content: space-evenly;
     padding: 0 280px;
     background-color: #C4C4C4;
+    font-weight: bold;
 }
 
 .menu-carrinho a {
@@ -240,54 +279,54 @@ footer {
     height: 5vh;
     min-height: 50px;
     align-items: center;
-    }
-    
-    footer .fbutton {
+}
+
+footer .fbutton {
     width: 60%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    }
-    
-    footer .fbutton a {
+}
+
+footer .fbutton a {
     display: flex;
     align-items: center;
-    }
-    
-    footer .fbutton a img {
+}
+
+footer .fbutton a img {
     height: 16px;
     position: relative;
     left: 4px;
-    }
-    
-    footer .mlogo {
+}
+
+footer .mlogo {
     width: 40%;
     display: flex;
     justify-content: end;
-    }
-    
-    footer section.fmobile {
+}
+
+footer section.fmobile {
     display: none;
-    }
-    
-    footer section.fmobile div,
-    footer section.fmobile a {
+}
+
+footer section.fmobile div,
+footer section.fmobile a {
     width: 50vw;
     text-align: center;
     font-weight: bold;
     font-size: 20px;
     margin: auto 0 auto 0;
-    }
-    
-    footer section.fmobile div:first-child {
+}
+
+footer section.fmobile div:first-child {
     border-right: solid 1px;
-    }
-    
-    footer section.fmobile div.fmenu p {
+}
+
+footer section.fmobile div.fmenu p {
     margin: 0;
-    }
-    
-    footer section.fmobile div.fmenu div.contentfmenu {
+}
+
+footer section.fmobile div.fmenu div.contentfmenu {
     position: fixed;
     width: 50vw;
     height: 50vh;
@@ -296,31 +335,42 @@ footer {
     flex-direction: column;
     justify-content: space-around;
     background-color: white;
-    }
-    
-    footer section.fmobile div.fmenu:hover div.contentfmenu {
+}
+
+footer section.fmobile div.fmenu:hover div.contentfmenu {
     display: flex;
-    }
-    
-    footer section.fmobile div.fmenu div.contentfmenu a {
+}
+
+footer section.fmobile div.fmenu div.contentfmenu a {
     font-size: 20px;
-    }
+}
 
 /* Fazendo as alterações para mobile: */
 @media screen and (max-width: 720px) {
-    header .logo, header .header-principal .hbutton {
-        width: 50vw !important;
-      }
-    
-    header section.buscamobile, footer section.fmobile {
-       display: flex;
-    }
-    
-    footer, .carrinho-entrega .processo-da-compra div {
-        padding: 0;
-      }
 
-    header .header-principal .busca, div.hbutton p, section.header-menu, section.fbutton, section.mlogo, .carrinho-entrega .processo-da-compra div .identificacao, .carrinho-entrega .processo-da-compra div .sacola, .carrinho-entrega .processo-da-compra div .pagamento {
+    header .logo,
+    header .header-principal .hbutton {
+        width: 50vw !important;
+    }
+
+    header section.buscamobile,
+    footer section.fmobile {
+        display: flex;
+    }
+
+    footer,
+    .carrinho-entrega .processo-da-compra div {
+        padding: 0;
+    }
+
+    header .header-principal .busca,
+    div.hbutton p,
+    section.header-menu,
+    section.fbutton,
+    section.mlogo,
+    .carrinho-entrega .processo-da-compra div .identificacao,
+    .carrinho-entrega .processo-da-compra div .sacola,
+    .carrinho-entrega .processo-da-compra div .pagamento {
         display: none;
     }
 
@@ -328,7 +378,8 @@ footer {
         display: block !important;
     }
 
-    .carrinho-entrega .resumo, .carrinho-entrega .container-carrinho .container-sacola {
+    .carrinho-entrega .resumo,
+    .carrinho-entrega .container-carrinho .container-sacola {
         width: unset;
         height: unset;
         margin-bottom: 10px;

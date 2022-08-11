@@ -20,6 +20,7 @@ footer {
 .fbutton a {
   display: flex;
   align-items: center;
+  font-weight: bold;
 }
 
 .fbutton a img {
@@ -71,6 +72,10 @@ footer {
 
 .contentfmenu a {
   font-size: 20px;
+}
+
+.contentfmenu a:last-of-type {
+  margin-bottom: 20px;
 }
 
 .categoriasmobile {

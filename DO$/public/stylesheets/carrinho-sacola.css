@@ -2,69 +2,69 @@
     margin: 0 25px 80px 25px;
 }
 
-.carrinho-sacola .processo-da-compra .sacola {
+.sacola {
     border-bottom: 4px solid #e84218
 }
 
-.carrinho-sacola .container-carrinho {
-display: flex;
-justify-content: space-between;
-margin: 0;
-width: 100%;
+.container-carrinho {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    width: 100%;
 }
 
-.carrinho-sacola .container-carrinho .container-sacola {
-/* background-color: white; */
-height: 260px;
-width: 68%;
+.container-sacola {
+    height: 260px;
+    width: 68%;
 }
 
-.carrinho-sacola .container-carrinho .container-sacola table{
-width: 100%;
-background-color: white;
-padding: 25px;
+table {
+    width: 100%;
+    background-color: white;
 }
 
-.carrinho-sacola .container-carrinho .container-sacola table .colunas tr, td {
-border-bottom: 1.5px solid #d3cece;
+td {
+    padding: 10px;
 }
 
-.carrinho-sacola .container-carrinho .container-sacola table .linhas tr, td {
-border-bottom: 1.5px solid #d3cece;
+.colunas td {
+    font-weight: bold;
 }
 
-.carrinho-sacola .container-carrinho .container-sacola .produto {
-display: flex;
-align-items: center;
+.linhas td {
+    border-bottom: 1.5px solid #d3cece;
+    vertical-align: middle;
 }
 
-.carrinho-sacola .container-carrinho .container-sacola img {
+.produto {
+    display: flex;
+    align-items: center;
+    height: inherit;
+}
+
+.container-sacola img {
     height: 72px;
     width: 60px;
     object-fit: cover;
-    margin: 20px;
+    margin: 10px;
 }
 
-.carrinho-sacola .container-carrinho .container-sacola .tamanho,
-.carrinho-sacola .container-carrinho .container-sacola .cor {
-display: flex;
+.tamanho,
+.cor {
+    display: flex;
 }
 
-.carrinho-sacola .container-carrinho .container-sacola .label {
-margin: 0
+.dados {
+    color: #837F7F;
+    margin: 0 10px;
 }
 
-.carrinho-sacola .container-carrinho .container-sacola .dados {
-color: #837F7F;
-margin: 0 10px;
+.quantidade {
+    display: flex;
+    align-items: center;
 }
 
-.carrinho-sacola .container-carrinho .container-sacola .quantidade {
-display: flex;
-align-items: center;
-}
-
-.carrinho-sacola .container-carrinho .container-sacola .quantidade button {
+.quantidade button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -79,35 +79,36 @@ align-items: center;
     border-radius: 100%;
     border-style: none;
     transition: background-color 0.1s;
-} .carrinho-sacola .container-carrinho .container-sacola .quantidade button:hover {
+}
+
+.quantidade button:hover {
     background-color: black
 }
 
-.carrinho-sacola .container-carrinho .container-sacola .acoes-produto {
-width: 70px;
+.acoes-produto {
+    width: 70px;
 }
 
-.carrinho-sacola .container-sacola .acoes-produto img {
-margin: 0 5px;
-opacity: 50px;
-width: 20px;
-height: 20px;
-
+.acoes-produto img {
+    margin: 0 5px;
+    width: 20px;
+    height: 20px;
 }
-.carrinho-sacola .resumo {
+
+.resumo {
     font-size: 18px;
     width: 30%;
     padding: 3%;
     background-color: #F1F1F1
 }
 
-.carrinho-sacola .resumo div p.resumo {
+.resumo div p.resumo {
     padding: 0;
     margin: 0 0 20px 0;
     font-weight: 800;
 }
 
-.carrinho-sacola .resumo .forma-de-recebimento {
+.resumo .forma-de-recebimento {
     display: flex;
     /* justify-content: center; */
     width: 100%;
@@ -118,35 +119,34 @@ height: 20px;
     text-align: center;
 }
 
-.carrinho-sacola .resumo .forma-de-recebimento a {
+.resumo .forma-de-recebimento a {
     width: 50%;
     transition: background-color 0.1s;
 }
 
-.carrinho-sacola .resumo .forma-de-recebimento a:hover {
+.resumo .forma-de-recebimento a:hover {
     background-color: #e2e2e2;
     width: 50%;
 }
 
 
-.carrinho-sacola .resumo .forma-de-recebimento .entrega {
-    /* width: 50%; */
+.resumo .forma-de-recebimento .entrega {
     border-bottom: 4px solid #e84218
 }
 
-.carrinho-sacola .resumo .cep {
+.resumo .cep {
     display: flex;
     justify-content: space-between;
 }
 
-.carrinho-sacola .resumo input {
+.resumo input {
     height: 41px;
     width: 230px;
     padding-left: 16px;
     font-size: 16px;
 }
 
-.carrinho-sacola .resumo .ok-cep {
+.resumo .ok-cep {
     font-size: 14px;
     color: white;
     background-color: black;
@@ -155,37 +155,40 @@ height: 20px;
     border: none;
     cursor: pointer;
     transition: background-color 0.1s;
-} .carrinho-sacola .resumo .ok-cep:hover {
+}
+
+.resumo .ok-cep:hover {
     background-color: rgb(27, 27, 27);
 }
 
-.carrinho-sacola .resumo .nao-sei-o-cep {
+.resumo .nao-sei-o-cep {
     text-decoration: underline;
     font-size: 13px;
     font-weight: 800;
     padding-left: 10px;
 }
 
-.carrinho-sacola .resumo .total div {
+.resumo .total div {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
 }
-.carrinho-sacola .resumo .total div p {
-    margin: 10px 0 ;
+
+.resumo .total div p {
+    margin: 10px 0;
 }
 
-.carrinho-sacola .resumo .total .total {
+.resumo .total .total {
     margin-top: 20px;
     border-top: 1px solid #D6D6D6;
     font-weight: 800;
 }
 
-.carrinho-sacola .resumo .total .total p {
+.resumo .total .total p {
     margin: 0;
 }
 
-.carrinho-sacola .resumo .finalizar {
+.resumo .finalizar {
     height: 53px;
     width: 100%;
     margin: 20px 0;
@@ -196,100 +199,23 @@ height: 20px;
     font-weight: 800;
     cursor: pointer;
     transition: background-color 0.1s;
-}.carrinho-sacola .resumo .finalizar:hover {
+}
+
+.resumo .finalizar:hover {
     background-color: #db5534;
 }
 
-.carrinho-sacola .resumo .continuar-comprando {
-    height: 53px;
-    width: 100%;
-    border: none;
-    font-size: 18px;
-    font-weight: 800;
-    cursor: pointer;
-    transition: color 0.1s;
-}.carrinho-sacola .resumo .continuar-comprando:hover {
+.continuar-comprando {
+    font-weight: bold;
+    display: block;
+    height: 30px;
+}
+
+.resumo .continuar-comprando:hover {
     color: rgb(73, 73, 73);
 }
 
-
-footer {
-background-color: #FFFFFF;
-width: 100vw;
-padding: 0 3%;
-display: flex;
-position: fixed;
-bottom: 0;
-height: 5vh;
-min-height: 50px;
-align-items: center;
-}
-
-footer .fbutton {
-width: 60%;
-display: flex;
-justify-content: space-around;
-align-items: center;
-}
-
-footer .fbutton a {
-display: flex;
-align-items: center;
-}
-
-footer .fbutton a img {
-height: 16px;
-position: relative;
-left: 4px;
-}
-
-footer .mlogo {
-width: 40%;
-display: flex;
-justify-content: end;
-}
-
-footer section.fmobile {
-display: none;
-}
-
-footer section.fmobile div,
-footer section.fmobile a {
-width: 50vw;
-text-align: center;
-font-weight: bold;
-font-size: 20px;
-margin: auto 0 auto 0;
-}
-
-footer section.fmobile div:first-child {
-border-right: solid 1px;
-}
-
-footer section.fmobile div.fmenu p {
-margin: 0;
-}
-
-footer section.fmobile div.fmenu div.contentfmenu {
-position: fixed;
-width: 50vw;
-height: 50vh;
-bottom: 50px;
-display: none;
-flex-direction: column;
-justify-content: space-around;
-background-color: white;
-}
-
-footer section.fmobile div.fmenu:hover div.contentfmenu {
-display: flex;
-}
-
-footer section.fmobile div.fmenu div.contentfmenu a {
-font-size: 20px;
-}
-
-.carrinho-sacola .container-carrinho .container-sacola .table-mobile {
+.table-mobile {
     display: none;
 }
 
@@ -311,6 +237,7 @@ td.acoes-produto div button {
     justify-content: space-evenly;
     padding: 0 280px;
     background-color: #C4C4C4;
+    font-weight: bold;
 }
 
 .menu-carrinho a {
@@ -319,48 +246,44 @@ td.acoes-produto div button {
 
 /* Fazendo as alterações para mobile: */
 @media screen and (max-width: 720px) {
-    header .logo, header .header-principal .hbutton {
-        width: 50vw !important;
-      }
-    
-    header section.buscamobile, footer section.fmobile {
-       display: flex;
-    }
-    
-    footer, .carrinho-sacola .processo-da-compra div {
-        padding: 0;
-      }
 
-    header .header-principal .busca, div.hbutton p, section.header-menu, section.fbutton, section.mlogo, .carrinho-sacola .processo-da-compra div .identificacao, .carrinho-sacola .processo-da-compra div .entrega, .carrinho-sacola .processo-da-compra div .pagamento {
+    .carrinho-sacola .processo-da-compra div {
+        padding: 0;
+    }
+
+    .identificacao,
+    .entrega,
+    .pagamento {
         display: none;
     }
 
     .container-carrinho {
-        display: block !important;
+        display: block;
     }
 
-    .carrinho-sacola .resumo, .carrinho-sacola .container-carrinho .container-sacola {
+    .resumo,
+    .container-sacola {
         width: unset;
         height: unset;
         margin-bottom: 10px;
     }
 
-    .carrinho-sacola .container-carrinho .container-sacola table {
+    .container-sacola table {
         display: none;
     }
 
-    .carrinho-sacola .container-carrinho .container-sacola .table-mobile {
+    .table-mobile {
         display: flex;
         background-color: white;
     }
 
-    .carrinho-sacola .container-carrinho .container-sacola .quantidade {
+    .quantidade {
         display: block;
         text-align: center;
         margin: auto;
     }
 
-    .carrinho-sacola .container-carrinho .container-sacola .dados-produto {
+    .dados-produto {
         margin: auto;
     }
 }
