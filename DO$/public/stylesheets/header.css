@@ -1,4 +1,5 @@
-header, .header-menu {
+header,
+.header-menu {
   background-color: #FFFFFF;
   width: 100%;
   padding: 0 3%;
@@ -36,9 +37,12 @@ header section {
 
 .busca input {
   width: 70%;
-  height: 10%;
+  height: 30px;
   font-size: 18px;
   line-height: 23px;
+  max-width: 100%;
+  border: 1px solid #C8D6E5;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
 }
 
 .busca a {
@@ -78,7 +82,9 @@ header section {
   border-radius: 50%;
 }
 
-header a, footer a, .header-menu a {
+header a,
+footer a,
+.header-menu a {
   font-weight: bold;
   color: #000;
   text-decoration: none;
@@ -118,11 +124,15 @@ header a, footer a, .header-menu a {
 }
 
 @media screen and (max-width: 720px) {
-  .logo, .hbutton {
+
+  .logo,
+  .hbutton {
     width: 50%;
   }
- 
-  .busca, .hbutton p, .header-menu {
+
+  .busca,
+  .hbutton p,
+  .header-menu {
     display: none;
   }
 
