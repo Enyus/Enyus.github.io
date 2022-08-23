@@ -17,3 +17,8 @@ Desafios do #7DaysOfCode em Javascript da Alura, projeto em que a cada dia, dura
 
 <a href="https://github.com/Enyus/7DoC-JS">Repositório original do projeto</a>
 <div><img src="https://media.giphy.com/media/402HofFrPzfATK7prR/giphy.gif"></div>
+
+## <a href="https://enyus.github.io/7DoC-HTML-CSS/">7DaysOfCode - HTML e CSS</a>
+Desafios do #7DaysOfCode em HTML e CSS da Alura, projeto em que a cada dia, durante sete dias, um desafio era lançado para resolução em HTML e CSS, para o desenvolvimento do <a href="https://www.figma.com/file/mm3MLozvUDGhDRTxSLlGL5/7daysOfCode-HTML-CSS">protótipo</a> de uma página para a empresa fictícia Optimus Tech.
+
+<a href="https://github.com/Enyus/7DoC-HTML-CSS">Repositório original do projeto</a>
