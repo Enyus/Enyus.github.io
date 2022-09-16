@@ -31,6 +31,11 @@ em {
     font-size: 15px;
     display: block;
     margin-right: 10px;
+    color: #003B00;
+}
+
+em:hover {
+    color: #008F11;
 }
 
 strong {
@@ -67,6 +72,7 @@ h1 {
     font-style: italic;
     margin-bottom: 20px;
     text-emphasis: 20px;
+    color: #00FF41;
 }
 
 h2 {
@@ -76,11 +82,11 @@ h2 {
 }
 
 a {
-    color: blue;
+    color: #00FF41;
 }
 
 a:visited {
-    color: darkgray;
+    color: #008F11;
 }
 
 a.repo::before {
