@@ -89,10 +89,15 @@ a:visited {
     color: #008F11;
 }
 
+a.repo {
+    display: block;
+    margin-bottom: 10px;
+}
+
 a.repo::before {
     content: '➜ ';
     text-decoration: none;
-    color: blue;
+    color: #008F11;
 }
 
 p {
