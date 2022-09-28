@@ -30,5 +30,10 @@ Evento Next Level Week, da Rocketseat, no qual em uma semanas desenvolvemos um s
 
 ## <a target="_blank" href="https://rolecities.vercel.app/">RoleCities (WIP)</a>
 Projeto pessoal com o objetivo de aprender React para desenvolver um aplicativo de administração de cidades medievais como complemento a uma campanha de RPG de mesa que mestro atualmente.
-<a href="https://www.figma.com/file/cLAeOLudWUygcrLiFxqERz/RoleCities" class="repo"target="_blank">Figma</a>
-<a class="repo" href="https://github.com/Enyus/rolecities" target="_blank">Repositório original do projeto</a>
+- <a href="https://www.figma.com/file/cLAeOLudWUygcrLiFxqERz/RoleCities" class="repo" target="_blank">Figma</a>
+- <a class="repo" href="https://github.com/Enyus/rolecities" target="_blank">Repositório original do projeto</a>
+
+## <a target="_blank" href="https://alurachallengefrontend5-uq19.vercel.app/">Alura Challenge Front End 5 (WIP)</a>
+Desafio da Alura para a construção do front end da página da loja AluraGeek <a href='https://www.figma.com/file/UdtAAnQKzmNeJO9Qa4fLDq/AluraGeek-(Copy)'>(de acordo com estes layouts do Figma)</a> entre 26/09 e 25/10/2022.
+- <a href="https://github.com/Enyus/alurachallengefrontend5" target="_blank">Repositório original do projeto</a>
+<img src='https://i.imgur.com/3gr5Nn4.jpg'>
