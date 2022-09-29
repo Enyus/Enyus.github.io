@@ -1,0 +1,30 @@
+.filtro {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.filtro__select {
+    background-color: transparent;
+    color: inherit;
+}
+
+.filtro__botao{
+    background-color: #003B00;
+    color: inherit;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    letter-spacing: 2px;
+}
+
+.filtro__option {
+    background-color: black;
+}
+
+@media screen and (max-width: 769px) {
+    .filtro {
+        flex-direction: column;
+    }
+}

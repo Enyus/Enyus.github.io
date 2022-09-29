@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio - Cássio Santini</title>
     <link rel="shortcut icon" href="./Images/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
@@ -19,96 +18,112 @@
 
         <h1>Meu Portfolio</h1>
 
-        <article>
-            <h2><a target="_blank" href="https://enyus.github.io/DO$/">Digital Outlet $</a></h2>
-            <p>Páginas Estáticas do Projeto Integrador do Grupo 3 da Digital House, realizado no segundo semestre de
-                2021, no curso
-                WebFullStack.</p>
-            <a class="repo" href="https://github.com/Enyus/PIDH2021-Digital-Outlet" target="_blank">Repositório original
-                do projeto</a>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Eh3SD-aoltk"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-        </article>
+        <div class="filtro">
+            <h3>Filtrar Projetos:</h3>
 
-        <article>
-            <h2><a target="_blank" href="https://enyus.github.io/pong/">PONG com JavaScript puro</a></h2>
-            <p>Este é um pequeno teste de conceito cujo objetivo é criar uma réplica do jogo PONG com apenas HTML, CSS e
-                JavaScript.</p>
-            <a class="repo" href="https://github.com/Enyus/Pong-JS-Puro" target="_blank">Repositório original do
-                projeto</a>
-            <img src="https://media.giphy.com/media/eRATjM94rRNwTtWvwV/giphy.gif">
-        </article>
+            <select id="filtro" class="filtro__select">
+                <option value="antigos" selected class="filtro__option">Mais antigos primeiro</option>
+                <option value="novos" class="filtro__option">Mais novos primeiro</option>
+            </select>
 
-        <article>
-            <h2><a target="_blank" href="https://enyus.github.io/7DoC-JS">7DaysOfCode - JavaScript</a></h2>
-            <p>Desafios do #7DaysOfCode em Javascript da Alura, projeto em que a cada dia, durante sete dias, um desafio
-                era lançado para resolução em JavaScript.</p>
-            <a class="repo" href="https://github.com/Enyus/7DoC-JS" target="_blank">Repositório original do projeto</a>
-            <img src="https://media.giphy.com/media/402HofFrPzfATK7prR/giphy.gif">
-        </article>
+            <button type="button" onclick="filtrarArtigos()" class="filtro__botao">Filtrar</button>
+        </div>
 
-        <article>
-            <h2><a target="_blank" href="https://enyus.github.io/7DoC-HTML-CSS/">7DaysOfCode - HTML e CSS</a></h2>
-            <p>Desafios do #7DaysOfCode em HTML e CSS da Alura, projeto em que a cada dia, durante sete dias, um desafio
-                era lançado para resolução em HTML e CSS, para o desenvolvimento do <a
-                    href="https://www.figma.com/file/mm3MLozvUDGhDRTxSLlGL5/7daysOfCode-HTML-CSS"
-                    target="_blank">protótipo</a> de uma
-                página para a empresa fictícia Optimus Tech.</p>
-            <a class="repo" href="https://github.com/Enyus/7DoC-HTML-CSS" target="_blank">Repositório original do
-                projeto</a>
-            <iframe src="https://enyus.github.io/7DoC-HTML-CSS/optimusTech" frameborder="0"></iframe>
-        </article>
+        <div class="container" id="container">
 
-        <article>
-            <h2><a target="_blank" href="https://enyus.github.io/nlwesportsexplorer/">Next Level Week eSports - 09/2022
-                    - Trilha Explorer - Rocketseat</a></h2>
-            <p>Evento Next Level Week, da Rocketseat, no qual em uma semanas desenvolvemos uma landing page <a
-                    href="https://www.figma.com/file/bMsaifJpkuUj59ZW5vLqw6/NLW-eSports-(Community)?node-id=79%3A2502"
-                    target="_blank">protótipo</a>
-                de uma
-                para um web app destinado aos jogadores de eSports.</p>
-            <a class="repo" href="https://github.com/Enyus/nlwesportsexplorer" target="_blank">Repositório original do
-                projeto</a>
-            <iframe src="https://enyus.github.io/nlwesportsexplorer/" frameborder="0"></iframe>
-        </article>
+            <article class="projeto">
+                <h2><a target="_blank" href="https://enyus.github.io/DO$/">Digital Outlet $</a></h2>
+                <p>Páginas Estáticas do Projeto Integrador do Grupo 3 da Digital House, realizado no segundo semestre de
+                    2021, no curso
+                    WebFullStack.</p>
+                <a class="repo" href="https://github.com/Enyus/PIDH2021-Digital-Outlet" target="_blank">Repositório original
+                    do projeto</a>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Eh3SD-aoltk"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </article>
+    
+            <article class="projeto">
+                <h2><a target="_blank" href="https://enyus.github.io/pong/">PONG com JavaScript puro</a></h2>
+                <p>Este é um pequeno teste de conceito cujo objetivo é criar uma réplica do jogo PONG com apenas HTML, CSS e
+                    JavaScript.</p>
+                <a class="repo" href="https://github.com/Enyus/Pong-JS-Puro" target="_blank">Repositório original do
+                    projeto</a>
+                <img src="https://media.giphy.com/media/eRATjM94rRNwTtWvwV/giphy.gif">
+            </article>
+    
+            <article class="projeto">
+                <h2><a target="_blank" href="https://enyus.github.io/7DoC-JS">7DaysOfCode - JavaScript</a></h2>
+                <p>Desafios do #7DaysOfCode em Javascript da Alura, projeto em que a cada dia, durante sete dias, um desafio
+                    era lançado para resolução em JavaScript.</p>
+                <a class="repo" href="https://github.com/Enyus/7DoC-JS" target="_blank">Repositório original do projeto</a>
+                <img src="https://media.giphy.com/media/402HofFrPzfATK7prR/giphy.gif">
+            </article>
+    
+            <article class="projeto">
+                <h2><a target="_blank" href="https://enyus.github.io/7DoC-HTML-CSS/">7DaysOfCode - HTML e CSS</a></h2>
+                <p>Desafios do #7DaysOfCode em HTML e CSS da Alura, projeto em que a cada dia, durante sete dias, um desafio
+                    era lançado para resolução em HTML e CSS, para o desenvolvimento do <a
+                        href="https://www.figma.com/file/mm3MLozvUDGhDRTxSLlGL5/7daysOfCode-HTML-CSS"
+                        target="_blank">protótipo</a> de uma
+                    página para a empresa fictícia Optimus Tech.</p>
+                <a class="repo" href="https://github.com/Enyus/7DoC-HTML-CSS" target="_blank">Repositório original do
+                    projeto</a>
+                <iframe src="https://enyus.github.io/7DoC-HTML-CSS/optimusTech" frameborder="0"></iframe>
+            </article>
+    
+            <article class="projeto">
+                <h2><a target="_blank" href="https://enyus.github.io/nlwesportsexplorer/">Next Level Week eSports - 09/2022
+                        - Trilha Explorer - Rocketseat</a></h2>
+                <p>Evento Next Level Week, da Rocketseat, no qual em uma semanas desenvolvemos uma landing page <a
+                        href="https://www.figma.com/file/bMsaifJpkuUj59ZW5vLqw6/NLW-eSports-(Community)?node-id=79%3A2502"
+                        target="_blank">protótipo</a>
+                    de uma
+                    para um web app destinado aos jogadores de eSports.</p>
+                <a class="repo" href="https://github.com/Enyus/nlwesportsexplorer" target="_blank">Repositório original do
+                    projeto</a>
+                <iframe src="https://enyus.github.io/nlwesportsexplorer/" frameborder="0"></iframe>
+            </article>
+    
+            <article class="projeto">
+                <h2><a target="_blank" href="https://github.com/Enyus/nlwesportsignite">Next Level Week eSports - 09/2022 -
+                        Trilha Ignite - Rocketseat</a></h2>
+                <p>Evento Next Level Week, da Rocketseat, no qual em uma semanas desenvolvemos um servidor, um aplicativo
+                    web com React e um aplicativo mobile com React-Native (<a
+                        href="https://www.figma.com/file/bMsaifJpkuUj59ZW5vLqw6/NLW-eSports-(Community)?node-id=0%3A1"
+                        target="_blank">de acordo com estes layouts do
+                        Figma</a>) destinados aos jogadores de eSports procurando parceiros de jogo ('Duos').</p>
+                <a class="repo" href="https://github.com/Enyus/nlwesportsignite">Repositório original do projeto</a>
+                <img src="./Images/nlwesportsignite.png"
+                    alt="resultado do aplicativo web da trilha Ignite da #nlwesposrts da Rocketseat">
+            </article>
+    
+            <article class="projeto">
+                <h2><a target="_blank" href="https://rolecities.vercel.app/">RoleCities (WIP)</a></h2>
+                <p>Projeto pessoal com o objetivo de aprender React para desenvolver um aplicativo de administração de
+                    cidades medievais como complemento a uma campanha de RPG de mesa que mestro atualmente.</p>
+                <a href="https://www.figma.com/file/cLAeOLudWUygcrLiFxqERz/RoleCities" class="repo"
+                    target="_blank">Figma</a>
+                <a class="repo" href="https://github.com/Enyus/rolecities" target="_blank">Repositório original do
+                    projeto</a>
+                <iframe src="https://rolecities.vercel.app/" frameborder="0"></iframe>
+            </article>
+    
+            <article class="projeto">
+                <h2><a target="_blank" href="https://alurachallengefrontend5-uq19.vercel.app/">Alura Challenge Front End 5
+                        (WIP)</a></h2>
+                <p>Desafio da Alura para a construção do front end da página da loja AluraGeek <a
+                        href='https://www.figma.com/file/UdtAAnQKzmNeJO9Qa4fLDq/AluraGeek-(Copy)'>(de acordo com estes
+                        layouts do Figma)</a> entre 26/09 e 25/10/2022.</p>
+                <a class="repo" href="https://github.com/Enyus/alurachallengefrontend5" target="_blank">Repositório original
+                    do
+                    projeto</a>
+                <iframe src="https://alurachallengefrontend5-uq19.vercel.app/" frameborder="0"></iframe>
+            </article>
 
-        <article>
-            <h2><a target="_blank" href="https://github.com/Enyus/nlwesportsignite">Next Level Week eSports - 09/2022 -
-                    Trilha Ignite - Rocketseat</a></h2>
-            <p>Evento Next Level Week, da Rocketseat, no qual em uma semanas desenvolvemos um servidor, um aplicativo
-                web com React e um aplicativo mobile com React-Native (<a
-                    href="https://www.figma.com/file/bMsaifJpkuUj59ZW5vLqw6/NLW-eSports-(Community)?node-id=0%3A1"
-                    target="_blank">de acordo com estes layouts do
-                    Figma</a>) destinados aos jogadores de eSports procurando parceiros de jogo ('Duos').</p>
-            <a class="repo" href="https://github.com/Enyus/nlwesportsignite">Repositório original do projeto</a>
-            <img src="./Images/nlwesportsignite.png"
-                alt="resultado do aplicativo web da trilha Ignite da #nlwesposrts da Rocketseat">
-        </article>
+        </div>
 
-        <article>
-            <h2><a target="_blank" href="https://rolecities.vercel.app/">RoleCities (WIP)</a></h2>
-            <p>Projeto pessoal com o objetivo de aprender React para desenvolver um aplicativo de administração de
-                cidades medievais como complemento a uma campanha de RPG de mesa que mestro atualmente.</p>
-            <a href="https://www.figma.com/file/cLAeOLudWUygcrLiFxqERz/RoleCities" class="repo"
-                target="_blank">Figma</a>
-            <a class="repo" href="https://github.com/Enyus/rolecities" target="_blank">Repositório original do
-                projeto</a>
-            <iframe src="https://rolecities.vercel.app/" frameborder="0"></iframe>
-        </article>
-
-        <article>
-            <h2><a target="_blank" href="https://alurachallengefrontend5-uq19.vercel.app/">Alura Challenge Front End 5
-                    (WIP)</a></h2>
-            <p>Desafio da Alura para a construção do front end da página da loja AluraGeek <a
-                    href='https://www.figma.com/file/UdtAAnQKzmNeJO9Qa4fLDq/AluraGeek-(Copy)'>(de acordo com estes
-                    layouts do Figma)</a> entre 26/09 e 25/10/2022.</p>
-            <a class="repo" href="https://github.com/Enyus/alurachallengefrontend5" target="_blank">Repositório original
-                do
-                projeto</a>
-            <iframe src="https://alurachallengefrontend5-uq19.vercel.app/" frameborder="0"></iframe>
-        </article>
 
         <article>
             <h2>Sobre Mim</h2>
@@ -129,6 +144,8 @@
         <a target="_blank" href="https://www.instagram.com/cssantini/"><img src="./Images/instagram.png" alt="instagram"
                 class="icone"></a>
     </footer>
+
+    <script src="./scripts/filtrarArtigos.js"></script>
 </body>
 
 </html>

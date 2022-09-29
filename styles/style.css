@@ -1,0 +1,49 @@
+@import url('./reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Orbitron:wght@500&family=Roboto+Mono:wght@400;500&display=swap');
+@import url('./capa.css');
+@import url('./filtro.css');
+@import url('./artigos.css');
+@import url('./footer.css');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: black;
+    color: whitesmoke;
+}
+
+strong {
+    font-weight: bold;
+}
+
+main {
+    margin: 5% auto;
+    width: 90%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bolder;
+    font-style: italic;
+    margin-bottom: 20px;
+    text-emphasis: 20px;
+    color: #00FF41;
+}
+
+p {
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+ul {
+    margin-left: 20px;
+    list-style: disc;
+}
+
+li {
+    margin-bottom: 10px;
+}

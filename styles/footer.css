@@ -1,0 +1,19 @@
+footer {
+    width: 35vw;
+    min-width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+
+.icone {
+    width: 50px;
+    margin: 0 10px;
+    border: solid white 2px;
+    border-radius: 25px;
+    transition: 1s;
+}
+
+.icone:hover {
+    opacity: 50%;
+}

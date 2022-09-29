@@ -1,0 +1,27 @@
+.capa {
+    width: 100%;
+    opacity: 50%;
+    max-height: 200px;
+    object-fit: cover;
+    object-position: top;
+    transition: all 1s;
+}
+
+.capa:hover {
+    height: fit-content;
+    max-height: fit-content;
+    opacity: 100%;
+}
+
+em {
+    text-align: right;
+    font-style: italic;
+    font-size: 15px;
+    display: block;
+    margin-right: 10px;
+    color: #003B00;
+}
+
+em:hover {
+    color: #008F11;
+}
