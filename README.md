@@ -36,6 +36,16 @@ Desafio da Alura para a construção do front end da página da loja AluraGeek <
 - <a href="https://github.com/Enyus/alurachallengefrontend5" target="_blank">Repositório original do projeto</a>
 <img src='https://i.imgur.com/3gr5Nn4.jpg'>
 
+## <a target="_blank" href="https://imersaoreact5.vercel.app/">Imersão React 5 - Alura Tube</a>
+Projeto desenvolvido durante a Imersão React 5 cujo o objetivo era desenvolver uma cópia simplificada do YouTube <a href='https://www.figma.com/file/32e9Nyt1TnsMn3p7MjugFt/Aluratube-(Copy)?t=tMNsJiaLTJoxLl6G-0'>(de acordo com estes layouts do Figma)</a> entre 07/11 e 11/11/2022.
+- <a class="repo" href="https://github.com/Enyus/imersaoreact5" target="_blank">Repositório original do projeto</a>
+<img src='https://i.imgur.com/P671JRV.png'>
+            
+## <a target="_blank" href="https://alurachallengebackend5.onrender.com/videos/free">Alura Challenge Back End 5 - AluraFlix API</a>
+Desafio da Alura para a construção de uma API para servir de Back End para o front do site AluraFlix, desenvolvido entre 24/10 e 22/11/2022.
+- <a class="repo" href="https://github.com/Enyus/alurachallengebackend5" target="_blank">Repositório original do projeto</a>
+<img src='https://i.imgur.com/4BTHvAB.png'>
+
 ## <a target="_blank" href="https://rolecities.vercel.app/">RoleCities (WIP)</a>
 Projeto pessoal com o objetivo de aprender React para desenvolver um aplicativo de administração de cidades medievais como complemento a uma campanha de RPG de mesa que mestro atualmente.
 - <a href="https://www.figma.com/file/cLAeOLudWUygcrLiFxqERz/RoleCities" class="repo" target="_blank">Figma</a>
@@ -45,7 +55,7 @@ Projeto pessoal com o objetivo de aprender React para desenvolver um aplicativo 
 
 
 
-## Sobre Mim
+# Sobre Mim
 - Formado em Engenharia Física pela UFSCar
 - Estudando Programação no momento, com foco em Web
 - Tecnologias que estudo no momento: React, JavaScript
