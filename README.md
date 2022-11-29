@@ -46,6 +46,11 @@ Desafio da Alura para a construção de uma API para servir de Back End para o f
 - <a class="repo" href="https://github.com/Enyus/alurachallengebackend5" target="_blank">Repositório original do projeto</a>
 <img src='https://i.imgur.com/4BTHvAB.png'>
 
+## <a target="_blank" href="https://enyus.github.io/canvasstudy/">Estudo de HTML Canvas</a>
+Estudo de canvas com o objetivo de transformar uma imagem em um sistema de partículas e possibilitar interação das mesmas com o mouse, a partir <a href="https://youtu.be/vAJEHf92tV0" target="_blank">deste vídeo aqui</a>.
+- <a class="repo" href="https://github.com/Enyus/canvasstudy" target="_blank">Repositório original do projeto</a>
+<img src='https://i.imgur.com/HgywS0V.png'>
+
 ## <a target="_blank" href="https://rolecities.vercel.app/">RoleCities (WIP)</a>
 Projeto pessoal com o objetivo de aprender React para desenvolver um aplicativo de administração de cidades medievais como complemento a uma campanha de RPG de mesa que mestro atualmente.
 - <a href="https://www.figma.com/file/cLAeOLudWUygcrLiFxqERz/RoleCities" class="repo" target="_blank">Figma</a>
