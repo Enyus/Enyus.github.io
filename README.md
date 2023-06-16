@@ -51,13 +51,16 @@ Estudo de canvas com o objetivo de transformar uma imagem em um sistema de part�
 - <a class="repo" href="https://github.com/Enyus/canvasstudy" target="_blank">Repositório original do projeto</a>
 <img src='https://i.imgur.com/HgywS0V.png'>
 
+## <a target="_blank" href="https://enyus.github.io/santandercoders23/">Santander Coders 2023</a>
+Desafios da Fase II da Trilha Web Front End do programa Santander Coders 2023 em parceria com a ADA.
+- <a class="repo" href="https://github.com/Enyus/santandercoders23" target="_blank">Repositório original do projeto</a>
+<img src='./Images/santander_coders_logo.png' style="display: block;">
+
 ## <a target="_blank" href="https://rolecities.vercel.app/">RoleCities (WIP)</a>
 Projeto pessoal com o objetivo de aprender React para desenvolver um aplicativo de administração de cidades medievais como complemento a uma campanha de RPG de mesa que mestro atualmente.
 - <a href="https://www.figma.com/file/cLAeOLudWUygcrLiFxqERz/RoleCities" class="repo" target="_blank">Figma</a>
 - <a class="repo" href="https://github.com/Enyus/rolecities" target="_blank">Repositório original do projeto</a>
 <img src="https://i.imgur.com/Vnfgwxp.jpg">
-
-
 
 
 # Sobre Mim
